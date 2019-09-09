@@ -1,3 +1,4 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/38ab71d1-fb64-4c2f-8676-cd046dc67604/deploy-status)](https://app.netlify.com/sites/amacss-frontend/deploys)
 # AMACSS Frontend
 
 Based on Gatsby and React, this website will serve as the frontend of AMACSS
