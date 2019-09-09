@@ -32,7 +32,7 @@
   ],
   "license": "MIT",
   "scripts": {
-    "now-build": "yum -y install libpng-devel",
+    "now-build": "yum -y install libpng-devel && gatsby build",
     "build": "gatsby build",
     "dev": "gatsby develop",
     "start": "npm run dev",
