@@ -1,6 +1,6 @@
 import React from 'react';
 import Helmet from 'react-helmet';
-import AMACSSIcon from '@static/favicon.svg';
+import AMACSSIcon from '@images/logos/amacss_logo.svg';
 
 const SEO_DATA = {
   description: 'The official website for AMACSS. The AMACSS team works to enhance the educational, recreational, social and cultural environment of UTSC.',
