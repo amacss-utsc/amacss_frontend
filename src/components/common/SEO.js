@@ -1,19 +1,20 @@
 import React from 'react';
 import Helmet from 'react-helmet';
+import AMACSSIcon from '@static/favicon.svg';
 
 const SEO_DATA = {
-  description: 'An absurd gatsby starter',
-  title: 'Absurd',
-  url: '',
-  author: 'ajayns',
-  keywords: ['gatsby', 'site', 'absurd'],
+  description: 'The official website for AMACSS. The AMACSS team works to enhance the educational, recreational, social and cultural environment of UTSC.',
+  title: 'Association of Mathematical and Computer Science Students',
+  url: 'https://beta.amacss.org',
+  author: 'Samiul Haque',
+  keywords: ['amacss', 'cms'],
   twitter: {
-    id: '@ajayns08',
-    img: '',
+    id: '',
+    img: AMACSSIcon,
   },
   facebook: {
     id: '',
-    img: '',
+    img: AMACSSIcon,
   },
 };
 
