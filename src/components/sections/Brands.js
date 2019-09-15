@@ -5,6 +5,7 @@ import Img from 'gatsby-image';
 
 import { Section, Container } from '@components/global';
 import ExternalLink from '@common/ExternalLink';
+import MailchimpSubscribe from 'react-mailchimp-subscribe';
 
 import { ReactComponent as AirbnbLogo } from '@images/logos/airbnb.svg';
 import { ReactComponent as AppleMusicLogo } from '@images/logos/apple-music.svg';
@@ -60,15 +61,48 @@ const UsedBy = () => (
       <Section id="brands" accent>
         <StyledContainer>
           <div>
-            <h1>Used by biggest in tech</h1>
-            <LogoGrid>
-              {LOGOS.map(({ logo, link }) => (
-                <ExternalLink href={link}>{logo()}</ExternalLink>
-              ))}
-            </LogoGrid>
+            <h1>What are you waiting for?</h1>
+            {/*<LogoGrid>*/}
+            {/*  {LOGOS.map(({ logo, link }) => (*/}
+            {/*    <ExternalLink href={link}>{logo()}</ExternalLink>*/}
+            {/*  ))}*/}
+            {/*</LogoGrid>*/}
+            <br/>
+            <h2>Sign up below</h2>
+            {/*<form*/}
+            {/*  action="https://amacss.us16.list-manage.com/subscribe/post?u=641679e76875b8186d30d1f0b&amp;id=362221620e"*/}
+            {/*  method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate"*/}
+            {/*  target="_blank" noValidate>*/}
+            {/*  <div id="mc_embed_signup_scroll">*/}
+            {/*    <div className="input-group">*/}
+            {/*    <span className="input-group-addon">*/}
+            {/*      <i className="fa fa-envelope"></i>*/}
+            {/*    </span>*/}
+            {/*      <input type="email" value="" name="EMAIL" className="form-control" id="mce-EMAIL"*/}
+            {/*             placeholder="Email Address"*/}
+            {/*             required></input>*/}
+            {/*    </div>*/}
+            {/*    <div className="clear">*/}
+            {/*      <input type="submit" value="Subscribe" name="subscribe"*/}
+            {/*                                  id="mc-embedded-subscribe"*/}
+            {/*             className="btn btn-info"></input>*/}
+            {/*      </div>*/}
+            {/*  </div>*/}
+            {/*</form>*/}
+            <br/>
+            <form action="https://amacss.us16.list-manage.com/subscribe/post?u=641679e76875b8186d30d1f0b&amp;id=362221620e">
+              <label>
+                <h3>
+                  Email:&nbsp;
+                  <input type="text" name="name"/>
+                </h3>
+              </label>
+              <br/>
+              <input type="submit" value="Submit"/>
+            </form>
           </div>
           <Art>
-            <Img fluid={data.art_story.childImageSharp.fluid} />
+            <Img fluid={data.art_story.childImageSharp.fluid}/>
           </Art>
         </StyledContainer>
       </Section>
@@ -77,48 +111,48 @@ const UsedBy = () => (
 );
 
 const LogoGrid = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 64px;
-  justify-items: center;
-  margin-top: 96px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 64px;
+    justify-items: center;
+    margin-top: 96px;
 
-  a {
-    svg {
+    a {
+      svg {
       width: 100%;
     }
-  }
+    }
 
-  @media (max-width: ${props => props.theme.screen.sm}) {
-    grid-template-columns: 1fr;
-  }
-`;
+    @media (max-width: ${props => props.theme.screen.sm}) {
+      grid - template - columns: 1fr;
+    }
+    `;
 
 const StyledContainer = styled(Container)`
-  display: flex;
-  justify-content: flex-end;
-  position: relative;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
 
-  @media (max-width: ${props => props.theme.screen.md}) {
-    justify-content: center;
-  }
-`;
+    @media (max-width: ${props => props.theme.screen.md}) {
+      justify - content: center;
+    }
+    `;
 
 const Art = styled.figure`
-  width: 600px;
-  position: absolute;
-  top: -12%;
-  right: 50%;
+    width: 600px;
+    position: absolute;
+    top: -12%;
+    right: 50%;
 
-  @media (max-width: ${props => props.theme.screen.lg}) {
-    top: 0;
-    right: 65%;
-    width: 500px;
-  }
+    @media (max-width: ${props => props.theme.screen.lg}) {
+      top: 0;
+      right: 65%;
+      width: 500px;
+    }
 
-  @media (max-width: ${props => props.theme.screen.md}) {
-    display: none;
-  }
-`;
+    @media (max-width: ${props => props.theme.screen.md}) {
+      display: none;
+    }
+    `;
 
 export default UsedBy;
