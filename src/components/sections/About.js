@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-import { StaticQuery, graphql } from 'gatsby';
+import { graphql, StaticQuery } from 'gatsby';
 import Img from 'gatsby-image';
 
-import { Section, Container } from '@components/global';
+import { Container, Section } from '@components/global';
 import ExternalLink from '../common/ExternalLink';
 
 const eventsURL = "https://utsccms.club/";

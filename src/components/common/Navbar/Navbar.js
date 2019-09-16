@@ -3,14 +3,7 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 import Scrollspy from 'react-scrollspy';
 
 import { Container } from '@components/global';
-import {
-  Nav,
-  NavItem,
-  StyledContainer,
-  NavListWrapper,
-  MobileMenu,
-  Mobile,
-} from './style';
+import { Mobile, MobileMenu, Nav, NavItem, NavListWrapper, StyledContainer } from './style';
 import { ReactComponent as AMACSSLogo } from '@images/logos/amacss_logo.svg';
 import { ReactComponent as MenuIcon } from '@static/icons/menu.svg';
 import ExternalLink from '@common/ExternalLink';

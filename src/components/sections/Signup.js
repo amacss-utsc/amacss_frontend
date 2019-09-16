@@ -2,9 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 import Img from 'gatsby-image';
 
-import { StaticQuery, graphql } from 'gatsby';
+import { graphql, StaticQuery } from 'gatsby';
 
-import { Section, Container } from '@components/global';
+import { Container, Section } from '@components/global';
 
 const SignUp = () => (
   <StaticQuery
@@ -35,7 +35,7 @@ const SignUp = () => (
               method="post" id="mc-embedded-subscribe-form"
               name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
               <label>
-                <p style={{ color: 'black' }}>
+                <p style={{ color: '#F6F6F6' }}>
                   Email:
                   <Input type="email" name="EMAIL"/>
                 </p>
@@ -58,6 +58,7 @@ const StyledContainer = styled(Container)`
     display: flex;
     justify-content: flex-end;
     position: relative;
+    color:  ${props => props.theme.color.white.dark};
 
     @media (max-width: ${props => props.theme.screen.md}) {
       justify - content: center;
@@ -83,11 +84,11 @@ const Art = styled.figure`
 
 const Button = styled.button`
   // background: ${props => props.primary ? 'palevioletred' : 'white'};
-  color: #ABA8AF;
+  color: #dedcdc;
   font-size: 1.2em;
   margin-top: 1em;
   padding: 0.65em 2.5em;
-  border: 2px solid black;
+  border: 2px solid #dedcdc;
   border-radius: 3px;
   font-weight: bold;
 `;

@@ -6,7 +6,7 @@ import Header from '@sections/Header';
 import About from '@sections/About';
 import Signup from '@sections/Signup';
 import Team from '@sections/Team';
-import Contact from "@sections/Contact"
+import Contact from '@sections/Contact';
 // import Faq from '@sections/Faq';
 import Footer from '@sections/Footer';
 
