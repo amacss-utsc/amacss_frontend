@@ -47,7 +47,7 @@ export const NavItem = styled.li`
   a {
     text-decoration: none;
     opacity: 0.7;
-    color: ${props => props.theme.color.black.regular};
+    color: ${props => props.theme.color.white.dark};
   }
 
   &.active {

@@ -19,7 +19,8 @@ import InstagramIcon from '@static/icons/instagram.svg';
 import FacebookIcon from '@static/icons/facebook.svg';
 import styled from 'styled-components';
 
-const NAV_ITEMS = ['About', 'Brands', 'Team', 'FAQ'];
+const HOME_URL = "/";
+const NAV_ITEMS = ['About', 'Sign Up', 'Team', 'Contact'];
 const SOCIAL = [
   {
     icon: GithubIcon,
@@ -86,7 +87,7 @@ class Navbar extends Component {
     return (
       <Nav {...this.props}>
         <StyledContainer>
-          <AMACSSLogo/>
+          <a href={HOME_URL}><AMACSSLogo /></a>
           <Mobile>
             <button onClick={this.toggleMobileMenu} style={{ color: 'black' }}>
               <MenuIcon/>

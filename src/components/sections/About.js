@@ -4,7 +4,9 @@ import { StaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 
 import { Section, Container } from '@components/global';
+import ExternalLink from '../common/ExternalLink';
 
+const eventsURL = "https://utsccms.club/";
 const About = () => (
   <StaticQuery
     query={graphql`
@@ -46,30 +48,16 @@ const About = () => (
     render={data => (
       <Section id="about">
         <Container>
-          {/*<Grid>*/}
-          {/*  <div>*/}
-          {/*    <h2>Speed past the competition</h2>*/}
-          {/*    <p>*/}
-          {/*      Gatsby.js builds the fastest possible website. Instead of*/}
-          {/*      waiting to generate pages when requested, pre-build pages and*/}
-          {/*      lift them into a global cloud of servers — ready to be delivered*/}
-          {/*      instantly to your users wherever they are.*/}
-          {/*    </p>*/}
-          {/*  </div>*/}
-          {/*  <Art>*/}
-          {/*    <Img fluid={data.art_fast.childImageSharp.fluid} />*/}
-          {/*  </Art>*/}
-          {/*</Grid>*/}
           <Grid inverse>
             <Art>
-              <Img fluid={data.art_ideas.childImageSharp.fluid} />
+              <Img fluid={data.art_ideas.childImageSharp.fluid}/>
             </Art>
             <div>
               <h2>Always learning</h2>
               <p>
                 AMACSS offers number of academic course seminars through the school year.
-                <br />
-                <br />
+                <br/>
+                <br/>
                 This includes review modules, midterm preparations, and final exam preparations.
                 Free access is given to all AMACSS members.
               </p>
@@ -79,15 +67,30 @@ const About = () => (
             <div>
               <h2>Grow and build your ideas</h2>
               <p>
-                AMACSS organizes a number of incredible events  <br />throughout the year.
-                <br /> <br />
-                To ensure that you never miss an upcoming event, <br />check the Events page frequently.
+                AMACSS organizes a number of incredible events <br/>throughout the year.
+                <br/> <br/>
+                To ensure that you never miss an upcoming event, <br/>check the <ExternalLink href={eventsURL}>Events</ExternalLink> page frequently.
               </p>
             </div>
             <Art>
-              <Img fluid={data.art_learn.childImageSharp.fluid} />
+              <Img fluid={data.art_learn.childImageSharp.fluid}/>
             </Art>
           </Grid>
+        </Container>
+
+        <Container>
+          <div>
+            <h2>About Us</h2>
+            <p>
+              The purpose of AMACSS is to represent, advocate for and enhance the university experience of students in
+              the Department of Computer and Mathematical Sciences.
+            </p>
+            <br/>
+            <p>
+              The AMACSS executive team, all current students, work to enhance the educational, recreational, social and
+              cultural environment of the University of Toronto at Scarborough.
+            </p>
+          </div>
         </Container>
       </Section>
     )}
@@ -104,8 +107,8 @@ const Grid = styled.div`
   margin: 24px 0;
 
   ${props =>
-    props.inverse &&
-    `
+  props.inverse &&
+  `
     text-align: left;
     grid-template-columns: 2fr 3fr;
   `}
@@ -124,8 +127,8 @@ const Grid = styled.div`
     }
 
     ${props =>
-      props.inverse &&
-      `
+  props.inverse &&
+  `
         ${Art} {
           order: 2;
         }

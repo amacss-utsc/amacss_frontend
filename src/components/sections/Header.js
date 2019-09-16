@@ -50,6 +50,7 @@ const Header = () => (
 
 const HeaderWrapper = styled.header`
   background-color: ${props => props.theme.color.primary};
+  color: ${props => props.theme.color.white.dark};
   padding-top: 96px;
 
   @media (max-width: ${props => props.theme.screen.md}) {

@@ -4,37 +4,44 @@ import { StaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 
 import { Section, Container } from '@components/global';
+import ExternalLink from '../common/ExternalLink';
 
 const TEAM = [
   {
-    name: 'Josh Peck',
+    name: 'Sonika Verma',
     image: 'josh.jpg',
-    role: 'Founder',
+    role: 'President',
+    linkedin: 'https://www.linkedin.com/in/sonika-verma-a068a8132/',
   },
   {
-    name: 'Lisa Haydon',
+    name: 'Angela Bernuy',
     image: 'lisa.jpg',
-    role: 'Art Director',
+    role: 'VP of Academics',
+    linkedin: 'https://www.linkedin.com/in/angela-zavaleta-bernuy/',
   },
   {
-    name: 'Ashlyn Harris',
+    name: 'Samiul Haque',
     image: 'ashlyn.jpg',
-    role: 'Frontend Engineer',
+    role: 'VP of Engineering',
+    linkedin: 'https://www.samiulhaque.com/',
   },
   {
-    name: 'Todd Joseph',
+    name: 'Zoë Ladouceur',
     image: 'todd.jpg',
-    role: 'Designer',
+    role: 'Director of Marketing',
+    linkedin: 'https://www.linkedin.com/in/zo%C3%AB-ladouceur-aa7a98143/',
   },
   {
-    name: 'Martin White',
+    name: 'Riyasat Talukder',
     image: 'martin.jpg',
-    role: 'Backend Engineer',
+    role: 'Director of Events',
+    linkedin: 'https://www.linkedin.com/in/riyasat-talukder-a34071165/',
   },
   {
-    name: 'Rose Leslie',
+    name: 'Luke Jin',
     image: 'rose.jpg',
-    role: 'Marketing',
+    role: 'Director of Events',
+    linkedin: 'https://www.facebook.com/lil.lukeyjin',
   },
 ];
 
@@ -71,14 +78,14 @@ const Team = () => (
         <Container style={{ position: 'relative' }}>
           <h1>The Team</h1>
           <TeamGrid>
-            {TEAM.map(({ name, image, role }) => {
+            {TEAM.map(({ name, image, role, linkedin }) => {
               const img = data.allFile.edges.find(
-                ({ node }) => node.relativePath === image
+                ({ node }) => node.relativePath === image,
               ).node;
 
               return (
                 <div>
-                  <Img fluid={img.childImageSharp.fluid} alt={name} />
+                  <ExternalLink href={linkedin}><Img fluid={img.childImageSharp.fluid} alt={name}/></ExternalLink>
                   <Title>{name}</Title>
                   <Subtitle>{role}</Subtitle>
                 </div>
@@ -86,10 +93,10 @@ const Team = () => (
             })}
           </TeamGrid>
           <Art>
-            <Img fluid={data.art_team.childImageSharp.fluid} />
+            <Img fluid={data.art_team.childImageSharp.fluid}/>
           </Art>
           <ArtMobile>
-            <Img fluid={data.art_team.childImageSharp.fluid} />
+            <Img fluid={data.art_team.childImageSharp.fluid}/>
           </ArtMobile>
         </Container>
       </Section>
