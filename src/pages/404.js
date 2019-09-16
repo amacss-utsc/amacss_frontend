@@ -24,7 +24,7 @@ const NotFoundPage = () => (
             <br />
             <br />
             <br />
-            <h1>NOT FOUND</h1>
+            <h1>Not Found</h1>
             <p>Unfortunately the URL you entered does not exist.</p>
           </div>
         </Container>
