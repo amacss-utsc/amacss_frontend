@@ -12,7 +12,7 @@ import InstagramIcon from '@static/icons/instagram.svg';
 import FacebookIcon from '@static/icons/facebook.svg';
 import styled from 'styled-components';
 
-const HOME_URL = "/";
+const HOME_URL = "/#home";
 const NAV_ITEMS = ['About', 'Sign Up', 'Office Hours', 'Team', 'Contact'];
 const SOCIAL = [
     {

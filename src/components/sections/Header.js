@@ -23,7 +23,7 @@ const Header = () => (
       }
     `}
         render={data => (
-            <HeaderWrapper>
+            <HeaderWrapper id="home">
                 <Container>
                     <Grid>
                         <Art>
