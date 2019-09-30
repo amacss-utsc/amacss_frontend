@@ -40,8 +40,8 @@ export const Section = styled.section`
   ${props =>
     props.accent &&
     `background-color: ${
-      props.accent === 'secondary'
-        ? props.theme.color.white.dark
-        : props.theme.color.primary
+        props.accent === 'secondary'
+            ? props.theme.color.white.dark
+            : props.theme.color.primary
     }`};
 `;

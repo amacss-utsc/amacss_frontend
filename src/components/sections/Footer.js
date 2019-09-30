@@ -1,15 +1,15 @@
 import React from 'react';
 import styled from 'styled-components';
-import { graphql, StaticQuery } from 'gatsby';
+import {graphql, StaticQuery} from 'gatsby';
 import Img from 'gatsby-image';
 
-import { Container } from '@components/global';
+import {Container} from '@components/global';
 import ExternalLink from '@common/ExternalLink';
-import { ReactComponent as AMACSSLogo } from '@images/logos/amacss_logo.svg';
+import {ReactComponent as AMACSSLogo} from '@images/logos/amacss_logo.svg';
 
 const Footer = () => (
-  <StaticQuery
-    query={graphql`
+    <StaticQuery
+        query={graphql`
       query {
         art_pot: file(
           sourceInstanceName: { eq: "art" }
@@ -23,31 +23,31 @@ const Footer = () => (
         }
       }
     `}
-    render={data => (
-      <React.Fragment>
-        <Art>
-          <Img
-            fluid={data.art_pot.childImageSharp.fluid}
-            style={{ width: 480, maxWidth: '100%', marginBottom: -16 }}
-          />
-        </Art>
-        <FooterWrapper>
-          <StyledContainer>
-            <Copyright>
-              <AMACSSLogo />
-              <span>
-                <br />Illustrations by
-                {` `}
-                <ExternalLink href="https://twitter.com/diana_valeanu">
+        render={data => (
+            <React.Fragment>
+                <Art>
+                    <Img
+                        fluid={data.art_pot.childImageSharp.fluid}
+                        style={{width: 480, maxWidth: '100%', marginBottom: -16}}
+                    />
+                </Art>
+                <FooterWrapper>
+                    <StyledContainer>
+                        <Copyright>
+                            <AMACSSLogo/>
+                            <span>
+                <br/>Illustrations by
+                                {` `}
+                                <ExternalLink href="https://twitter.com/diana_valeanu">
                   @diana_valeanu
                 </ExternalLink>
               </span>
-            </Copyright>
-          </StyledContainer>
-        </FooterWrapper>
-      </React.Fragment>
-    )}
-  />
+                        </Copyright>
+                    </StyledContainer>
+                </FooterWrapper>
+            </React.Fragment>
+        )}
+    />
 );
 
 const FooterWrapper = styled.footer`

@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
-import AnchorLink from 'react-anchor-link-smooth-scroll';
+import React, {Component} from 'react';
+import {Link} from "gatsby";
 import Scrollspy from 'react-scrollspy';
 
-import { Container } from '@components/global';
-import { Mobile, MobileMenu, Nav, NavItem, NavListWrapper, StyledContainer } from './style';
-import { ReactComponent as AMACSSLogo } from '@images/logos/amacss_logo.svg';
-import { ReactComponent as MenuIcon } from '@static/icons/menu.svg';
+import {Container} from '@components/global';
+import {Mobile, MobileMenu, Nav, NavItem, NavListWrapper, StyledContainer} from './style';
+import {ReactComponent as AMACSSLogo} from '@images/logos/amacss_logo.svg';
+import {ReactComponent as MenuIcon} from '@static/icons/menu.svg';
 import ExternalLink from '@common/ExternalLink';
 import GithubIcon from '@static/icons/github.svg';
 import InstagramIcon from '@static/icons/instagram.svg';
@@ -13,92 +13,102 @@ import FacebookIcon from '@static/icons/facebook.svg';
 import styled from 'styled-components';
 
 const HOME_URL = "/";
-const NAV_ITEMS = ['About', 'Sign Up', 'Team', 'Contact'];
+const NAV_ITEMS = ['About', 'Sign Up', 'Office Hours', 'Team', 'Contact'];
 const SOCIAL = [
-  {
-    icon: GithubIcon,
-    link: 'https://github.com/amacss-utsc',
-  },
-  {
-    icon: InstagramIcon,
-    link: 'https://instagram.com/amacss_utsc/',
-  },
-  {
-    icon: FacebookIcon,
-    link: 'https://facebook.com/AMACSSUTSC',
-  },
+    {
+        icon: GithubIcon,
+        link: 'https://github.com/amacss-utsc',
+    },
+    {
+        icon: InstagramIcon,
+        link: 'https://instagram.com/amacss_utsc/',
+    },
+    {
+        icon: FacebookIcon,
+        link: 'https://facebook.com/AMACSSUTSC',
+    },
 ];
 
 class Navbar extends Component {
 
-  state = {
-    mobileMenuOpen: false,
-  };
+    state = {
+        mobileMenuOpen: false,
+    };
 
-  toggleMobileMenu = () => {
-    this.setState(prevState => ({ mobileMenuOpen: !prevState.mobileMenuOpen }));
-  };
+    toggleMobileMenu = () => {
+        this.setState(prevState => ({mobileMenuOpen: !prevState.mobileMenuOpen}));
+    };
 
-  closeMobileMenu = () => {
-    if (this.state.mobileMenuOpen) {
-      this.setState({ mobileMenuOpen: false });
-    }
-  };
+    closeMobileMenu = () => {
+        if (this.state.mobileMenuOpen) {
+            this.setState({mobileMenuOpen: false});
+        }
+    };
 
-  getNavAnchorLink = item => (
-    <AnchorLink href={`#${item.toLowerCase()}`} onClick={this.closeMobileMenu}>
-      {item}
-    </AnchorLink>
-  );
+    getNavAnchorLink = item => {
+        if (['team', 'contact', 'office hours'].includes(item.toLowerCase())) {
+            return (
+                <Link to={`${item.toLowerCase()}`} onClick={this.closeMobileMenu}>
+                    {item}
+                </Link>
+            );
+        }
+        return (
+            <Link to={`#${item.toLowerCase()}`} onClick={this.closeMobileMenu}>
+                {item}
+            </Link>
+        );
 
-  getNavList = ({ mobile = false }) => (
-    <NavListWrapper mobile={mobile}>
-      <Scrollspy
-        items={NAV_ITEMS.map(item => item.toLowerCase())}
-        currentClassName="active"
-        mobile={mobile}
-        offset={-64}
-      >
-        {NAV_ITEMS.map(navItem => (
-          <NavItem key={navItem}>{this.getNavAnchorLink(navItem)}</NavItem>
-        ))}
-        <SocialIcons>
-          {SOCIAL.map(({ icon, link }) => (
-            <ExternalLink href={link}>
-              <img src={icon} alt="link"/>
-            </ExternalLink>
-          ))}
-        </SocialIcons>
-      </Scrollspy>
-    </NavListWrapper>
-  );
+    };
 
-
-  render() {
-    const { mobileMenuOpen } = this.state;
-
-    return (
-      <Nav {...this.props}>
-        <StyledContainer>
-          <a href={HOME_URL}><AMACSSLogo /></a>
-          <Mobile>
-            <button onClick={this.toggleMobileMenu} style={{ color: 'black' }}>
-              <MenuIcon/>
-            </button>
-          </Mobile>
-
-          <Mobile hide>{this.getNavList({})}</Mobile>
-        </StyledContainer>
-        <Mobile>
-          {mobileMenuOpen && (
-            <MobileMenu>
-              <Container>{this.getNavList({ mobile: true })}</Container>
-            </MobileMenu>
-          )}
-        </Mobile>
-      </Nav>
+    getNavList = ({mobile = false}) => (
+        <NavListWrapper mobile={mobile}>
+            <Scrollspy
+                items={NAV_ITEMS.map(item => item.toLowerCase())}
+                currentClassName="active"
+                mobile={mobile}
+                offset={-64}
+            >
+                {NAV_ITEMS.map(navItem => (
+                    <NavItem key={navItem}>{this.getNavAnchorLink(navItem)}</NavItem>
+                ))}
+                <SocialIcons>
+                    {SOCIAL.map(({icon, link}) => (
+                        <ExternalLink href={link}>
+                            <img src={icon} alt="link"/>
+                        </ExternalLink>
+                    ))}
+                </SocialIcons>
+            </Scrollspy>
+        </NavListWrapper>
     );
-  }
+
+
+    render() {
+        const {mobileMenuOpen} = this.state;
+
+        return (
+            <Nav {...this.props}>
+                <StyledContainer>
+                    <a href={HOME_URL}><AMACSSLogo/></a>
+                    <Mobile>
+                        <button onClick={this.toggleMobileMenu} style={{color: 'black'}}>
+                            <MenuIcon/>
+                        </button>
+                    </Mobile>
+
+                    <Mobile hide>{this.getNavList({})}</Mobile>
+                </StyledContainer>
+                <Mobile>
+                    {mobileMenuOpen && (
+                        <MobileMenu>
+                            <Container>{this.getNavList({mobile: true})}</Container>
+                        </MobileMenu>
+                    )}
+                </Mobile>
+            </Nav>
+        );
+    }
 }
 
 const SocialIcons = styled.div`

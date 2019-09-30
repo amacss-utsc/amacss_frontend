@@ -2,13 +2,13 @@ import React from 'react';
 import styled from 'styled-components';
 import Img from 'gatsby-image';
 
-import { graphql, StaticQuery } from 'gatsby';
+import {graphql, StaticQuery} from 'gatsby';
 
-import { Container, Section } from '@components/global';
+import {Container, Section} from '@components/global';
 
 const SignUp = () => (
-  <StaticQuery
-    query={graphql`
+    <StaticQuery
+        query={graphql`
       query {
         art_story: file(
           sourceInstanceName: { eq: "art" }
@@ -22,35 +22,35 @@ const SignUp = () => (
         }
       }
     `}
-    render={data => (
-      <Section id="sign up" accent>
-        <StyledContainer>
-          <div>
-            <h1>What are you waiting for?</h1>
-            <br/>
-            <h2>Sign up below</h2>
-            <br/>
-            <form
-              action="https://amacss.us16.list-manage.com/subscribe/post?u=641679e76875b8186d30d1f0b&amp;id=362221620e"
-              method="post" id="mc-embedded-subscribe-form"
-              name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-              <label>
-                <p style={{ color: '#F6F6F6' }}>
-                  Email:
-                  <Input type="email" name="EMAIL"/>
-                </p>
-              </label>
-              <br/>
-              <Button>Submit</Button>
-            </form>
-          </div>
-          <Art>
-            <Img fluid={data.art_story.childImageSharp.fluid}/>
-          </Art>
-        </StyledContainer>
-      </Section>
-    )}
-  />
+        render={data => (
+            <Section id="sign%20up" accent>
+                <StyledContainer>
+                    <div>
+                        <h1>What are you waiting for?</h1>
+                        <br/>
+                        <h2>Sign up below</h2>
+                        <br/>
+                        <form
+                            action="https://amacss.us16.list-manage.com/subscribe/post?u=641679e76875b8186d30d1f0b&amp;id=362221620e"
+                            method="post" id="mc-embedded-subscribe-form"
+                            name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                            <label>
+                                <p style={{color: '#F6F6F6'}}>
+                                    Email:
+                                    <Input type="email" name="EMAIL"/>
+                                </p>
+                            </label>
+                            <br/>
+                            <Button>Submit</Button>
+                        </form>
+                    </div>
+                    <Art>
+                        <Img fluid={data.art_story.childImageSharp.fluid}/>
+                    </Art>
+                </StyledContainer>
+            </Section>
+        )}
+    />
 );
 
 
@@ -94,10 +94,10 @@ const Button = styled.button`
 `;
 
 const Input = styled.input.attrs(props => ({
-  // we can define static props
-  type: 'email',
-  // or we can define dynamic ones
-  size: '0.55em',
+    // we can define static props
+    type: 'email',
+    // or we can define dynamic ones
+    size: '0.55em',
 }))`
   color: black;
   font-size: 1em;

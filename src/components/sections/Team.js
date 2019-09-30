@@ -1,53 +1,53 @@
 import React from 'react';
 import styled from 'styled-components';
-import { graphql, StaticQuery } from 'gatsby';
+import {graphql, StaticQuery} from 'gatsby';
 import Img from 'gatsby-image';
 
-import { Container, Section } from '@components/global';
+import {Container, Section} from '@components/global';
 import ExternalLink from '../common/ExternalLink';
 
 const TEAM = [
-  {
-    name: 'Sonika Verma',
-    image: 'josh.jpg',
-    role: 'President',
-    linkedin: 'https://www.linkedin.com/in/sonika-verma-a068a8132/',
-  },
-  {
-    name: 'Angela Bernuy',
-    image: 'lisa.jpg',
-    role: 'VP of Academics',
-    linkedin: 'https://www.linkedin.com/in/angela-zavaleta-bernuy/',
-  },
-  {
-    name: 'Samiul Haque',
-    image: 'ashlyn.jpg',
-    role: 'VP of Engineering',
-    linkedin: 'https://www.samiulhaque.com/',
-  },
-  {
-    name: 'Zoë Ladouceur',
-    image: 'todd.jpg',
-    role: 'Director of Marketing',
-    linkedin: 'https://www.linkedin.com/in/zo%C3%AB-ladouceur-aa7a98143/',
-  },
-  {
-    name: 'Riyasat Talukder',
-    image: 'martin.jpg',
-    role: 'Director of Events',
-    linkedin: 'https://www.linkedin.com/in/riyasat-talukder-a34071165/',
-  },
-  {
-    name: 'Luke Jin',
-    image: 'rose.jpg',
-    role: 'Director of Events',
-    linkedin: 'https://www.facebook.com/lil.lukeyjin',
-  },
+    {
+        name: 'Sonika Verma',
+        image: 'josh.jpg',
+        role: 'President',
+        linkedin: 'https://www.linkedin.com/in/sonika-verma-a068a8132/',
+    },
+    {
+        name: 'Angela Bernuy',
+        image: 'lisa.jpg',
+        role: 'VP of Academics',
+        linkedin: 'https://www.linkedin.com/in/angela-zavaleta-bernuy/',
+    },
+    {
+        name: 'Samiul Haque',
+        image: 'martin.jpg',
+        role: 'VP of Engineering',
+        linkedin: 'https://www.samiulhaque.com/',
+    },
+    {
+        name: 'Zoë Ladouceur',
+        image: 'ashlyn.jpg',
+        role: 'Director of Marketing',
+        linkedin: 'https://www.linkedin.com/in/zo%C3%AB-ladouceur-aa7a98143/',
+    },
+    {
+        name: 'Riyasat Talukder',
+        image: 'todd.jpg',
+        role: 'Director of Events',
+        linkedin: 'https://www.linkedin.com/in/riyasat-talukder-a34071165/',
+    },
+    {
+        name: 'Luke Jin',
+        image: 'captain.jpg',
+        role: 'Director of Events',
+        linkedin: 'https://www.facebook.com/lil.lukeyjin',
+    },
 ];
 
 const Team = () => (
-  <StaticQuery
-    query={graphql`
+    <StaticQuery
+        query={graphql`
       query {
         allFile(filter: { sourceInstanceName: { eq: "team" } }) {
           edges {
@@ -73,35 +73,36 @@ const Team = () => (
         }
       }
     `}
-    render={data => (
-      <Section id="team" accent="secondary">
-        <Container style={{ position: 'relative' }}>
-          <h1>The Team</h1>
-          <TeamGrid>
-            {TEAM.map(({ name, image, role, linkedin }) => {
-              const img = data.allFile.edges.find(
-                ({ node }) => node.relativePath === image,
-              ).node;
+        render={data => (
+            <Section id="team" accent="secondary">
+                <Container style={{position: 'relative'}}>
+                    <h1>The Team</h1>
+                    <TeamGrid>
+                        {TEAM.map(({name, image, role, linkedin}) => {
+                            const img = data.allFile.edges.find(
+                                ({node}) => node.relativePath === image,
+                            ).node;
 
-              return (
-                <div>
-                  <ExternalLink href={linkedin}><Img fluid={img.childImageSharp.fluid} alt={name}/></ExternalLink>
-                  <Title>{name}</Title>
-                  <Subtitle>{role}</Subtitle>
-                </div>
-              );
-            })}
-          </TeamGrid>
-          <Art>
-            <Img fluid={data.art_team.childImageSharp.fluid}/>
-          </Art>
-          <ArtMobile>
-            <Img fluid={data.art_team.childImageSharp.fluid}/>
-          </ArtMobile>
-        </Container>
-      </Section>
-    )}
-  />
+                            return (
+                                <div>
+                                    <ExternalLink href={linkedin}><Img fluid={img.childImageSharp.fluid}
+                                                                       alt={name}/></ExternalLink>
+                                    <Title>{name}</Title>
+                                    <Subtitle>{role}</Subtitle>
+                                </div>
+                            );
+                        })}
+                    </TeamGrid>
+                    <Art>
+                        <Img fluid={data.art_team.childImageSharp.fluid}/>
+                    </Art>
+                    <ArtMobile>
+                        <Img fluid={data.art_team.childImageSharp.fluid}/>
+                    </ArtMobile>
+                </Container>
+            </Section>
+        )}
+    />
 );
 
 const TeamGrid = styled.div`

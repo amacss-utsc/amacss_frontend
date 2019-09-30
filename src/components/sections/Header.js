@@ -1,14 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
-import { graphql, StaticQuery } from 'gatsby';
+import {graphql, StaticQuery} from 'gatsby';
 import Img from 'gatsby-image';
 
-import { Container } from '@components/global';
+import {Container} from '@components/global';
 import ExternalLink from '@common/ExternalLink';
 
 const Header = () => (
-  <StaticQuery
-    query={graphql`
+    <StaticQuery
+        query={graphql`
       query {
         art_build: file(
           sourceInstanceName: { eq: "art" }
@@ -22,30 +22,30 @@ const Header = () => (
         }
       }
     `}
-    render={data => (
-      <HeaderWrapper>
-        <Container>
-          <Grid>
-            <Art>
-              <Img fluid={data.art_build.childImageSharp.fluid} />
-            </Art>
-            <Text>
-              <h1>
-                The Association of
-                <br />
-                Mathematical and
-                <br />
-                Computer Science
-                <br />
-                Students
-              </h1>
-              <br />
-            </Text>
-          </Grid>
-        </Container>
-      </HeaderWrapper>
-    )}
-  />
+        render={data => (
+            <HeaderWrapper>
+                <Container>
+                    <Grid>
+                        <Art>
+                            <Img fluid={data.art_build.childImageSharp.fluid}/>
+                        </Art>
+                        <Text>
+                            <h1>
+                                The Association of
+                                <br/>
+                                Mathematical and
+                                <br/>
+                                Computer Science
+                                <br/>
+                                Students
+                            </h1>
+                            <br/>
+                        </Text>
+                    </Grid>
+                </Container>
+            </HeaderWrapper>
+        )}
+    />
 );
 
 const HeaderWrapper = styled.header`

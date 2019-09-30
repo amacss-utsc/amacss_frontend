@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { Container } from '@components/global';
+import {Container} from '@components/global';
 
 export const Nav = styled.nav`
   padding: 16px 0;
@@ -25,9 +25,9 @@ export const NavListWrapper = styled.div`
     display: flex;
     flex-direction: row;
 
-    ${({ mobile }) =>
-      mobile &&
-      `
+    ${({mobile}) =>
+    mobile &&
+    `
         flex-direction: column;
         margin-top: 1em;
 
