@@ -46,7 +46,7 @@ class Navbar extends Component {
     };
 
     getNavAnchorLink = item => {
-        if (['team', 'contact', 'office hours'].includes(item.toLowerCase())) {
+        if (['team', 'office hours'].includes(item.toLowerCase())) {
             return (
                 <Link to={`${item.toLowerCase()}`} onClick={this.closeMobileMenu}>
                     {item}
