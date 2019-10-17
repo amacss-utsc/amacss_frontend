@@ -2,48 +2,18 @@ import React from 'react';
 import styled from 'styled-components';
 import {graphql, StaticQuery} from 'gatsby';
 import Img from 'gatsby-image';
-
+import {
+    ACADEMICS_TEAM,
+    EVENTS_TEAM,
+    EXECUTIVE_TEAM,
+    FIRST_YEAR_TEAM,
+    MARKETING_TEAM,
+    OPERATIONS_TEAM,
+    TECH_TEAM
+} from '../../data/teams_data'
 import {Container, Section} from '@components/global';
 import ExternalLink from '../common/ExternalLink';
 
-const TEAM = [
-    {
-        name: 'Sonika Verma',
-        image: 'josh.jpg',
-        role: 'President',
-        linkedin: 'https://www.linkedin.com/in/sonika-verma-a068a8132/',
-    },
-    {
-        name: 'Angela Bernuy',
-        image: 'lisa.jpg',
-        role: 'VP of Academics',
-        linkedin: 'https://www.linkedin.com/in/angela-zavaleta-bernuy/',
-    },
-    {
-        name: 'Samiul Haque',
-        image: 'martin.jpg',
-        role: 'VP of Engineering',
-        linkedin: 'https://www.samiulhaque.com/',
-    },
-    {
-        name: 'Zoë Ladouceur',
-        image: 'ashlyn.jpg',
-        role: 'Director of Marketing',
-        linkedin: 'https://www.linkedin.com/in/zo%C3%AB-ladouceur-aa7a98143/',
-    },
-    {
-        name: 'Riyasat Talukder',
-        image: 'todd.jpg',
-        role: 'Director of Events',
-        linkedin: 'https://www.linkedin.com/in/riyasat-talukder-a34071165/',
-    },
-    {
-        name: 'Luke Jin',
-        image: 'captain.jpg',
-        role: 'Director of Events',
-        linkedin: 'https://www.facebook.com/lil.lukeyjin',
-    },
-];
 
 const Team = () => (
     <StaticQuery
@@ -61,24 +31,16 @@ const Team = () => (
             }
           }
         }
-        art_team: file(
-          sourceInstanceName: { eq: "art" }
-          name: { eq: "team_work" }
-        ) {
-          childImageSharp {
-            fluid(maxWidth: 1600) {
-              ...GatsbyImageSharpFluid_withWebp_tracedSVG
-            }
-          }
-        }
       }
     `}
         render={data => (
             <Section id="team" accent="secondary">
                 <Container style={{position: 'relative'}}>
                     <h1>The Team</h1>
+                    <br/><br/>
+                    <h2>Executive Team</h2>
                     <TeamGrid>
-                        {TEAM.map(({name, image, role, linkedin}) => {
+                        {EXECUTIVE_TEAM.map(({name, image, role, linkedin}) => {
                             const img = data.allFile.edges.find(
                                 ({node}) => node.relativePath === image,
                             ).node;
@@ -93,12 +55,114 @@ const Team = () => (
                             );
                         })}
                     </TeamGrid>
-                    <Art>
-                        <Img fluid={data.art_team.childImageSharp.fluid}/>
-                    </Art>
-                    <ArtMobile>
-                        <Img fluid={data.art_team.childImageSharp.fluid}/>
-                    </ArtMobile>
+                    <br/><br/>
+                    <h2>Academics Team</h2>
+                    <TeamGrid>
+                        {ACADEMICS_TEAM.map(({name, image, role, linkedin}) => {
+                            const img = data.allFile.edges.find(
+                                ({node}) => node.relativePath === image,
+                            ).node;
+
+                            return (
+                                <div>
+                                    <ExternalLink href={linkedin}><Img fluid={img.childImageSharp.fluid}
+                                                                       alt={name}/></ExternalLink>
+                                    <Title>{name}</Title>
+                                    <Subtitle>{role}</Subtitle>
+                                </div>
+                            );
+                        })}
+                    </TeamGrid>
+                    <br/><br/>
+                    <h2>Operations Team</h2>
+                    <TeamGrid>
+                        {OPERATIONS_TEAM.map(({name, image, role, linkedin}) => {
+                            const img = data.allFile.edges.find(
+                                ({node}) => node.relativePath === image,
+                            ).node;
+
+                            return (
+                                <div>
+                                    <ExternalLink href={linkedin}><Img fluid={img.childImageSharp.fluid}
+                                                                       alt={name}/></ExternalLink>
+                                    <Title>{name}</Title>
+                                    <Subtitle>{role}</Subtitle>
+                                </div>
+                            );
+                        })}
+                    </TeamGrid>
+                    <br/><br/>
+                    <h2>Tech Team</h2>
+                    <TeamGrid>
+                        {TECH_TEAM.map(({name, image, role, linkedin}) => {
+                            const img = data.allFile.edges.find(
+                                ({node}) => node.relativePath === image,
+                            ).node;
+
+                            return (
+                                <div>
+                                    <ExternalLink href={linkedin}><Img fluid={img.childImageSharp.fluid}
+                                                                       alt={name}/></ExternalLink>
+                                    <Title>{name}</Title>
+                                    <Subtitle>{role}</Subtitle>
+                                </div>
+                            );
+                        })}
+                    </TeamGrid>
+                    <br/><br/>
+                    <h2>Events Team</h2>
+                    <TeamGrid>
+                        {EVENTS_TEAM.map(({name, image, role, linkedin}) => {
+                            const img = data.allFile.edges.find(
+                                ({node}) => node.relativePath === image,
+                            ).node;
+
+                            return (
+                                <div>
+                                    <ExternalLink href={linkedin}><Img fluid={img.childImageSharp.fluid}
+                                                                       alt={name}/></ExternalLink>
+                                    <Title>{name}</Title>
+                                    <Subtitle>{role}</Subtitle>
+                                </div>
+                            );
+                        })}
+                    </TeamGrid>
+                    <br/><br/>
+                    <h2>Marketing Team</h2>
+                    <TeamGrid>
+                        {MARKETING_TEAM.map(({name, image, role, linkedin}) => {
+                            const img = data.allFile.edges.find(
+                                ({node}) => node.relativePath === image,
+                            ).node;
+
+                            return (
+                                <div>
+                                    <ExternalLink href={linkedin}><Img fluid={img.childImageSharp.fluid}
+                                                                       alt={name}/></ExternalLink>
+                                    <Title>{name}</Title>
+                                    <Subtitle>{role}</Subtitle>
+                                </div>
+                            );
+                        })}
+                    </TeamGrid>
+                    <br/><br/>
+                    <h2>First Year Representatives</h2>
+                    <TeamGrid>
+                        {FIRST_YEAR_TEAM.map(({name, image, role, linkedin}) => {
+                            const img = data.allFile.edges.find(
+                                ({node}) => node.relativePath === image,
+                            ).node;
+
+                            return (
+                                <div>
+                                    <ExternalLink href={linkedin}><Img fluid={img.childImageSharp.fluid}
+                                                                       alt={name}/></ExternalLink>
+                                    <Title>{name}</Title>
+                                    <Subtitle>{role}</Subtitle>
+                                </div>
+                            );
+                        })}
+                    </TeamGrid>
                 </Container>
             </Section>
         )}
@@ -107,12 +171,12 @@ const Team = () => (
 
 const TeamGrid = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fill, 200px);
+  grid-template-columns: repeat(auto-fill, 270px);
   grid-template-rows: min-content;
-  grid-gap: 50px;
+  grid-gap: 25px;
   justify-content: space-between;
-  width: 60%;
-  margin-top: 72px;
+  width: 100%;
+  margin-top: 20px;
 
   @media (max-width: ${props => props.theme.screen.lg}) {
     justify-content: start;
@@ -125,34 +189,6 @@ const TeamGrid = styled.div`
 
   @media (max-width: ${props => props.theme.screen.xs}) {
     grid-gap: 24px;
-  }
-`;
-
-const Art = styled.figure`
-  width: 800px;
-  margin: -80px 0;
-  position: absolute;
-  top: 0;
-  left: 70%;
-
-  @media (max-width: ${props => props.theme.screen.lg}) {
-    top: 20%;
-  }
-
-  @media (max-width: ${props => props.theme.screen.md}) {
-    display: none;
-  }
-`;
-
-const ArtMobile = styled.figure`
-  width: 100%;
-  margin: 0;
-  display: none;
-  margin-top: 64px;
-  margin-bottom: -60%;
-
-  @media (max-width: ${props => props.theme.screen.md}) {
-    display: block;
   }
 `;
 

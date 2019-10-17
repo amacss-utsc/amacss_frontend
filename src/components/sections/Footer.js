@@ -25,12 +25,6 @@ const Footer = () => (
     `}
         render={data => (
             <React.Fragment>
-                <Art>
-                    <Img
-                        fluid={data.art_pot.childImageSharp.fluid}
-                        style={{width: 480, maxWidth: '100%', marginBottom: -16}}
-                    />
-                </Art>
                 <FooterWrapper>
                     <StyledContainer>
                         <Copyright>
@@ -64,13 +58,6 @@ const Copyright = styled.div`
     text-decoration: none;
     color: inherit;
   }
-`;
-
-const Art = styled.figure`
-  display: flex;
-  justify-content: center;
-  margin: 0;
-  margin-top: 48px;
 `;
 
 const StyledContainer = styled(Container)`
