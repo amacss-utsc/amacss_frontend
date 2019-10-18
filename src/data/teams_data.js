@@ -50,7 +50,7 @@ const ACADEMICS_TEAM = [
         linkedin: '',
     },
     {
-        name: 'Dave Sal',
+        name: 'Dave Salwinski',
         image: 'josh.jpg',
         role: 'Math Representative',
         linkedin: '',
