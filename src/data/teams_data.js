@@ -14,7 +14,7 @@ const EXECUTIVE_TEAM = [
     {
         name: 'Samiul Haque',
         image: 'martin.jpg',
-        role: 'VP of Engineering',
+        role: 'VP of Technology',
         linkedin: 'https://www.samiulhaque.com/',
     },
     {
