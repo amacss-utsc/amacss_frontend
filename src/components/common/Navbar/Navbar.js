@@ -67,8 +67,7 @@ class Navbar extends Component {
                 items={NAV_ITEMS.map(item => item.toLowerCase())}
                 currentClassName="active"
                 mobile={mobile}
-                offset={-64}
-            >
+                offset={-64}>
                 {NAV_ITEMS.map(navItem => (
                     <NavItem key={navItem}>{this.getNavAnchorLink(navItem)}</NavItem>
                 ))}

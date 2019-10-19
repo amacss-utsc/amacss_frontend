@@ -7,13 +7,13 @@ const EXECUTIVE_TEAM = [
     },
     {
         name: 'Angela Zavaleta Bernuy',
-        image: 'lisa.jpg',
+        image: 'josh.jpg',
         role: 'VP of Academics',
         linkedin: 'https://www.linkedin.com/in/angela-zavaleta-bernuy/',
     },
     {
         name: 'Samiul Haque',
-        image: 'martin.jpg',
+        image: 'josh.jpg',
         role: 'VP of Technology',
         linkedin: 'https://www.samiulhaque.com/',
     },
@@ -61,6 +61,12 @@ const ACADEMICS_TEAM = [
         role: 'Math Representative',
         linkedin: '',
     },
+    {
+        name: 'Dylan Ruff',
+        image: 'josh.jpg',
+        role: 'Math Representative',
+        linkedin: '',
+    }
 ];
 const OPERATIONS_TEAM = [
     {

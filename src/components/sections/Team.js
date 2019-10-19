@@ -34,7 +34,7 @@ const Team = () => (
       }
     `}
         render={data => (
-            <Section id="team" accent="secondary">
+            <Section id="team" >
                 <Container style={{position: 'relative'}}>
                     <h1>The Team</h1>
                     <br/><br/>
@@ -177,7 +177,6 @@ const TeamGrid = styled.div`
   justify-content: space-between;
   width: 100%;
   margin-top: 20px;
-
   @media (max-width: ${props => props.theme.screen.lg}) {
     justify-content: start;
   }
