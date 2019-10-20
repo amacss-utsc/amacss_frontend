@@ -1,15 +1,36 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import FullCalendar from '@fullcalendar/react';
+import dayGridPlugin from '@fullcalendar/daygrid';
+import googleCalendar from '@fullcalendar/google-calendar'
+import timeGridPlugin from '@fullcalendar/timegrid'
+import interactionPlugin from '@fullcalendar/interaction'
+
 import {Container, Section} from '@components/global';
 
+import '@styles/dog.css';
+import '@styles/shit.css';
+import '@styles/cat.css';
+
 const location = "https://goo.gl/maps/hL7Vs5zgmBAbn1dp8";
+const exposedapikey = "AIzaSyCb02sStRI4-i35sG2UMchOrs7pKDBrLq0"
 
 const Schedule = () => (
     <Section id="schedule">
         <Container>
             <div>
-                <h1>TBD</h1>
+              <FullCalendar
+                          defaultView="dayGridMonth"
+                          header={{
+                              left: 'prev,next today',
+                              center: 'title',
+                              right: 'dayGridMonth,timeGridWeek,timeGridDay,listWeek'
+                          }}
+                          plugins={[dayGridPlugin, googleCalendar, timeGridPlugin, interactionPlugin]}
+                          events='j2addbd8s2an3stvbasq1hjitc@group.calendar.google.com'
+                          googleCalendarApiKey={exposedapikey}
+                      />
             </div>
         </Container>
     </Section>

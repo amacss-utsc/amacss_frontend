@@ -5,6 +5,9 @@
   "version": "0.1.0",
   "author": "Samiul Haque <sammy.haque@mail.utoronto.ca>",
   "dependencies": {
+    "@fullcalendar/core": "^4.3.1",
+    "@fullcalendar/google-calendar": "^4.3.0",
+    "@fullcalendar/react": "^4.3.0",
     "@svgr/webpack": "^4.1.0",
     "gatsby": "^2.0.76",
     "gatsby-image": "^2.0.20",
@@ -13,6 +16,7 @@
     "gatsby-plugin-manifest": "^2.0.9",
     "gatsby-plugin-offline": "^2.0.16",
     "gatsby-plugin-react-helmet": "^3.0.2",
+    "gatsby-plugin-sass": "^2.1.20",
     "gatsby-plugin-sharp": "^2.0.14",
     "gatsby-plugin-styled-components": "^3.0.7",
     "gatsby-plugin-svgr": "^2.0.1",
@@ -43,6 +47,9 @@
     "clean": "rm -rf .cache && rm -rf public"
   },
   "devDependencies": {
+    "@fullcalendar/daygrid": "^4.3.0",
+    "@fullcalendar/interaction": "^4.3.0",
+    "@fullcalendar/timegrid": "^4.3.0",
     "prettier": "^1.15.2"
   }
 }
