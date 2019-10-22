@@ -21,7 +21,7 @@ const Schedule = () => (
         <Container>
             <div>
               <FullCalendar
-                          defaultView="dayGridMonth"
+                          defaultView="timeGridWeek"
                           header={{
                               left: 'prev,next today',
                               center: 'title',
