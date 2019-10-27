@@ -113,7 +113,7 @@
 .fc-time-grid .fc-slats td {
   height: 1.5em;
   border-bottom: 0;
-  /* each cell is responsible for its top border */
+  height: 30px !important;
 }
 
 .fc-time-grid .fc-slats .fc-minor td {
