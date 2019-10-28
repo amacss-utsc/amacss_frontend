@@ -21,8 +21,6 @@ const events = 'j2addbd8s2an3stvbasq1hjitc@group.calendar.google.com';
 
 class Schedule extends React.Component {
 
-
-
   constructor(props){
     super(props);
     this.isMobile = window.innerWidth < 500;
@@ -41,7 +39,7 @@ class Schedule extends React.Component {
                           }}
                           scrollTime='8:00:00'
                           plugins={[dayGridPlugin, googleCalendar, timeGridPlugin, interactionPlugin]}
-                          events='j2addbd8s2an3stvbasq1hjitc@group.calendar.google.com'
+                          events={events}
                           googleCalendarApiKey={exposedapikey}
                           weekends={false}
                           eventRender={function(info) {
