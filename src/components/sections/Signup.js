@@ -27,8 +27,8 @@ const SignUp = () => (
                 <StyledContainer>
                     <div>
                         <h1>What are you waiting for?</h1>
-                        <br/>
-                        <h2>Sign up below</h2>
+                        <br/><br/>
+                        <h2>Sign up for our newsletter below</h2>
                         <br/>
                         <form
                             action="https://amacss.us16.list-manage.com/subscribe/post?u=641679e76875b8186d30d1f0b&amp;id=362221620e"

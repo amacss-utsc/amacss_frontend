@@ -93,7 +93,7 @@ const TECH_TEAM = [
 const EVENTS_TEAM = [
     {
         name: 'Luke Jin',
-        image: 'missing.jpg',
+        image: 'luke.jpg',
         role: 'Events Director',
         linkedin: '',
     },
