@@ -17,12 +17,6 @@ const EXECUTIVE_TEAM = [
         role: 'VP of Technology',
         linkedin: 'https://www.samiulhaque.com/',
     },
-    {
-        name: 'Tyesha Dwyer-Dawkins',
-        image: 'josh.jpg',
-        role: 'VP of Operations',
-        linkedin: '',
-    },
 ];
 const ACADEMICS_TEAM = [
     {

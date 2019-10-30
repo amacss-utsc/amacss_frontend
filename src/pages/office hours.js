@@ -7,16 +7,16 @@ import Navbar from '@common/Navbar';
 import Footer from '@sections/Footer';
 
 const Calendar = Loadable({
-  loader: () => import('./../components/sections/Schedule'),
-  loading() {
-    return <div>Loading Calendar!</div>
-  },
-})
+    loader: () => import('./../components/sections/Schedule'),
+    loading() {
+        return <div>Loading Calendar!</div>
+    },
+});
 
 const OfficeHoursPage = () => (
     <Layout>
         <Navbar/>
-        <Calendar />
+        <Calendar/>
         <Footer/>
     </Layout>
 );
