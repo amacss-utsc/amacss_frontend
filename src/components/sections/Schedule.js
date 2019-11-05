@@ -2,6 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import FadeIn from 'react-fade-in';
 
+
+
 import {Container, Section} from '@components/global';
 
 import Loadable from 'react-loadable'
@@ -24,7 +26,6 @@ class Schedule extends React.Component {
 
   constructor(props) {
     super(props);
-    this.isMobile = window.innerWidth < 500;
 }
 
   render(){
