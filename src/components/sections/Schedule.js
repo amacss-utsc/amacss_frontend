@@ -6,8 +6,7 @@ import {Container, Section} from '@components/global';
 
 import Loadable from 'react-loadable'
 
-const location = "https://goo.gl/maps/hL7Vs5zgmBAbn1dp8";
-const exposedapikey = "AIzaSyCb02sStRI4-i35sG2UMchOrs7pKDBrLq0";
+const exposedApiKey = "AIzaSyCb02sStRI4-i35sG2UMchOrs7pKDBrLq0";
 const events = 'j2addbd8s2an3stvbasq1hjitc@group.calendar.google.com';
 
 const Calendar = Loadable({
@@ -66,20 +65,33 @@ const Grid = styled.div`
       margin-bottom: 24px;
     }
 
-    ${props =>
-    props.inverse &&
-    `
-        ${Art} {
-          order: 2;
-        }
-    `}
-  }
-`;
-
-const Art = styled.figure`
-  margin: 0;
-  max-width: 380px;
-  width: 100%;
-`;
+    render() {
+        return (<Section id="schedule">
+            <Container>
+                <div>
+                    <FullCalendar
+                        defaultView={this.isMobile ? "timeGridDay" : "timeGridWeek"}
+                        header={{
+                            left: 'prev,next today',
+                            center: 'title',
+                            right: 'timeGridWeek,timeGridDay,listWeek'
+                        }}
+                        scrollTime='8:00:00'
+                        plugins={[dayGridPlugin, googleCalendar, timeGridPlugin, interactionPlugin]}
+                        events={events}
+                        googleCalendarApiKey={exposedApiKey}
+                        weekends={false}
+                        eventRender={function (info) {
+                            let location = info.event.extendedProps.location || "area 51";
+                            let node = document.createElement("span");
+                            node.innerText = location;
+                            info.el.appendChild(node)
+                        }}
+                    />
+                </div>
+            </Container>
+        </Section>)
+    }
+}
 
 export default Schedule;

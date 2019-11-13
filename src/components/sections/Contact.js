@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import {Container, Section} from '@components/global';
 import ExternalLink from '../common/ExternalLink';
 
-const location = "https://goo.gl/maps/hL7Vs5zgmBAbn1dp8";
+const location = "https://goo.gl/maps/4dm87YbHmCWUodH17";
 
 const Contact = () => (
     <Section id="contact">
@@ -13,7 +13,7 @@ const Contact = () => (
                 <h2>Come See Us</h2>
                 <br/>
                 <p>
-                    Stop by the AMACSS office (BV-308) during any of the scheduled times
+                    Stop by the AMACSS office (IC-312) during any of the scheduled times
                     for assistance in CMS courses, advice on course/program selection,
                     general questions, membership purchase or information or just for a chat.
                 </p>

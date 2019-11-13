@@ -48,6 +48,22 @@ const About = () => (
         render={data => (
             <Section id="about">
                 <Container>
+                    <div>
+                        <h2>About Us</h2>
+                        <p>
+                            The purpose of AMACSS is to represent, advocate for and enhance the university experience of
+                            students in
+                            the Department of Computer and Mathematical Sciences.
+                        </p>
+                        <br/>
+                        <p>
+                            The AMACSS executive team, all current students, work to enhance the educational,
+                            recreational, social and
+                            cultural environment of the University of Toronto at Scarborough.
+                        </p>
+                    </div>
+                </Container>
+                <Container>
                     <Grid inverse>
                         <Art>
                             <Img fluid={data.art_ideas.childImageSharp.fluid}/>
@@ -77,23 +93,6 @@ const About = () => (
                             <Img fluid={data.art_learn.childImageSharp.fluid}/>
                         </Art>
                     </Grid>
-                </Container>
-
-                <Container>
-                    <div>
-                        <h2>About Us</h2>
-                        <p>
-                            The purpose of AMACSS is to represent, advocate for and enhance the university experience of
-                            students in
-                            the Department of Computer and Mathematical Sciences.
-                        </p>
-                        <br/>
-                        <p>
-                            The AMACSS executive team, all current students, work to enhance the educational,
-                            recreational, social and
-                            cultural environment of the University of Toronto at Scarborough.
-                        </p>
-                    </div>
                 </Container>
             </Section>
         )}

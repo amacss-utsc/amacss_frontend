@@ -1,69 +1,63 @@
 const EXECUTIVE_TEAM = [
     {
         name: 'Sonika Verma',
-        image: 'josh.jpg',
+        image: 'sonika.jpg',
         role: 'President',
         linkedin: 'https://www.linkedin.com/in/sonika-verma-a068a8132/',
     },
     {
         name: 'Angela Zavaleta Bernuy',
-        image: 'josh.jpg',
+        image: 'angela.jpg',
         role: 'VP of Academics',
         linkedin: 'https://www.linkedin.com/in/angela-zavaleta-bernuy/',
     },
     {
         name: 'Samiul Haque',
-        image: 'josh.jpg',
+        image: 'samiul.jpg',
         role: 'VP of Technology',
         linkedin: 'https://www.samiulhaque.com/',
-    },
-    {
-        name: 'Tyesha Dwyer-Dawkins',
-        image: 'josh.jpg',
-        role: 'VP of Operations',
-        linkedin: '',
     },
 ];
 const ACADEMICS_TEAM = [
     {
         name: 'Tabeeb Yeamin',
-        image: 'josh.jpg',
+        image: 'tabeeb.jpg',
         role: 'CS Representative',
         linkedin: '',
     },
     {
         name: 'Shree Shah',
-        image: 'josh.jpg',
+        image: 'missing.jpg',
         role: 'CS Representative',
         linkedin: '',
     },
     {
         name: 'Keegan Poon',
-        image: 'josh.jpg',
+        image: 'keegan.jpg',
         role: 'CS Representative',
         linkedin: '',
     },
     {
         name: 'Anand Karki',
-        image: 'josh.jpg',
+        image: 'missing.jpg',
         role: 'Math Representative',
         linkedin: '',
     },
     {
         name: 'Dave Salwinski',
-        image: 'josh.jpg',
+        image: 'missing.jpg',
         role: 'Math Representative',
         linkedin: '',
     },
     {
         name: 'Yasin Mobassir',
-        image: 'josh.jpg',
+        image: 'missing.jpg',
         role: 'Math Representative',
         linkedin: '',
     },
     {
         name: 'Dylan Ruff',
-        image: 'josh.jpg',
+        image: 'missing.jpg',
         role: 'Math Representative',
         linkedin: '',
     }
@@ -71,13 +65,13 @@ const ACADEMICS_TEAM = [
 const OPERATIONS_TEAM = [
     {
         name: 'Rachel D\'Souza',
-        image: 'josh.jpg',
+        image: 'missing.jpg',
         role: 'Finance Director',
         linkedin: '',
     },
     {
         name: 'Johnson Su',
-        image: 'josh.jpg',
+        image: 'johnson.jpg',
         role: 'External Affairs Director',
         linkedin: '',
     },
@@ -85,13 +79,13 @@ const OPERATIONS_TEAM = [
 const TECH_TEAM = [
     {
         name: ' Jordan Liu',
-        image: 'josh.jpg',
+        image: 'jordan.jpg',
         role: 'IT Director',
         linkedin: '',
     },
     {
         name: ' Richard Hong',
-        image: 'josh.jpg',
+        image: 'missing.jpg',
         role: 'IT Director',
         linkedin: '',
     },
@@ -99,25 +93,25 @@ const TECH_TEAM = [
 const EVENTS_TEAM = [
     {
         name: 'Luke Jin',
-        image: 'josh.jpg',
+        image: 'luke.jpg',
         role: 'Events Director',
         linkedin: '',
     },
     {
         name: 'Riyasat Talukder',
-        image: 'josh.jpg',
+        image: 'riyasat.jpg',
         role: 'Events Director',
         linkedin: '',
     },
     {
         name: 'Keia Rahmati',
-        image: 'josh.jpg',
+        image: 'keia.jpg',
         role: 'Events Director',
         linkedin: '',
     },
     {
         name: 'Jenny Gao',
-        image: 'josh.jpg',
+        image: 'jenny.jpg',
         role: 'Jnr. Events Director',
         linkedin: '',
     },
@@ -125,19 +119,19 @@ const EVENTS_TEAM = [
 const MARKETING_TEAM = [
     {
         name: 'Zoe Ladouceur',
-        image: 'josh.jpg',
+        image: 'zoe.jpg',
         role: 'Marketing Director',
         linkedin: '',
     },
     {
         name: 'Jenisha Thomas',
-        image: 'josh.jpg',
+        image: 'jenisha.jpg',
         role: 'Marketing Director',
         linkedin: '',
     },
     {
         name: 'Aabid Ali',
-        image: 'josh.jpg',
+        image: 'missing.jpg',
         role: 'Photographer',
         linkedin: '',
     },
@@ -145,13 +139,13 @@ const MARKETING_TEAM = [
 const FIRST_YEAR_TEAM = [
     {
         name: 'Keshavaa Shaiskandan',
-        image: 'josh.jpg',
+        image: 'keshavaa.jpg',
         role: 'First Year Representative',
         linkedin: '',
     },
     {
         name: 'Amy Han',
-        image: 'josh.jpg',
+        image: 'amy.jpg',
         role: 'First Year Representative',
         linkedin: '',
     },
