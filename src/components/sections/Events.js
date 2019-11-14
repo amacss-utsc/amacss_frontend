@@ -9,22 +9,22 @@ import ExternalLink from '../common/ExternalLink';
 const eventsURL = "https://utsccms.club/";
 
 const Events = () => {
+    console.log("events div",EventContainer);
     return (
         <Section id="events">
             <Container>
-                <eventContainer>
+                <EventContainer>
                     <h1>hello</h1>
-                </eventContainer>
+                </EventContainer>
             </Container>
         </Section>
     )
 }
 
-const eventContainer = styled.div`
+const EventContainer = styled.div`
     h1 {
         font-size: 30px;
     }
-    background: black;
 `;
 
 export default Events
