@@ -46,15 +46,21 @@ const EventContainer = styled.div`
     display: block;
     width: 350px;
     margin-bottom: 3rem;
-    margin-left: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
 `;
 
 const ImageContainer = styled.div`
+    max-height: 380px;
+    over-flow: hidden;
     position: relative;
     overflow: hidden;
     margin-bottom: 10px;
     display: flex;
     justify-content: center;
+    img {
+        object-fit: cover;
+    }
 `;
 
 const TextContainer = styled.div`
