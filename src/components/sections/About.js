@@ -3,9 +3,11 @@ import styled from 'styled-components';
 import {graphql, StaticQuery} from 'gatsby';
 import Img from 'gatsby-image';
 
+import Constitution from '@static/docs/constitution.pdf'
 import {Container, Section} from '@components/global';
 import ExternalLink from '../common/ExternalLink';
 
+const CONSTITUTION = Constitution;
 const eventsURL = "https://utsccms.club/";
 const About = () => (
     <StaticQuery
@@ -63,6 +65,7 @@ const About = () => (
                         </p>
                     </div>
                 </Container>
+                <br/>
                 <Container>
                     <Grid inverse>
                         <Art>
@@ -93,6 +96,15 @@ const About = () => (
                             <Img fluid={data.art_learn.childImageSharp.fluid}/>
                         </Art>
                     </Grid>
+                </Container>
+                <Container>
+                    <div>
+                        <h2>Constitution</h2>
+                        <p>
+                            To further explore our organization's mission and philosophy, policy and procedures, feel free to read our constitution <ExternalLink
+                                href={CONSTITUTION}>here</ExternalLink>.
+                        </p>
+                    </div>
                 </Container>
             </Section>
         )}

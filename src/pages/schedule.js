@@ -6,7 +6,7 @@ import Footer from '@sections/Footer';
 import Schedule from '@sections/Schedule';
 
 
-const OfficeHoursPage = () => (
+const SchedulePage = () => (
     <Layout>
         <Navbar/>
         <Schedule />
@@ -14,4 +14,4 @@ const OfficeHoursPage = () => (
     </Layout>
 );
 
-export default OfficeHoursPage;
+export default SchedulePage;
