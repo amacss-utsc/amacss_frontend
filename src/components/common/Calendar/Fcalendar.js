@@ -10,9 +10,9 @@ import "@styles/dog.css";
 import "@styles/shit.css";
 import "@styles/cat.css";
 
-const AcademicColor = "green";
-const OfficeHourColor = "#3788d8";
-const EverythingElseColor = "#008080";
+const AcademicColor = "#008080";
+const OfficeHourColor = "#516676";
+const EverythingElseColor = "#386189";
 
 export default class Fcalendar extends React.Component {
   constructor(props) {
