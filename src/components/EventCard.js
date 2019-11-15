@@ -44,10 +44,9 @@ const EventCard = () => {
 
 const EventContainer = styled.div`
     display: block;
-    width: 300px;
+    width: 350px;
     margin-bottom: 3rem;
     margin-left: 2rem;
-    margin-right: 2rem;
 `;
 
 const ImageContainer = styled.div`
