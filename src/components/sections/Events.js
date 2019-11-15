@@ -2,29 +2,31 @@ import React from 'react';
 import styled from 'styled-components';
 import {graphql, StaticQuery} from 'gatsby';
 import Img from 'gatsby-image';
-
+import EventCard from '@components/EventCard'
 import {Container, Section} from '@components/global';
 import ExternalLink from '../common/ExternalLink';
 
 const eventsURL = "https://utsccms.club/";
 
 const Events = () => {
-    console.log("events div",EventContainer);
     return (
-        <Section id="events">
+        <Section>
             <Container>
-                <EventContainer>
-                    <h1>hello</h1>
-                </EventContainer>
+                <AllEvents>
+                    <EventCard/>
+                    <EventCard/>
+                    <EventCard/>
+                </AllEvents>
             </Container>
         </Section>
     )
 }
 
-const EventContainer = styled.div`
-    h1 {
-        font-size: 30px;
-    }
+const AllEvents = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 `;
 
 export default Events
