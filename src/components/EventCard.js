@@ -1,20 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
-import {graphql, StaticQuery} from 'gatsby';
-import Img from 'gatsby-image';
-import DummyImg from '../images/events/dummy image.jpg'
-import {Container, Section} from '@components/global';
-import { tsConstructorType } from '@babel/types';
 
-const eventsURL = "https://utsccms.club/";
 
 const EventCard = (props) => {
-
+    
 
     return (
         <EventContainer>
              <ImageContainer>
-                 <img src={DummyImg}/>
+                 <img src={require('../images/events/' + props.img + '.jpg')}/>
              </ImageContainer>
              <TextContainer>
 
@@ -56,10 +50,10 @@ const EventContainer = styled.div`
 `;
 
 const ImageContainer = styled.div`
+    object-fit: cover;
     max-height: 380px;
-    over-flow: hidden;
-    position: relative;
     overflow: hidden;
+    position: relative;
     margin-bottom: 10px;
     display: flex;
     justify-content: center;
