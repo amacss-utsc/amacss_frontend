@@ -4,10 +4,13 @@ import {graphql, StaticQuery} from 'gatsby';
 import Img from 'gatsby-image';
 import DummyImg from '../images/events/dummy image.jpg'
 import {Container, Section} from '@components/global';
+import { tsConstructorType } from '@babel/types';
 
 const eventsURL = "https://utsccms.club/";
 
-const EventCard = () => {
+const EventCard = (props) => {
+
+
     return (
         <EventContainer>
              <ImageContainer>
@@ -16,25 +19,27 @@ const EventCard = () => {
              <TextContainer>
 
                 <EntryDate>
-                    <a>December 15, 2017</a>
+                    <a>
+                        {props.date}
+                    </a>
                 </EntryDate>
 
                 <EntryTitle>
-                    <a>AMACSS Gaming Night</a>
+                    <a>
+                        {props.title}
+                    </a>
                 </EntryTitle>
 
                 <EntryExcerpt>
                     <p>
-                        Lorem ipsum Sed eiusmod esse aliqua sed 
-                        incididunt aliqua incididunt mollit id et 
-                        sit proident dolor nulla sed commodo est 
-                        ad minim elit reprehenderit nisi officia 
-                        aute incididunt velit sint in aliqua..
+                        {props.desc}
                     </p>
                 </EntryExcerpt>
 
                 <EntryTag>
-                    <a>Gaming, Fun</a>
+                    <a>
+                        {props.tags}
+                    </a>
                 </EntryTag>
 
              </TextContainer>
