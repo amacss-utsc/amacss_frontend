@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import EventCard from '@components/EventCard'
+import EventCard from '@common/EventCard'
 import {Container, Section} from '@components/global';
 
 

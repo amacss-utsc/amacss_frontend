@@ -1,14 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
 
-
 const EventCard = (props) => {
-    
 
     return (
         <EventContainer>
              <ImageContainer>
-                 <img src={require('../images/events/' + props.img + '.jpg')}/>
+                 <img src={require('../../../images/events/' + props.img + '.jpg')}/>
              </ImageContainer>
              <TextContainer>
 
