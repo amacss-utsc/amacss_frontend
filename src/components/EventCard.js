@@ -8,31 +8,31 @@ const EventCard = (props) => {
     return (
         <EventContainer>
              <ImageContainer>
-                 <img src={require('../images/events/' + props.img + '.jpg')}/>
+                 <img src={require('../images/events/' + props.event.img + '.jpg')}/>
              </ImageContainer>
              <TextContainer>
 
                 <EntryDate>
                     <a>
-                        {props.date}
+                        {props.event.date}
                     </a>
                 </EntryDate>
 
                 <EntryTitle>
                     <a>
-                        {props.title}
+                        {props.event.title}
                     </a>
                 </EntryTitle>
 
                 <EntryExcerpt>
                     <p>
-                        {props.desc}
+                        {props.event.desc}
                     </p>
                 </EntryExcerpt>
 
                 <EntryTag>
                     <a>
-                        {props.tags}
+                        {props.event.tags}
                     </a>
                 </EntryTag>
 

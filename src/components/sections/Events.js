@@ -13,25 +13,13 @@ const Events = () => {
             <Container>
                 <AllEvents>
                     <EventCard
-                        date={EventOne.date}
-                        title={EventOne.title}
-                        desc={EventOne.desc}
-                        tags={EventOne.tags}
-                        img={EventOne.img}
+                        event={EventOne}
                     />
                     <EventCard
-                        date={EventTwo.date}
-                        title={EventTwo.title}
-                        desc={EventTwo.desc}
-                        tags={EventTwo.tags}
-                        img={EventTwo.img}
+                        event={EventTwo}
                     />
                     <EventCard
-                        date={EventThree.date}
-                        title={EventThree.title}
-                        desc={EventThree.desc}
-                        tags={EventThree.tags}
-                        img={EventThree.img}
+                        event={EventThree}
                     />
                 </AllEvents>
             </Container>
