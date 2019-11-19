@@ -10,12 +10,11 @@ import ExternalLink from '@common/ExternalLink';
 import GithubIcon from '@static/icons/github.svg';
 import InstagramIcon from '@static/icons/instagram.svg';
 import FacebookIcon from '@static/icons/facebook.svg';
-import Constitution from '@static/docs/constitution.pdf'
 import styled from 'styled-components';
 
 const HOME_URL = "/#home";
-const NAV_ITEMS = ['About', 'Office Hours', 'Team', 'Contact'];
-const CONSTITUTION = Constitution;
+const NAV_ITEMS = ['About', 'Schedule', 'Team', 'Contact'];
+const BLOGLINK = "https://blog.amacss.org/"
 const SOCIAL = [
     {
         icon: GithubIcon,
@@ -48,7 +47,7 @@ class Navbar extends Component {
     };
 
     getNavAnchorLink = item => {
-        if (['team', 'office hours'].includes(item.toLowerCase())) {
+        if (['team', 'schedule'].includes(item.toLowerCase())) {
             return (
                 <Link to={`${item.toLowerCase()}`} onClick={this.closeMobileMenu}>
                     {item}
@@ -73,7 +72,7 @@ class Navbar extends Component {
                 {NAV_ITEMS.map(navItem => (
                     <NavItem key={navItem}>{this.getNavAnchorLink(navItem)}</NavItem>
                 ))}
-                <NavItem><a target="_blank" href={CONSTITUTION}>Constitution</a></NavItem>
+                <NavItem><a target="_blank" href={BLOGLINK}>Blog</a></NavItem>
                 <SocialIcons>
                     {SOCIAL.map(({icon, link}) => (
                         <ExternalLink href={link}>
