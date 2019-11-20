@@ -6,7 +6,7 @@ const EventCard = (props) => {
     return (
         <EventContainer>
              <ImageContainer>
-                 <img src={require('../images/events/' + props.event.img + '.jpg')}/>
+                 <img src={require('../../../images/events/' + props.event.img + '.jpg')}/>
              </ImageContainer>
              <TextContainer>
 
