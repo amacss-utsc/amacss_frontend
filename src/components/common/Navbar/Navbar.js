@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Link} from "gatsby";
+import { Link } from "gatsby";
 import Scrollspy from 'react-scrollspy';
 
 import {Container} from '@components/global';
@@ -14,7 +14,24 @@ import Constitution from '@static/docs/constitution.pdf'
 import styled from 'styled-components';
 
 const HOME_URL = "/#home";
-const NAV_ITEMS = ['About', 'Office Hours', 'Team', 'Contact'];
+const NAV_ITEMS = [
+    {
+        name: 'About',
+        url: '/#about',
+    },
+    {
+        name: 'Office Hours',
+        url: '/office hours',
+    },
+    {
+        name: 'Team',
+        url: '/team',
+    },
+    {
+        name: 'Contact',
+        url: '/#contact',
+    }
+];
 const CONSTITUTION = Constitution;
 const SOCIAL = [
     {
@@ -47,31 +64,17 @@ class Navbar extends Component {
         }
     };
 
-    getNavAnchorLink = item => {
-        if (['team', 'office hours'].includes(item.toLowerCase())) {
-            return (
-                <Link to={`${item.toLowerCase()}`} onClick={this.closeMobileMenu}>
-                    {item}
-                </Link>
-            );
-        }
-        return (
-            <Link to={`#${item.toLowerCase()}`} onClick={this.closeMobileMenu}>
-                {item}
-            </Link>
-        );
-
-    };
-
     getNavList = ({mobile = false}) => (
         <NavListWrapper mobile={mobile}>
             <Scrollspy
-                items={NAV_ITEMS.map(item => item.toLowerCase())}
+                items={NAV_ITEMS.map(item => item.name)}
                 currentClassName="active"
                 mobile={mobile}
                 offset={-64}>
-                {NAV_ITEMS.map(navItem => (
-                    <NavItem key={navItem}>{this.getNavAnchorLink(navItem)}</NavItem>
+                {NAV_ITEMS.map(({name, url}) => (
+                    <NavItem key={name}>
+                        <Link to={url} onClick={this.closeMobileMenu}>{name}</Link>
+                    </NavItem>
                 ))}
                 <NavItem><a target="_blank" href={CONSTITUTION}>Constitution</a></NavItem>
                 <SocialIcons>

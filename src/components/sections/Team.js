@@ -8,7 +8,7 @@ import {
     EXECUTIVE_TEAM,
     FIRST_YEAR_TEAM,
     MARKETING_TEAM,
-    OPERATIONS_TEAM,
+    FINANCE_TEAM,
     TECH_TEAM
 } from '../../data/teams_data'
 import {Container, Section} from '@components/global';
@@ -36,7 +36,7 @@ const Team = () => (
         render={data => (
             <Section id="team">
                 <Container style={{position: 'relative'}}>
-                    <h1>The Team</h1>
+                    <h1>The Team 2020-2021</h1>
                     <br/><br/>
                     <h2>Executive Team</h2>
                     <TeamGrid>
@@ -74,9 +74,9 @@ const Team = () => (
                         })}
                     </TeamGrid>
                     <br/><br/>
-                    <h2>Operations Team</h2>
+                    <h2>Events Team</h2>
                     <TeamGrid>
-                        {OPERATIONS_TEAM.map(({name, image, role, linkedin}) => {
+                        {EVENTS_TEAM.map(({name, image, role, linkedin}) => {
                             const img = data.allFile.edges.find(
                                 ({node}) => node.relativePath === image,
                             ).node;
@@ -110,9 +110,9 @@ const Team = () => (
                         })}
                     </TeamGrid>
                     <br/><br/>
-                    <h2>Events Team</h2>
+                    <h2>Marketing Team</h2>
                     <TeamGrid>
-                        {EVENTS_TEAM.map(({name, image, role, linkedin}) => {
+                        {MARKETING_TEAM.map(({name, image, role, linkedin}) => {
                             const img = data.allFile.edges.find(
                                 ({node}) => node.relativePath === image,
                             ).node;
@@ -128,9 +128,9 @@ const Team = () => (
                         })}
                     </TeamGrid>
                     <br/><br/>
-                    <h2>Marketing Team</h2>
+                    <h2>Finance Team</h2>
                     <TeamGrid>
-                        {MARKETING_TEAM.map(({name, image, role, linkedin}) => {
+                        {FINANCE_TEAM.map(({name, image, role, linkedin}) => {
                             const img = data.allFile.edges.find(
                                 ({node}) => node.relativePath === image,
                             ).node;
