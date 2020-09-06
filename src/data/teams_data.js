@@ -46,14 +46,14 @@ const ACADEMICS_TEAM = [
         description: ''
     },
     {
-        name: 'Vacant',
+        name: 'Vacant(available)',
         image: 'missing.jpg',
         role: 'Math Representative',
         linkedin: '',
         description: ''
     },
     {
-        name: 'Vacant',
+        name: 'Vacant(available)',
         image: 'missing.jpg',
         role: 'Stats Representative',
         linkedin: '',
