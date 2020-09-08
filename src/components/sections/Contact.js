@@ -13,9 +13,15 @@ const Contact = () => (
                 <h2>Come See Us</h2>
                 <br/>
                 <p>
-                    Stop by the AMACSS office (IC-312) during any of the scheduled times
+                    In Person: AMACSS office (IC-312), open door policy. Max 4 people in room, 2 meters apart due to COVID-19 safety measures.
+                    <br/>
+                    <br/>
+                    Office Hours: Posted soon, come in during any of the scheduled times
                     for assistance in CMS courses, advice on course/program selection,
-                    general questions, membership purchase or information or just for a chat.
+                    general questions, or information or just for a chat.
+                    <br/>
+                    <br/>
+                    By Email:  president [a-t] amacss [d-0-t] org
                 </p>
                 <br/>
                 <p>

@@ -2,13 +2,13 @@ const EXECUTIVE_TEAM = [
     {
         name: 'Bonika Verma',
         image: 'sonika.jpg',
-        role: 'Co-President',
+        role: 'Honorary President',
         linkedin: 'https://www.linkedin.com/in/sonika-verma-a068a8132/',
     },
     {
         name: 'Daniel Zhao',
-        image: 'missing.jpg',
-        role: 'Co-President',
+        image: 'daniel.jpg',
+        role: 'President',
         linkedin: '',
     },
     {
@@ -73,18 +73,12 @@ const OPERATIONS_TEAM = [
         image: 'missing.jpg',
         role: 'Events Director',
         linkedin: '',
-    },
-    {
-        name: 'Anaqi Amir',
-        image: 'missing.jpg',
-        role: 'External Affairs Director',
-        linkedin: '',
     }
 ];
 */
 const EVENTS_TEAM = [
     {
-        name: 'COVID-19',
+        name: 'COVID-19(jk)',
         image: 'covid-19.jpg',
         role: 'Events Mangler',
         linkedin: '',
@@ -92,6 +86,12 @@ const EVENTS_TEAM = [
     {
         name: 'Shashwat Doshi',
         image: 'missing.jpg',
+        role: 'Events Director',
+        linkedin: '',
+    },
+    {
+        name: 'Keia Rahmati',
+        image: 'keia.jpg',
         role: 'Events Director',
         linkedin: '',
     },
@@ -110,7 +110,7 @@ const TECH_TEAM = [
         linkedin: '',
     },
     {
-        name: 'Calvin Guo',
+        name: 'Jacky Zhuang',
         image: 'missing.jpg',
         role: 'Developer',
         linkedin: '',
@@ -152,13 +152,13 @@ const FINANCE_TEAM = [
 ];
 const FIRST_YEAR_TEAM = [
     {
-        name: 'Coming Soon™',
+        name: 'Coming Soon™(available)',
         image: 'missing.jpg',
         role: 'First Year Representative',
         linkedin: '',
     },
     {
-        name: 'Coming Soon™',
+        name: 'Coming Soon™(available)',
         image: 'missing.jpg',
         role: 'First Year Representative',
         linkedin: '',

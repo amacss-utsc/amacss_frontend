@@ -47,6 +47,20 @@ const About = () => (
     `}
         render={data => (
             <Section id="about">
+               <Container>
+                    <div>
+                        <h2>Update</h2>
+                        <p>
+                            This website is now updated for the 2020 to 2021 academic year(except constitution).
+                            <br></br>
+                            Contact tech [a-t] amacss [d-0-t] org for possible mistakes/typos.
+                        </p>
+                        <br>
+                        </br>
+                        <br>
+                        </br>
+                    </div>
+                </Container>
                 <Container>
                     <div>
                         <h2>About Us</h2>
@@ -87,6 +101,8 @@ const About = () => (
                                 <br/> <br/>
                                 To ensure that you never miss an upcoming event, <br/>check the <ExternalLink
                                 href={eventsURL}>Events</ExternalLink> page frequently.
+                                <br></br>
+                                A special thanks to CSEC, for developing the shared CMS events page.
                             </p>
                         </div>
                         <Art>
