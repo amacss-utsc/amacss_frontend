@@ -14,16 +14,11 @@ import {
     MARKETING_TEAM,
     FINANCE_TEAM,
     TECH_TEAM
-} from '../data/teams_data'
+} from '../../data/teams_data_2019'
 
 var items = {
     "Executive Team": EXECUTIVE_TEAM,
     "Academics Team": ACADEMICS_TEAM,
-    "Events Team": EVENTS_TEAM,
-    "Tech Team": TECH_TEAM,
-    "Marketing Team": MARKETING_TEAM,
-    "Finance Team": FINANCE_TEAM,
-    "First Year Representatives": FIRST_YEAR_TEAM
 }
 
 const TeamPage = () => (

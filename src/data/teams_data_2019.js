@@ -1,4 +1,3 @@
-// Current team data
 const EXECUTIVE_TEAM = [
     {
         name: 'Bonika Verma',
@@ -61,8 +60,22 @@ const ACADEMICS_TEAM = [
         description: ''
     }
 ];
-
-
+/*
+const OPERATIONS_TEAM = [
+    {
+        name: 'COVID-19',
+        image: 'covid-19.jpg',
+        role: 'Events Mangler',
+        linkedin: '',
+    },
+    {
+        name: 'Shashwat Doshi',
+        image: 'missing.jpg',
+        role: 'Events Director',
+        linkedin: '',
+    }
+];
+*/
 const EVENTS_TEAM = [
     {
         name: 'COVID-19(jk)',
@@ -152,4 +165,5 @@ const FIRST_YEAR_TEAM = [
     },
 ];
 
+//export {EXECUTIVE_TEAM, ACADEMICS_TEAM, OPERATIONS_TEAM, TECH_TEAM, EVENTS_TEAM, MARKETING_TEAM, FIRST_YEAR_TEAM};
 export {EXECUTIVE_TEAM, ACADEMICS_TEAM, FINANCE_TEAM, TECH_TEAM, EVENTS_TEAM, MARKETING_TEAM, FIRST_YEAR_TEAM};

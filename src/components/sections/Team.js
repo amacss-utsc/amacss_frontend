@@ -2,20 +2,11 @@ import React from 'react';
 import styled from 'styled-components';
 import {graphql, StaticQuery} from 'gatsby';
 import Img from 'gatsby-image';
-import {
-    ACADEMICS_TEAM,
-    EVENTS_TEAM,
-    EXECUTIVE_TEAM,
-    FIRST_YEAR_TEAM,
-    MARKETING_TEAM,
-    FINANCE_TEAM,
-    TECH_TEAM
-} from '../../data/teams_data'
 import {Container, Section} from '@components/global';
 import ExternalLink from '../common/ExternalLink';
 
 
-const Team = () => (
+const Team = ({items}) => (
     <StaticQuery
         query={graphql`
       query {
@@ -37,132 +28,30 @@ const Team = () => (
             <Section id="team">
                 <Container style={{position: 'relative'}}>
                     <h1>The Team 2020-2021</h1>
-                    <br/><br/>
-                    <h2>Executive Team</h2>
-                    <TeamGrid>
-                        {EXECUTIVE_TEAM.map(({name, image, role, linkedin}) => {
-                            const img = data.allFile.edges.find(
-                                ({node}) => node.relativePath === image,
-                            ).node;
-
-                            return (
-                                <div>
-                                    <ExternalLink href={linkedin}><Img fluid={img.childImageSharp.fluid}
-                                                                       alt={name}/></ExternalLink>
-                                    <Title>{name}</Title>
-                                    <Subtitle>{role}</Subtitle>
-                                </div>
-                            );
-                        })}
-                    </TeamGrid>
-                    <br/><br/>
-                    <h2>Academics Team</h2>
-                    <TeamGrid>
-                        {ACADEMICS_TEAM.map(({name, image, role, linkedin}) => {
-                            const img = data.allFile.edges.find(
-                                ({node}) => node.relativePath === image,
-                            ).node;
-
-                            return (
-                                <div>
-                                    <ExternalLink href={linkedin}><Img fluid={img.childImageSharp.fluid}
-                                                                       alt={name}/></ExternalLink>
-                                    <Title>{name}</Title>
-                                    <Subtitle>{role}</Subtitle>
-                                </div>
-                            );
-                        })}
-                    </TeamGrid>
-                    <br/><br/>
-                    <h2>Events Team</h2>
-                    <TeamGrid>
-                        {EVENTS_TEAM.map(({name, image, role, linkedin}) => {
-                            const img = data.allFile.edges.find(
-                                ({node}) => node.relativePath === image,
-                            ).node;
-
-                            return (
-                                <div>
-                                    <ExternalLink href={linkedin}><Img fluid={img.childImageSharp.fluid}
-                                                                       alt={name}/></ExternalLink>
-                                    <Title>{name}</Title>
-                                    <Subtitle>{role}</Subtitle>
-                                </div>
-                            );
-                        })}
-                    </TeamGrid>
-                    <br/><br/>
-                    <h2>Tech Team</h2>
-                    <TeamGrid>
-                        {TECH_TEAM.map(({name, image, role, linkedin}) => {
-                            const img = data.allFile.edges.find(
-                                ({node}) => node.relativePath === image,
-                            ).node;
-
-                            return (
-                                <div>
-                                    <ExternalLink href={linkedin}><Img fluid={img.childImageSharp.fluid}
-                                                                       alt={name}/></ExternalLink>
-                                    <Title>{name}</Title>
-                                    <Subtitle>{role}</Subtitle>
-                                </div>
-                            );
-                        })}
-                    </TeamGrid>
-                    <br/><br/>
-                    <h2>Marketing Team</h2>
-                    <TeamGrid>
-                        {MARKETING_TEAM.map(({name, image, role, linkedin}) => {
-                            const img = data.allFile.edges.find(
-                                ({node}) => node.relativePath === image,
-                            ).node;
-
-                            return (
-                                <div>
-                                    <ExternalLink href={linkedin}><Img fluid={img.childImageSharp.fluid}
-                                                                       alt={name}/></ExternalLink>
-                                    <Title>{name}</Title>
-                                    <Subtitle>{role}</Subtitle>
-                                </div>
-                            );
-                        })}
-                    </TeamGrid>
-                    <br/><br/>
-                    <h2>Finance Team</h2>
-                    <TeamGrid>
-                        {FINANCE_TEAM.map(({name, image, role, linkedin}) => {
-                            const img = data.allFile.edges.find(
-                                ({node}) => node.relativePath === image,
-                            ).node;
-
-                            return (
-                                <div>
-                                    <ExternalLink href={linkedin}><Img fluid={img.childImageSharp.fluid}
-                                                                       alt={name}/></ExternalLink>
-                                    <Title>{name}</Title>
-                                    <Subtitle>{role}</Subtitle>
-                                </div>
-                            );
-                        })}
-                    </TeamGrid>
-                    <br/><br/>
-                    <h2>First Year Representatives</h2>
-                    <TeamGrid>
-                        {FIRST_YEAR_TEAM.map(({name, image, role, linkedin}) => {
-                            const img = data.allFile.edges.find(
-                                ({node}) => node.relativePath === image,
-                            ).node;
-
-                            return (
-                                <div>
-                                    <ExternalLink href={linkedin}><Img fluid={img.childImageSharp.fluid}
-                                                                       alt={name}/></ExternalLink>
-                                    <Title>{name}</Title>
-                                    <Subtitle>{role}</Subtitle>
-                                </div>
-                            );
-                        })}
-                    </TeamGrid>
+                    {Object.entries(items).map(([teamName, teamObj]) => {
+                        return (
+                        <div>
+                            <br/><br/>
+                            <h2>{teamName}</h2>
+                            <TeamGrid>
+                                {teamObj.map(({name, image, role, linkedin}) => {
+                                    const img = data.allFile.edges.find(
+                                        ({node}) => node.relativePath === image,
+                                    ).node;
+        
+                                    return (
+                                        <div>
+                                            <ExternalLink href={linkedin}><Img fluid={img.childImageSharp.fluid}
+                                                                            alt={name}/></ExternalLink>
+                                            <Title>{name}</Title>
+                                            <Subtitle>{role}</Subtitle>
+                                        </div>
+                                    );
+                                })}
+                            </TeamGrid>
+                        </div>
+                        )
+                    })}
                 </Container>
             </Section>
         )}

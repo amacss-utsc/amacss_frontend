@@ -14,7 +14,7 @@ import {
     MARKETING_TEAM,
     FINANCE_TEAM,
     TECH_TEAM
-} from '../data/teams_data'
+} from '../../data/teams_data_2018'
 
 var items = {
     "Executive Team": EXECUTIVE_TEAM,
