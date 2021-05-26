@@ -13,7 +13,7 @@ const EXECUTIVE_TEAM = [
     },
     {
         name: 'Luke Jin',
-        image: 'luke.jpg',
+        image: 'missing.jpg',
         role: 'VP of Operations',
         linkedin: '',
     },
