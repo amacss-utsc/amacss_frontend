@@ -1,169 +1,137 @@
 const EXECUTIVE_TEAM = [
-    {
-        name: 'Bonika Verma',
-        image: 'sonika.jpg',
-        role: 'Honorary President',
-        linkedin: 'https://www.linkedin.com/in/sonika-verma-a068a8132/',
-    },
-    {
-        name: 'Daniel Zhao',
-        image: 'daniel.jpg',
-        role: 'President',
-        linkedin: '',
-    },
-    {
-        name: 'Luke Jin',
-        image: 'missing.jpg',
-        role: 'VP of Operations',
-        linkedin: '',
-    },
-    {
-        name: 'Mustafa Hafeez',
-        image: 'missing.jpg',
-        role: 'VP of Academics',
-        linkedin: '',
-    },
-    {
-        name: 'Gavin Leung',
-        image: 'gavin.jpg',
-        role: 'VP of Technology',
-        linkedin: 'https://thesilentflare.github.io/',
-    }
+  {
+    name: "Jason",
+    image: "missing.png",
+    role: "President",
+    linkedin: "",
+  },
+  {
+    name: "Clara Chick",
+    image: "missing.png",
+    role: "VP of Technology",
+    linkedin: "https://www.linkedin.com/in/clarachick/",
+  },
+  {
+    name: "Cene",
+    image: "missing.png",
+    role: "VP of Operations",
+    linkedin: "",
+  },
+  {
+    name: "Husni",
+    image: "missing.png",
+    role: "VP of Academics",
+    linkedin: "",
+  },
 ];
 const ACADEMICS_TEAM = [
-    {
-        name: 'Tabeeb Yeamin',
-        image: 'tabeeb.jpg',
-        role: 'CS Representative',
-        linkedin: '',
-        description: ''
-    },
-    {
-        name: 'Keegan Poon',
-        image: 'keegan.jpg',
-        role: 'CS Representative',
-        linkedin: '',
-        description: ''
-    },
-    {
-        name: 'Vacant(available)',
-        image: 'missing.jpg',
-        role: 'Math Representative',
-        linkedin: '',
-        description: ''
-    },
-    {
-        name: 'Vacant(available)',
-        image: 'missing.jpg',
-        role: 'Stats Representative',
-        linkedin: '',
-        description: ''
-    }
-];
-/*
-const OPERATIONS_TEAM = [
-    {
-        name: 'COVID-19',
-        image: 'covid-19.jpg',
-        role: 'Events Mangler',
-        linkedin: '',
-    },
-    {
-        name: 'Shashwat Doshi',
-        image: 'missing.jpg',
-        role: 'Events Director',
-        linkedin: '',
-    }
-];
-*/
-const EVENTS_TEAM = [
-    {
-        name: 'COVID-19(jk)',
-        image: 'covid-19.jpg',
-        role: 'Events Mangler',
-        linkedin: '',
-    },
-    {
-        name: 'Shashwat Doshi',
-        image: 'missing.jpg',
-        role: 'Events Director',
-        linkedin: '',
-    },
-    {
-        name: 'Keia Rahmati',
-        image: 'keia.jpg',
-        role: 'Events Director',
-        linkedin: '',
-    },
-    {
-        name: 'Vacant',
-        image: 'missing.jpg',
-        role: 'External Affairs Director',
-        linkedin: '',
-    }
-];
-const TECH_TEAM = [
-    {
-        name: 'Jeff Zhao',
-        image: 'missing.jpg',
-        role: 'Developer',
-        linkedin: '',
-    },
-    {
-        name: 'Jacky Zhuang',
-        image: 'missing.jpg',
-        role: 'Developer',
-        linkedin: '',
-    },
-];
-const MARKETING_TEAM = [
-    {
-        name: 'Husni Fareed',
-        image: 'missing.jpg',
-        role: 'Marketing Director',
-        linkedin: '',
-    },
-    {
-        name: 'Sharon Xiao',
-        image: 'missing.jpg',
-        role: 'Designer',
-        linkedin: '',
-    }
-];
-const FINANCE_TEAM = [
-    {
-        name: 'Marcos Jaen',
-        image: 'missing.jpg',
-        role: 'Finance Director',
-        linkedin: '',
-    },
-    {
-        name: 'CMS Department',
-        image: 'missing.jpg',
-        role: 'Sponsor',
-        linkedin: '',
-    },
-    {
-        name: 'SCSU(sometimes)',
-        image: 'missing.jpg',
-        role: 'Sponsor',
-        linkedin: '',
-    }
-];
-const FIRST_YEAR_TEAM = [
-    {
-        name: 'Coming Soon™(available)',
-        image: 'missing.jpg',
-        role: 'First Year Representative',
-        linkedin: '',
-    },
-    {
-        name: 'Coming Soon™(available)',
-        image: 'missing.jpg',
-        role: 'First Year Representative',
-        linkedin: '',
-    },
+  {
+    name: "Katrina Best",
+    image: "missing.png",
+    role: "Academic Representative",
+    linkedin: "",
+    description: "",
+  },
+  {
+    name: "Malhar Pandya",
+    image: "missing.png",
+    role: "Academic Representative",
+    linkedin: "",
+    description: "",
+  },
+  {
+    name: "Tabeeb",
+    image: "missing.png",
+    role: "Academic Representative",
+    linkedin: "",
+    description: "",
+  },
 ];
 
-//export {EXECUTIVE_TEAM, ACADEMICS_TEAM, OPERATIONS_TEAM, TECH_TEAM, EVENTS_TEAM, MARKETING_TEAM, FIRST_YEAR_TEAM};
-export {EXECUTIVE_TEAM, ACADEMICS_TEAM, FINANCE_TEAM, TECH_TEAM, EVENTS_TEAM, MARKETING_TEAM, FIRST_YEAR_TEAM};
+const EVENTS_TEAM = [
+  {
+    name: "Changhao",
+    image: "missing.png",
+    role: "Events Director",
+    linkedin: "",
+  },
+];
+
+// const OPERATIONS_TEAM = [
+//     {
+//         name: 'COVID-19',
+//         image: 'covid-19.jpg',
+//         role: 'Events Mangler',
+//         linkedin: '',
+//     },
+//     {
+//         name: 'Shashwat Doshi',
+//         image: 'missing.png',
+//         role: 'Events Director',
+//         linkedin: '',
+//     }
+// ];
+// const TECH_TEAM = [
+//     {
+//         name: 'Jeff Zhao',
+//         image: 'missing.png',
+//         role: 'Developer',
+//         linkedin: '',
+//     },
+//     {
+//         name: 'Jacky Zhuang',
+//         image: 'missing.png',
+//         role: 'Developer',
+//         linkedin: '',
+//     },
+// ];
+// const MARKETING_TEAM = [
+//     {
+//         name: 'Husni Fareed',
+//         image: 'missing.png',
+//         role: 'Marketing Director',
+//         linkedin: '',
+//     },
+//     {
+//         name: 'Sharon Xiao',
+//         image: 'missing.png',
+//         role: 'Designer',
+//         linkedin: '',
+//     }
+// ];
+// const FINANCE_TEAM = [
+//     {
+//         name: 'Marcos Jaen',
+//         image: 'missing.png',
+//         role: 'Finance Director',
+//         linkedin: '',
+//     },
+//     {
+//         name: 'CMS Department',
+//         image: 'missing.png',
+//         role: 'Sponsor',
+//         linkedin: '',
+//     },
+//     {
+//         name: 'SCSU(sometimes)',
+//         image: 'missing.png',
+//         role: 'Sponsor',
+//         linkedin: '',
+//     }
+// ];
+// const FIRST_YEAR_TEAM = [
+//     {
+//         name: 'Coming Soon™(available)',
+//         image: 'missing.png',
+//         role: 'First Year Representative',
+//         linkedin: '',
+//     },
+//     {
+//         name: 'Coming Soon™(available)',
+//         image: 'missing.png',
+//         role: 'First Year Representative',
+//         linkedin: '',
+//     },
+// ];
+
+export { EXECUTIVE_TEAM, ACADEMICS_TEAM, EVENTS_TEAM };
