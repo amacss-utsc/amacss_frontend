@@ -14,6 +14,12 @@ import {
 import {Container, Section} from '@components/global';
 import ExternalLink from '../common/ExternalLink';
 
+// Clara Note:
+/**
+ * Some Team sections are commented out because AMACSS Team 2020-2021 decided
+ * to pass on the duties of these teams to the President to keep the team small
+ * and efficient.
+ */
 
 const Team = () => (
     <StaticQuery
@@ -36,7 +42,7 @@ const Team = () => (
         render={data => (
             <Section id="team">
                 <Container style={{position: 'relative'}}>
-                    <h1>The Team 2020-2021</h1>
+                    <h1>The Team 2021-2022</h1>
                     <br/><br/>
                     <h2>Executive Team</h2>
                     <TeamGrid>
@@ -91,10 +97,10 @@ const Team = () => (
                             );
                         })}
                     </TeamGrid>
-                    <br/><br/>
-                    <h2>Tech Team</h2>
+                    {/* <br/><br/>
+                    <h2>Tech Team</h2> */}
                     <TeamGrid>
-                        {TECH_TEAM.map(({name, image, role, linkedin}) => {
+                        {TECH_TEAM && TECH_TEAM.map(({name, image, role, linkedin}) => {
                             const img = data.allFile.edges.find(
                                 ({node}) => node.relativePath === image,
                             ).node;
@@ -109,10 +115,10 @@ const Team = () => (
                             );
                         })}
                     </TeamGrid>
-                    <br/><br/>
-                    <h2>Marketing Team</h2>
+                    {/* <br/><br/>
+                    <h2>Marketing Team</h2> */}
                     <TeamGrid>
-                        {MARKETING_TEAM.map(({name, image, role, linkedin}) => {
+                        {MARKETING_TEAM && MARKETING_TEAM.map(({name, image, role, linkedin}) => {
                             const img = data.allFile.edges.find(
                                 ({node}) => node.relativePath === image,
                             ).node;
@@ -127,10 +133,10 @@ const Team = () => (
                             );
                         })}
                     </TeamGrid>
-                    <br/><br/>
-                    <h2>Finance Team</h2>
+                    {/* <br/><br/>
+                    <h2>Finance Team</h2> */}
                     <TeamGrid>
-                        {FINANCE_TEAM.map(({name, image, role, linkedin}) => {
+                        {FINANCE_TEAM && FINANCE_TEAM.map(({name, image, role, linkedin}) => {
                             const img = data.allFile.edges.find(
                                 ({node}) => node.relativePath === image,
                             ).node;
@@ -145,10 +151,10 @@ const Team = () => (
                             );
                         })}
                     </TeamGrid>
-                    <br/><br/>
-                    <h2>First Year Representatives</h2>
+                    {/* <br/><br/>
+                    <h2>First Year Representatives</h2> */}
                     <TeamGrid>
-                        {FIRST_YEAR_TEAM.map(({name, image, role, linkedin}) => {
+                        {FIRST_YEAR_TEAM && FIRST_YEAR_TEAM.map(({name, image, role, linkedin}) => {
                             const img = data.allFile.edges.find(
                                 ({node}) => node.relativePath === image,
                             ).node;
