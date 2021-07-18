@@ -57,81 +57,12 @@ const EVENTS_TEAM = [
   },
 ];
 
-// const OPERATIONS_TEAM = [
-//     {
-//         name: 'COVID-19',
-//         image: 'covid-19.jpg',
-//         role: 'Events Mangler',
-//         linkedin: '',
-//     },
-//     {
-//         name: 'Shashwat Doshi',
-//         image: 'missing.png',
-//         role: 'Events Director',
-//         linkedin: '',
-//     }
-// ];
-// const TECH_TEAM = [
-//     {
-//         name: 'Jeff Zhao',
-//         image: 'missing.png',
-//         role: 'Developer',
-//         linkedin: '',
-//     },
-//     {
-//         name: 'Jacky Zhuang',
-//         image: 'missing.png',
-//         role: 'Developer',
-//         linkedin: '',
-//     },
-// ];
-// const MARKETING_TEAM = [
-//     {
-//         name: 'Husni Fareed',
-//         image: 'missing.png',
-//         role: 'Marketing Director',
-//         linkedin: '',
-//     },
-//     {
-//         name: 'Sharon Xiao',
-//         image: 'missing.png',
-//         role: 'Designer',
-//         linkedin: '',
-//     }
-// ];
-// const FINANCE_TEAM = [
-//     {
-//         name: 'Marcos Jaen',
-//         image: 'missing.png',
-//         role: 'Finance Director',
-//         linkedin: '',
-//     },
-//     {
-//         name: 'CMS Department',
-//         image: 'missing.png',
-//         role: 'Sponsor',
-//         linkedin: '',
-//     },
-//     {
-//         name: 'SCSU(sometimes)',
-//         image: 'missing.png',
-//         role: 'Sponsor',
-//         linkedin: '',
-//     }
-// ];
-// const FIRST_YEAR_TEAM = [
-//     {
-//         name: 'Coming Soon™(available)',
-//         image: 'missing.png',
-//         role: 'First Year Representative',
-//         linkedin: '',
-//     },
-//     {
-//         name: 'Coming Soon™(available)',
-//         image: 'missing.png',
-//         role: 'First Year Representative',
-//         linkedin: '',
-//     },
-// ];
+const SPONSORED_BY = [
+  {
+    name: "dApp Technology Inc.",
+    image: "dapp.png",
+    linkedin: "https://dapp-inc.com/",
+  },
+];
 
-export { EXECUTIVE_TEAM, ACADEMICS_TEAM, EVENTS_TEAM };
+export { EXECUTIVE_TEAM, ACADEMICS_TEAM, EVENTS_TEAM, SPONSORED_BY };
