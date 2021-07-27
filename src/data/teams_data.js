@@ -1,24 +1,24 @@
 const EXECUTIVE_TEAM = [
   {
-    name: "Jason",
+    name: "Jason Tian",
     image: "missing.png",
     role: "President",
-    linkedin: "",
+    linkedin: "https://www.linkedin.com/in/jtian6/",
   },
   {
     name: "Clara Chick",
-    image: "missing.png",
+    image: "clarachick.jpg",
     role: "VP of Technology",
     linkedin: "https://www.linkedin.com/in/clarachick/",
   },
   {
-    name: "Cene",
-    image: "missing.png",
+    name: "Cené Odendaal",
+    image: "ceneodendaal.jpg",
     role: "VP of Operations",
     linkedin: "",
   },
   {
-    name: "Husni",
+    name: "Husni Fareed",
     image: "missing.png",
     role: "VP of Academics",
     linkedin: "",
@@ -27,7 +27,7 @@ const EXECUTIVE_TEAM = [
 const ACADEMICS_TEAM = [
   {
     name: "Katrina Best",
-    image: "missing.png",
+    image: "katrinabest.png",
     role: "Academic Representative",
     linkedin: "",
     description: "",
@@ -40,8 +40,8 @@ const ACADEMICS_TEAM = [
     description: "",
   },
   {
-    name: "Tabeeb",
-    image: "missing.png",
+    name: "Tabeeb Yeamin",
+    image: "tabeebyeamin.jpg",
     role: "Academic Representative",
     linkedin: "",
     description: "",
@@ -50,8 +50,8 @@ const ACADEMICS_TEAM = [
 
 const EVENTS_TEAM = [
   {
-    name: "Changhao",
-    image: "missing.png",
+    name: "Changhao Wang",
+    image: "changhaowang.jpg",
     role: "Events Director",
     linkedin: "",
   },
