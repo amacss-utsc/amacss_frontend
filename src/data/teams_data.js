@@ -1,28 +1,28 @@
 const EXECUTIVE_TEAM = [
   {
     name: "Jason Tian",
-    image: "missing.png",
+    image: "jasontian.jpg",
     role: "President",
-    linkedin: "https://www.linkedin.com/in/jtian6/",
+    linkedin: "https://www.linkedin.com/in/jtian6/"
   },
   {
-    name: "Clara Chick",
-    image: "clarachick.jpg",
+    name: "Parth Patel",
+    image: "missing.png",
     role: "VP of Technology",
-    linkedin: "https://www.linkedin.com/in/clarachick/",
+    linkedin: "https://www.linkedin.com/in/pparth-patel/"
   },
   {
     name: "Cené Odendaal",
     image: "ceneodendaal.jpg",
     role: "VP of Operations",
-    linkedin: "",
+    linkedin: ""
   },
   {
     name: "Husni Fareed",
     image: "missing.png",
     role: "VP of Academics",
-    linkedin: "",
-  },
+    linkedin: ""
+  }
 ];
 const ACADEMICS_TEAM = [
   {
@@ -30,22 +30,22 @@ const ACADEMICS_TEAM = [
     image: "katrinabest.png",
     role: "Academic Representative",
     linkedin: "",
-    description: "",
+    description: ""
   },
   {
     name: "Malhar Pandya",
     image: "missing.png",
     role: "Academic Representative",
     linkedin: "",
-    description: "",
+    description: ""
   },
   {
     name: "Tabeeb Yeamin",
     image: "tabeebyeamin.jpg",
     role: "Academic Representative",
     linkedin: "",
-    description: "",
-  },
+    description: ""
+  }
 ];
 
 const EVENTS_TEAM = [
@@ -53,16 +53,16 @@ const EVENTS_TEAM = [
     name: "Changhao Wang",
     image: "changhaowang.jpg",
     role: "Events Director",
-    linkedin: "",
-  },
+    linkedin: ""
+  }
 ];
 
 const SPONSORED_BY = [
   {
     name: "dApp Technology Inc.",
     image: "dapp.png",
-    linkedin: "https://dapp-inc.com/",
-  },
+    linkedin: "https://dapp-inc.com/"
+  }
 ];
 
 export { EXECUTIVE_TEAM, ACADEMICS_TEAM, EVENTS_TEAM, SPONSORED_BY };
