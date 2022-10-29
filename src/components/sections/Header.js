@@ -6,47 +6,68 @@ import Img from 'gatsby-image';
 import {Container} from '@components/global';
 import ExternalLink from '@common/ExternalLink';
 
-const Header = () => (
-    <StaticQuery
-        query={graphql`
-      query {
-        art_build: file(
-          sourceInstanceName: { eq: "art" }
-          name: { eq: "build" }
-        ) {
-          childImageSharp {
-            fluid(maxWidth: 1400) {
-              ...GatsbyImageSharpFluid_withWebp_tracedSVG
-            }
-          }
-        }
-      }
-    `}
-        render={data => (
-            <HeaderWrapper id="home">
-                <Container>
-                    <Grid>
-                        <Art>
-                            <Img fluid={data.art_build.childImageSharp.fluid}/>
-                        </Art>
-                        <Text>
-                            <h1>
-                                The Association of
-                                <br/>
-                                Mathematical and
-                                <br/>
-                                Computer Science
-                                <br/>
-                                Students
-                            </h1>
-                            <br/>
-                        </Text>
-                    </Grid>
-                </Container>
-            </HeaderWrapper>
-        )}
-    />
-);
+const Header = () => {
+
+  return (
+    <HeaderWrapper>
+      <Container>
+        <Grid>
+        <Text>
+          <h1>
+              The Association of
+              <br/>
+              Mathematical and
+              <br/>
+              Computer Science
+              <br/>
+              Students
+          </h1>
+          <br/>
+        </Text>
+        </Grid>
+      </Container>
+    </HeaderWrapper>
+    );
+    // <StaticQuery
+    //     query={graphql`
+    //   query {
+    //     art_build: file(
+    //       sourceInstanceName: { eq: "art" }
+    //       name: { eq: "build" }
+    //     ) {
+    //       childImageSharp {
+    //         fluid(maxWidth: 1400) {
+    //           ...GatsbyImageSharpFluid_withWebp_tracedSVG
+    //         }
+    //       }
+    //     }
+    //   }
+    // `}
+    //     render={data => (
+    //         <HeaderWrapper id="home">
+    //             <Container>
+    //                 <Grid>
+    //                     <Art>
+    //                         <Img fluid={data.art_build.childImageSharp.fluid}/>
+    //                     </Art>
+    //                     <Text>
+    //                         <h1>
+    //                             The Association of
+    //                             <br/>
+    //                             Mathematical and
+    //                             <br/>
+    //                             Computer Science
+    //                             <br/>
+    //                             Students
+    //                         </h1>
+    //                         <br/>
+    //                     </Text>
+    //                 </Grid>
+    //             </Container>
+    //         </HeaderWrapper>
+    //     )}
+    // />
+  };
 
 const HeaderWrapper = styled.header`
   background-color: ${props => props.theme.color.primary};

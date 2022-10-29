@@ -6,9 +6,17 @@ Based on Gatsby and React, this website will serve as the frontend of AMACSS
 
 ## Installation
 
+Upgrade dependencies:
+
+### `yarn upgrade`
+
 Install the dependencies:
 
 ### `yarn install`
+
+Cleanup cache (often fixes misc errors when run before `yarn dev`):
+
+### `yarn clean`
 
 Run the development server:
 
@@ -17,10 +25,6 @@ Run the development server:
 Production build to `/public`:
 
 ### `yarn build`
-
-Cleanup cache (often fixes misc errors when run before `yarn dev`):
-
-### `yarn clean`
 
 ## Content
 
