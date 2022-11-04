@@ -6,7 +6,9 @@ import Img from 'gatsby-image';
 import {Container, Section} from '@components/global';
 import ExternalLink from '../common/ExternalLink';
 
-const eventsURL = "https://utsccms.club/";
+const instagramURL = "https://www.instagram.com/amacss_utsc/";
+const amacssEmail = "mailto:amacss.uoft@gmail.com";
+
 const About = () => (
     <StaticQuery
         query={graphql`
@@ -51,9 +53,12 @@ const About = () => (
                     <div>
                         <h2>Update</h2>
                         <p>
-                            This website is now updated for the 2020 to 2021 academic year(except constitution).
-                            <br></br>
-                            Contact tech [a-t] amacss [d-0-t] org for possible mistakes/typos.
+                            Welcome to the 2022-2023 AMACSS club! 
+                            <br></br><br></br>
+                            We are here for all of your academic needs and CMS questions, so please reach out!
+                            This website is now updated for the 2022 to 2023 academic year (except constitution).
+                            <br></br><br></br>
+                            Contact <ExternalLink href={amacssEmail}>amacss.uoft@gmail.com</ExternalLink> for possible mistakes/typos.
                         </p>
                         <br>
                         </br>
@@ -99,10 +104,9 @@ const About = () => (
                             <p>
                                 AMACSS organizes a number of incredible events <br/>throughout the year.
                                 <br/> <br/>
-                                To ensure that you never miss an upcoming event, <br/>check the <ExternalLink
-                                href={eventsURL}>Events</ExternalLink> page frequently.
+                                To ensure that you never miss an upcoming event, <br/>check out our <ExternalLink
+                                href={instagramURL}>Instagram</ExternalLink> page frequently.
                                 <br></br>
-                                A special thanks to CSEC, for developing the shared CMS events page.
                             </p>
                         </div>
                         <Art>

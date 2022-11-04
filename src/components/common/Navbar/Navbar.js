@@ -32,6 +32,10 @@ const NAV_ITEMS = [
     name: "Contact",
     url: "/#contact",
   },
+  {
+    name: "FAQs",
+    url: "/#faq"
+  }
 ];
 const CONSTITUTION = Constitution;
 const SOCIAL = [

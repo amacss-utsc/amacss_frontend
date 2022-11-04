@@ -6,12 +6,6 @@ const EXECUTIVE_TEAM = [
     linkedin: "https://www.linkedin.com/in/sauhaard"
   },
   {
-    name: "Vincent Zhang",
-    image: "missing.png",
-    role: "VP of Academics",
-    linkedin: "https://www.linkedin.com/in/vincentzhang15/"
-  },
-  {
     name: "Katrina Best",
     image: "Katrina_Best.jpg",
     role: "VP of Technology/Marketing",
@@ -22,16 +16,15 @@ const EXECUTIVE_TEAM = [
     image: "ceneodendaal.jpg",
     role: "Former President",
     linkedin: "https://www.linkedin.com/in/cen%C3%A9-odendaal-137a18180/"
+  },
+  {
+    name: "Vincent Zhang",
+    image: "Vincent_Zhang.JPG",
+    role: "VP of Academics",
+    linkedin: "https://www.linkedin.com/in/vincentzhang15/"
   }
 ];
 const ACADEMICS_TEAM = [
-  {
-    name: "Alex Teeter",
-    image: "missing.png",
-    role: "Academic Representative",
-    linkedin: "https://www.linkedin.com/in/alexander-teeter-a7b3ba223/",
-    description: ""
-  },
   {
     name: "Malhar Pandya",
     image: "missing.png",
@@ -41,9 +34,16 @@ const ACADEMICS_TEAM = [
   },
   {
     name: "Leila Cheraghi Seifabad",
-    image: "missing.png",
+    image: "Leila_Seifabad.jpg",
     role: "Academic Representative",
     linkedin: "https://www.linkedin.com/in/leila-chr/",
+    description: ""
+  },
+  {
+    name: "Alex Teeter",
+    image: "missing.png",
+    role: "Academic Representative",
+    linkedin: "https://www.linkedin.com/in/alexander-teeter-a7b3ba223/",
     description: ""
   }
 ];

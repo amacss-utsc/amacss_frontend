@@ -5,6 +5,7 @@ import {Container, Section} from '@components/global';
 import ExternalLink from '../common/ExternalLink';
 
 const location = "https://goo.gl/maps/4dm87YbHmCWUodH17";
+const amacssEmail = "mailto:amacss.uoft@gmail.com";
 
 const Contact = () => (
     <Section id="contact">
@@ -21,7 +22,10 @@ const Contact = () => (
                     general questions, or information or just for a chat.
                     <br/>
                     <br/>
-                    By Email:  president [a-t] amacss [d-0-t] org
+                    By Email: <ExternalLink href={amacssEmail}>amacss.uoft@gmail.com</ExternalLink>
+                    <br/>
+                    <br/>
+                    Through Github: <ExternalLink href={amacssEmail}>amacss.uoft@gmail.com</ExternalLink>
                 </p>
                 <br/>
                 <p>
