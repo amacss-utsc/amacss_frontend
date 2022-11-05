@@ -40,23 +40,23 @@ This project uses [styled-components]() to handle styling: `src/styles/theme.js`
 
 ## Common Problems
 
-If you get `digital envelop routines::unsupported` error:
-### Windows
+### If you get `digital envelop routines::unsupported` error:
+#### Windows
 run `set NODE_OPTIONS=--openssl-legacy-provider` in your terminal.
-### Mac OS
+#### Mac OS
 run `export NODE_OPTIONS=--openssl-legacy-provider` in your terminal.
 
 If these don't work, look at [Stack Overflow](https://stackoverflow.com/questions/69692842/error-message-error0308010cdigital-envelope-routinesunsupported).
 
-If you get a `ERR_REQUIRE_ESM` error, change the require to import('remark-mdx);
+### If you get a `ERR_REQUIRE_ESM` error, change the require to import('remark-mdx);
 
-If you get `node: --openssl-legacy-provider is not allowed in NODE_OPTIONS` error:
-### Windows
+### If you get `node: --openssl-legacy-provider is not allowed in NODE_OPTIONS` error:
+#### Windows
 run `set NODE_OPTIONS=` or `SETX NODE_OPTIONS ""` in your terminal.
 
 If these don't work, look at [Stack Overflow](https://stackoverflow.com/questions/72866798/node-openssl-legacy-provider-is-not-allowed-in-node-options).
 
-If you get `building static HTML failed for path "/<page>/"`, review [Stack Overflow](https://stackoverflow.com/questions/70962885/building-static-html-failed-for-path-styles-gatsby-fontawesome)
+### If you get `building static HTML failed for path "/<page>/"`, review [Stack Overflow](https://stackoverflow.com/questions/70962885/building-static-html-failed-for-path-styles-gatsby-fontawesome)
 
 ## Upgrade all `package.json` dependencies
 
