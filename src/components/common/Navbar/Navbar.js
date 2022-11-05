@@ -33,6 +33,10 @@ const NAV_ITEMS = [
     url: "/#contact",
   },
   {
+    name: "Resources",
+    url: "/resources",
+  },
+  {
     name: "FAQs",
     url: "/#faq"
   }

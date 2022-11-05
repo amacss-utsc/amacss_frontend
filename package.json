@@ -5,9 +5,12 @@
   "version": "0.1.0",
   "author": "Samiul Haque <sammy.haque@mail.utoronto.ca>",
   "dependencies": {
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
     "@fullcalendar/core": "^5.11.3",
     "@fullcalendar/google-calendar": "^5.11.3",
     "@fullcalendar/react": "^5.11.2",
+    "@mui/material": "^5.10.12",
     "@svgr/webpack": "^6.5.1",
     "gatsby": "^4.24.7",
     "gatsby-image": "^3.11.0",
@@ -37,6 +40,7 @@
     "react-scripts": "^5.0.1",
     "react-scrollspy": "^3.4.3",
     "remark-mdx": "^2.1.5",
+    "sharp": "^0.31.2",
     "styled-components": "^5.3.6"
   },
   "keywords": [
