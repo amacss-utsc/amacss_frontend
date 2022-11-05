@@ -39,7 +39,7 @@ const FAQS = [
         ),
     },
     {
-        title: 'How does do I future-proof my website?',
+        title: 'How do I future-proof my website?',
         content: () => (
             <>
                 Do not build a website with last decade’s tech. The future of the web is

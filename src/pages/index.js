@@ -6,6 +6,7 @@ import Header from '@sections/Header';
 import About from '@sections/About';
 import Signup from '@sections/Signup';
 import Contact from '@sections/Contact';
+import FAQs from '@sections/Faq';
 import Footer from '@sections/Footer';
 
 const IndexPage = () => (
@@ -15,6 +16,7 @@ const IndexPage = () => (
         <About/>
         {/* <Signup/> */}
         <Contact/>
+        <FAQs/>
         <Footer/>
     </Layout>
 );

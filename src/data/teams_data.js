@@ -1,49 +1,49 @@
 const EXECUTIVE_TEAM = [
   {
-    name: "Jason Tian",
-    image: "jasontian.jpg",
+    name: "Sauhaard Walia",
+    image: "Sauhaard_Walia.jpg",
     role: "President",
-    linkedin: "https://www.linkedin.com/in/jtian6/"
+    linkedin: "https://www.linkedin.com/in/sauhaard"
   },
   {
-    name: "Parth Patel",
-    image: "missing.png",
-    role: "VP of Technology",
-    linkedin: "https://www.linkedin.com/in/pparth-patel/"
+    name: "Katrina Best",
+    image: "Katrina_Best.jpg",
+    role: "VP of Technology/Marketing",
+    linkedin: "https://www.linkedin.com/in/katrina-best/"
   },
   {
     name: "Cené Odendaal",
     image: "ceneodendaal.jpg",
-    role: "VP of Operations",
-    linkedin: ""
+    role: "Former President",
+    linkedin: "https://www.linkedin.com/in/cen%C3%A9-odendaal-137a18180/"
   },
   {
-    name: "Husni Fareed",
-    image: "missing.png",
+    name: "Vincent Zhang",
+    image: "Vincent_Zhang.JPG",
     role: "VP of Academics",
-    linkedin: ""
+    linkedin: "https://www.linkedin.com/in/vincentzhang15/"
   }
 ];
 const ACADEMICS_TEAM = [
   {
-    name: "Katrina Best",
-    image: "katrinabest.png",
-    role: "Academic Representative",
-    linkedin: "",
-    description: ""
-  },
-  {
     name: "Malhar Pandya",
     image: "missing.png",
     role: "Academic Representative",
-    linkedin: "",
+    linkedin: "https://www.linkedin.com/in/malhar-pandya/",
     description: ""
   },
   {
-    name: "Tabeeb Yeamin",
-    image: "tabeebyeamin.jpg",
+    name: "Leila Cheraghi Seifabad",
+    image: "Leila_Seifabad.jpg",
     role: "Academic Representative",
-    linkedin: "",
+    linkedin: "https://www.linkedin.com/in/leila-chr/",
+    description: ""
+  },
+  {
+    name: "Alex Teeter",
+    image: "missing.png",
+    role: "Academic Representative",
+    linkedin: "https://www.linkedin.com/in/alexander-teeter-a7b3ba223/",
     description: ""
   }
 ];

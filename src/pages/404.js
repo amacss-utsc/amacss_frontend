@@ -9,8 +9,6 @@ import Footer from '@sections/Footer';
 const NotFoundPage = () => (
     <Layout>
         <Navbar/>
-        <Layout>
-            <section>
                 <Container>
                     <div>
                         <br/>
@@ -20,10 +18,18 @@ const NotFoundPage = () => (
                         <br/>
                         <h1>Not Found</h1>
                         <p>Unfortunately the URL you entered does not exist.</p>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
                     </div>
                 </Container>
-            </section>
-        </Layout>
         <Footer/>
     </Layout>
 );

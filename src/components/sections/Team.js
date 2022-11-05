@@ -34,7 +34,7 @@ const Team = () => (
     render={(data) => (
       <Section id="team">
         <Container style={{ position: "relative" }}>
-          <h1>The Team 2021-2022</h1>
+          <h1>The Team 2022-2023</h1>
           <br />
           <br />
           <h2>Executive Team</h2>

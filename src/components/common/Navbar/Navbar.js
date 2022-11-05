@@ -32,6 +32,10 @@ const NAV_ITEMS = [
     name: "Contact",
     url: "/#contact",
   },
+  {
+    name: "FAQs",
+    url: "/#faq"
+  }
 ];
 const CONSTITUTION = Constitution;
 const SOCIAL = [
@@ -84,7 +88,7 @@ class Navbar extends Component {
           </NavItem>
         ))}
         <NavItem>
-          <a target="_blank" href={CONSTITUTION}>
+          <a target="_blank" rel="noreferrer" href={CONSTITUTION}>
             Constitution
           </a>
         </NavItem>
