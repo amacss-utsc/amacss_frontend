@@ -5,9 +5,12 @@
   "version": "0.1.0",
   "author": "Samiul Haque <sammy.haque@mail.utoronto.ca>",
   "dependencies": {
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
     "@fullcalendar/core": "^5.11.3",
     "@fullcalendar/google-calendar": "^5.11.3",
     "@fullcalendar/react": "^5.11.2",
+    "@mui/material": "^5.10.12",
     "@svgr/webpack": "^6.5.1",
     "gatsby": "^4.24.7",
     "gatsby-image": "^3.11.0",
@@ -22,6 +25,7 @@
     "gatsby-plugin-styled-components": "^5.24.0",
     "gatsby-plugin-svgr": "^3.0.0-beta.0",
     "gatsby-source-filesystem": "^4.24.0",
+    "gatsby-source-youtube-v3": "^3.0.2",
     "gatsby-transformer-sharp": "^4.24.0",
     "google-maps-react": "^2.0.6",
     "node": "^14.21.0",
@@ -37,6 +41,7 @@
     "react-scripts": "^5.0.1",
     "react-scrollspy": "^3.4.3",
     "remark-mdx": "^2.1.5",
+    "sharp": "^0.31.2",
     "styled-components": "^5.3.6"
   },
   "keywords": [
@@ -49,7 +54,7 @@
     "dev": "gatsby develop",
     "start": "npm run dev",
     "format": "prettier --write \"src/**/*.js\"",
-    "clean": "rm -rf .cache && rm -rf public"
+    "clean": "gatsby clean"
   },
   "devDependencies": {
     "@fullcalendar/daygrid": "^5.11.3",
