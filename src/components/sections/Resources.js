@@ -1,82 +1,63 @@
 import React from 'react';
 
 import {Container, Section} from '@components/global';
+import {graphql, useStaticQuery} from 'gatsby';
 
 import ResourceItem from '@common/ResourceItem';
 import ExternalLink from '@common/ExternalLink';
 
-const FAQS = [
-    {
-        title: 'What tech does Gatsby use?',
-        content: () => (
-            <>
-                Enjoy the power of the latest web technologies – React.js , Webpack ,
-                modern JavaScript and CSS and more — all set up and waiting for you to
-                start building
-            </>
-        ),
-    },
-    {
-        title: 'Where can you source data from?',
-        content: () => (
-            <>
-                Gatsby’s rich data plugin ecosystem lets you build sites with the data
-                you want — from one or many sources: Pull data from headless CMSs, SaaS
-                services, APIs, databases, your file system, and more directly into your
-                pages using GraphQL.
-            </>
-        ),
-    },
-    {
-        title: 'How do I scale Gatsby sites?',
-        content: () => (
-            <>
-                Gatsby.js is Internet Scale. Forget complicated deploys with databases
-                and servers and their expensive, time-consuming setup costs,
-                maintenance, and scaling fears. Gatsby.js builds your site as “static”
-                files which can be deployed easily on dozens of services.
-            </>
-        ),
-    },
-    {
-        title: 'How do I future-proof my website?',
-        content: () => (
-            <>
-                Do not build a website with last decade’s tech. The future of the web is
-                mobile, JavaScript and APIs—the{` `}
-                <ExternalLink href="https://jamstack.org/">JAMstack</ExternalLink>.
-                Every website is a web app and every web app is a website. Gatsby.js is
-                the universal JavaScript framework you’ve been waiting for.
-            </>
-        ),
-    },
-    {
-        title: 'What exactly does Gatsby build?',
-        content: () => (
-            <>
-                Gatsby.js is a static PWA (Progressive Web App) generator. You get code
-                and data splitting out-of-the-box. Gatsby loads only the critical HTML,
-                CSS, data, and JavaScript so your site loads as fast as possible. Once
-                loaded, Gatsby prefetches resources for other pages so clicking around
-                the site feels incredibly fast.
-            </>
-        ),
-    },
-];
-
-const Resources = () => (
-    <Section id="resources">
-        <Container>
-            <h1 style={{marginBottom: 40}}>Resources</h1>
-            <div>
-                {FAQS.map(({title, content}) => (
-                    <ResourceItem title={title} key={title}>
-                        {content()}
-                    </ResourceItem>
-                ))}
-            </div>
-        </Container>
-    </Section>
-);
+const Resources = () => {
+    const youtubeLink = "https://www.youtube.com/watch?v=";
+    const data = useStaticQuery(
+        graphql`
+            query {
+                allYoutubeVideo {
+                    edges {
+                        node {
+                            id
+                            title
+                            description
+                            videoId
+                            publishedAt
+                            privacyStatus
+                            channelTitle
+                        }
+                    }
+                }
+            }
+        `
+    );
+    // console.log("Data: ", data.allYoutubeVideo.edges[0]);
+    // data.allYoutubeVideo.edges.map((video) => {
+    //     console.log(video.node);
+    // })
+    // data.allYoutubeVideo.edges[0].node.title
+    // data.allYoutubeVideo.edges[0].node.title.lastIndexOf(" ", data.allYoutubeVideo.edges[0].node.title.lastIndexOf(" "))
+    return <Section id="resources">
+            <Container>
+                <h1 style={{marginBottom: 40}}>Resources</h1>
+                <div>
+                    {data.allYoutubeVideo.edges.map((video) => {
+                        const title = video.node.title;
+                        //console.log(title, video.node.title.lastIndexOf(" ", 33));
+                        let desc = "";
+                        if (video.node.description.substring(0, video.node.description.indexOf(":")).length > 5) {
+                            desc = video.node.description.substring(0, video.node.description.indexOf(":"));//.substring(0,30);
+                        }
+                        //const semester = video.node.title.substring(video.node.title.lastIndexOf(" ", video.node.title.lastIndexOf(" ", video.node.title.lastIndexOf(" "))));
+                        const link = youtubeLink + video.node.videoId;
+                        return (
+                        <ResourceItem 
+                            title={title} 
+                            key={title}
+                            desc={desc}
+                            link={link}
+                        />
+                    )}
+                    )}
+                </div>
+            </Container>
+        </Section>
+};
 
 export default Resources;

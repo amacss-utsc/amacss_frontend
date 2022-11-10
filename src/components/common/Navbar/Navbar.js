@@ -38,7 +38,7 @@ const NAV_ITEMS = [
   },
   {
     name: "FAQs",
-    url: "/#faq"
+    url: "/faq"
   }
 ];
 const CONSTITUTION = Constitution;

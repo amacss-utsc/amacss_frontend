@@ -1,6 +1,9 @@
 const path = require('path');
 
 module.exports = {
+    siteMetadata: {
+        title: "AMACSS Website",
+    },
     plugins: [
         `gatsby-plugin-react-helmet`,
         `gatsby-plugin-svgr`,
@@ -10,6 +13,16 @@ module.exports = {
             options: {
                 name: `team`,
                 path: `${__dirname}/src/images/team`,
+            },
+        },
+        {
+            resolve: `gatsby-source-youtube-v3`,
+            typeName: 'allYoutubeVideo',
+            fieldName: 'allYoutubeVideo',
+            options: {
+              channelId: ['UCUAWhdc8JqyH97S1mFzLCAg'],
+              apiKey: 'AIzaSyD1evv-S_S5XUtzRYKWbPVATVLJxjsqWAI',
+              maxVideos: 50 // Defaults to 50
             },
         },
         {

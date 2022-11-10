@@ -24,6 +24,12 @@ const Contact = () => (
                     general questions, or information or just for a chat.
                     <br/>
                     <br/>
+                    <b>Email:</b> <a href="mailto:amacss.uoft@gmail.com" target="_blank">amacss.uoft@gmail.com</a>
+                    <br/>
+                    <b>Instagram:</b> <a href="https://instagram.com/amacss_utsc/" target="_blank">amacss_utsc</a>
+                    <br/>
+                    <b>Discord:</b> <a href="https://discord.gg/9nB958kxTJ" target="_blank">AMACSS Community</a>
+
                 </p>
             </div>
         </Container>
