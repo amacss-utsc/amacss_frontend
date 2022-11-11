@@ -8,11 +8,13 @@ import Signup from '@sections/Signup';
 import Contact from '@sections/Contact';
 import FAQs from '@sections/Faq';
 import Footer from '@sections/Footer';
+import Update from '@sections/Update';
 
 const IndexPage = () => (
     <Layout>
         <Navbar/>
         <Header/>
+        <Update/>
         <About/>
         {/* <Signup/> */}
         <Contact/>

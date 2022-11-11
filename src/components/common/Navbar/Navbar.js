@@ -18,11 +18,15 @@ const HOME_URL = "/#home";
 const NAV_ITEMS = [
   {
     name: "About",
-    url: "/#about",
+    url: "/about",
   },
   {
-    name: "Office Hours",
+    name: "Events",
     url: "/office hours",
+  },
+  {
+    name: "Resources",
+    url: "/resources",
   },
   {
     name: "Team",
@@ -31,10 +35,6 @@ const NAV_ITEMS = [
   {
     name: "Contact",
     url: "/#contact",
-  },
-  {
-    name: "Resources",
-    url: "/resources",
   },
   {
     name: "FAQs",

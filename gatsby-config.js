@@ -21,7 +21,7 @@ module.exports = {
             fieldName: 'allYoutubeVideo',
             options: {
               channelId: ['UCUAWhdc8JqyH97S1mFzLCAg'],
-              apiKey: 'AIzaSyD1evv-S_S5XUtzRYKWbPVATVLJxjsqWAI',
+              apiKey: 'AIzaSyCxNn4TYovZwzMXgSMcp87uuhMK5oCT4NE',
               maxVideos: 50 // Defaults to 50
             },
         },
