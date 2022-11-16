@@ -15,9 +15,9 @@ const IndexPage = () => (
         <Navbar/>
         <Header/>
         <Update/>
-        <About/>
-        {/* <Signup/> */}
         <Contact/>
+        {/* <About/> */}
+        {/* <Signup/> */}
         <Footer/>
     </Layout>
 );
