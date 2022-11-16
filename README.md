@@ -65,3 +65,15 @@ run `yarn upgrade @fullcalendar/core@latest @fullcalendar/google-calendar@latest
 ## Upgrade from gatsby-image to gatsby-plugin-image docs
 
 [Gatsby Documentation](https://www.gatsbyjs.com/docs/reference/release-notes/image-migration-guide/)
+
+## Documentation
+
+### Navigation
+
+- About (includes team)
+- Events
+- Resources
+- Team
+- Contact
+- FAQs
+- Constitution

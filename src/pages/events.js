@@ -7,7 +7,7 @@ import Navbar from '@common/Navbar';
 import Footer from '@sections/Footer';
 
 const Calendar = Loadable({
-    loader: () => import('./../components/sections/Schedule'),
+    loader: () => import('../components/sections/Schedule'),
     loading() {
         return <div>Loading Calendar!</div>
     },

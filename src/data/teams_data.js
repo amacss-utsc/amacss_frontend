@@ -27,7 +27,7 @@ const EXECUTIVE_TEAM = [
 const ACADEMICS_TEAM = [
   {
     name: "Malhar Pandya",
-    image: "missing.png",
+    image: "Malhar_Pandya.jpg",
     role: "Academic Representative",
     linkedin: "https://www.linkedin.com/in/malhar-pandya/",
     description: ""
