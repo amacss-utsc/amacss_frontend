@@ -22,7 +22,7 @@ const NAV_ITEMS = [
   },
   {
     name: "Events",
-    url: "/office hours",
+    url: "/events",
   },
   {
     name: "Resources",

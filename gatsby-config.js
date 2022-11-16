@@ -25,6 +25,19 @@ module.exports = {
               maxVideos: 50 // Defaults to 50
             },
         },
+        // {
+        //     resolve: `gatsby-source-google-calendar`,
+        //     options: {
+        //       calendarIds: [
+        //         'https://calendar.google.com/calendar/u/0?cid=YW1hY3NzLnVvZnRAZ21haWwuY29t',
+        //       ],
+        //       // options to retrieve the next 10 upcoming events
+        //       timeMin: (new Date()).toISOString(),
+        //       maxResults: 30,
+        //       singleEvents: true,
+        //       orderBy: 'startTime',
+        //     }
+        //   },
         {
             resolve: `gatsby-source-filesystem`,
             options: {
