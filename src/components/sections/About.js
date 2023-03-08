@@ -83,6 +83,8 @@ const About = () => (
                             </p>
                         </div>
                     </Grid>
+                </Container>
+                <Container>
                     <Grid>
                         <div>
                             <h2>Grow and build your ideas</h2>
@@ -90,6 +92,14 @@ const About = () => (
                                 AMACSS organizes a number of incredible events throughout the year, and this year is no exception. 
                                 <br></br>
                                 Some of our past events have been:
+                                </p>
+                                </div>
+                      </Grid>
+                </Container>
+                <Container>
+                  <Grid>
+                    <div>
+                      <p>
                                 <ol>
                                   <li><ExternalLink href="https://www.instagram.com/p/CbLYOMiO84n/">Talent Show & Games Night</ExternalLink> - March 30th, 2022</li>
                                   <li><ExternalLink href="https://www.instagram.com/p/CY1sblZlETj/">Gathertown Games/Social Night</ExternalLink> - January 21st, 2022</li>
@@ -120,10 +130,6 @@ const About = () => (
                                   <li><ExternalLink href="https://www.instagram.com/p/BuZtLMjATJj/">Gaming Night</ExternalLink> - March 1st, 2019</li>
 
                                 </ol>
-                                <br/> <br/>
-                                To ensure that you never miss an upcoming event, <br/>check out our <ExternalLink
-                                href={instagramURL}>Instagram</ExternalLink> page frequently.
-                                <br></br>
                             </p>
                         </div>
                         <Art>
@@ -131,6 +137,56 @@ const About = () => (
                         </Art>
                     </Grid>
                 </Container>
+                <Container>
+                                <p style={{ textAlign: 'center' }}>To ensure that you never miss an upcoming event, <br/>check out our <ExternalLink
+                                href={instagramURL}>Instagram</ExternalLink> page frequently.</p>
+                                <br></br>   <br/> <br/>
+                      <h1 style={{ textAlign: 'center' }}>Code of Conduct</h1><br></br>
+                      <p>
+<ol>
+  <li><b>Purpose</b><br></br>
+    The Association of Mathematical and Computer Science Students (AMACSS) at the University of Toronto Scarborough (UTSC) is committed to creating and maintaining a safe and inclusive environment for all its members. This code of conduct outlines our expectations for behavior and our commitment to upholding our values of respect, inclusion, and diversity.
+  </li>
+  <li><b>Scope</b><br></br>
+    This code of conduct applies to all members of AMACSS, including but not limited to executive members, general members, and volunteers.
+  </li>
+  <li><b>General Conduct</b><br></br>
+    All members of AMACSS are expected to:
+    <ul>
+      <li>Treat others with respect, kindness, and empathy.</li>
+      <li>Act in a professional and ethical manner.</li>
+      <li>Refrain from engaging in any form of discrimination, harassment, or bullying.</li>
+      <li>Respect the privacy and confidentiality of others.</li>
+      <li>Refrain from engaging in any activity that may bring AMACSS or the University of Toronto into disrepute.</li>
+      <li>Adhere to all applicable laws, policies, and regulations.</li>
+    </ul>
+  </li>
+  <li><b>Discrimination, Harassment, and Bullying</b><br></br>
+    AMACSS has zero-tolerance for discrimination, harassment, and bullying of any kind. This includes but is not limited to discrimination based on race, gender, sexual orientation, religion, age, disability, or any other personal characteristic.
+    Examples of prohibited conduct include:
+    <ul>
+      <li>Verbal abuse, including derogatory comments or slurs.</li>
+      <li>Physical abuse or intimidation.</li>
+      <li>Making unwanted advances or gestures of a sexual nature.</li>
+      <li>Bullying, including cyberbullying, through the use of electronic communication, social media, or any other means.</li>
+    </ul>
+    If any member of AMACSS experiences or witnesses any form of discrimination, harassment, or bullying, they should report it to a member of the executive immediately.
+  </li>
+  <li><b>Confidentiality</b><br></br>
+    All members of AMACSS are expected to respect the privacy and confidentiality of others. This includes but is not limited to personal information, academic records, and sensitive business information.
+  </li>
+  <li><b>Conflict Resolution</b><br></br>
+    AMACSS is committed to resolving conflicts in a fair and respectful manner. Any member who is experiencing a conflict with another member should first attempt to resolve it informally. If the conflict cannot be resolved informally, the member may seek assistance from a member of the executive.
+  </li>
+  <li><b>Enforcement</b><br></br>
+    AMACSS takes violations of this code of conduct seriously. Any member who violates this code of conduct may be subject to disciplinary action, up to and including termination of membership.
+  </li>
+  <li><b>Amendments</b><br></br>
+    This code of conduct may be amended from time to time by a two-thirds vote of the executive members of AMACSS. Any amendments to this code of conduct must be communicated to all members in writing.
+  </li>
+</ol>
+                      </p>
+                    </Container>
             </Section>
         )}
     />
