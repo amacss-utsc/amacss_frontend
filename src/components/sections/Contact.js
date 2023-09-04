@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import {Container, Section} from '../../data/global';
+import {Container, Section, Button} from '../../data/global';
 import ExternalLink from '../common/ExternalLink';
 import { socials } from '../../data/socials_data';
 import { LOCATION } from '../../data/global';
@@ -35,15 +35,5 @@ const Contact = () => (
         </Container>
     </Section>
 );
-const Button = styled.button`
-  // background: ${props => props.primary ? 'palevioletred' : 'white'};
-  color: black;
-  font-size: 1em;
-  margin-top: 1em;
-  padding: 0.65em 1em;
-  border: 2px solid black;
-  border-radius: 3px;
-  font-weight: bold;
-`;
 
 export default Contact;

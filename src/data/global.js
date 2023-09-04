@@ -31,11 +31,11 @@ export const Container = styled.div`
 `;
 
 export const Section = styled.section`
-  padding: 128px 0;
+  padding: 64px 0;
   overflow: hidden;
 
   @media (max-width: ${props => props.theme.screen.md}) {
-    padding: 96px 0;
+    padding: 64px 0;
   }
 
   ${props =>
@@ -46,6 +46,18 @@ export const Section = styled.section`
             : props.theme.color.primary
     }`};
 `;
+
+export const Button = styled.button`
+  background: ${props => props.primary ? 'palevioletred' : 'white'};
+  color: black;
+  font-size: 1em;
+  margin-top: 1em;
+  padding: 0.65em 1em;
+  border: 2px solid black;
+  border-radius: 3px;
+  font-weight: bold;
+`;
+
 
 export const year = "2023-2024"
 export const LOCATION = "https://goo.gl/maps/4dm87YbHmCWUodH17";

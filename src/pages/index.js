@@ -9,12 +9,14 @@ import Contact from '@sections/Contact';
 import FAQs from '@sections/Faq';
 import Footer from '@sections/Footer';
 import Update from '@sections/Update';
+import Hiring from '../components/sections/Hiring';
 
 const IndexPage = () => (
     <Layout>
         <Navbar/>
         <Header/>
         <Update/>
+        <Hiring/>
         <Contact/>
         {/* <About/> */}
         {/* <Signup/> */}
