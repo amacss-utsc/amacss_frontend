@@ -1,4 +1,4 @@
-import {Container} from '@components/global';
+import {Container} from '../data/global';
 
 
 import React from 'react';

@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import {graphql, StaticQuery} from 'gatsby';
 
-import {Container} from '@components/global';
+import {Container} from '../../data/global';
 import ExternalLink from '@common/ExternalLink';
 import {ReactComponent as AMACSSLogo} from '@images/logos/amacss_logo.svg';
 

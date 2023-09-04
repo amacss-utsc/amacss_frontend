@@ -7,7 +7,7 @@ import googleCalendar from '@fullcalendar/google-calendar'
 import timeGridPlugin from '@fullcalendar/timegrid'
 import interactionPlugin from '@fullcalendar/interaction'
 
-import {Container, Section} from '@components/global';
+import {Container, Section} from '../../data/global';
 
 import '@styles/dog.css';
 import '@styles/shit.css';

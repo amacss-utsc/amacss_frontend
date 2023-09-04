@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {Container, Section} from '@components/global';
+import {Container, Section} from '../../data/global';
 
 import FaqItem from '@common/FaqItem';
 import ExternalLink from '@common/ExternalLink';

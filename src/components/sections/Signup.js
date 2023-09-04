@@ -4,7 +4,7 @@ import Img from 'gatsby-image';
 
 import {graphql, StaticQuery} from 'gatsby';
 
-import {Container, Section} from '@components/global';
+import {Container, Section} from '../../data/global';
 
 const SignUp = () => (
     <StaticQuery
