@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {Container, Section} from '@components/global';
+import {Container, Section} from '../../data/global';
 import {graphql, useStaticQuery} from 'gatsby';
 
 import ResourceItem from '@common/ResourceItem';

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import {graphql, StaticQuery} from 'gatsby';
 import Img from 'gatsby-image';
 
-import {Container, Section} from '@components/global';
+import {Container, Section} from '../../data/global';
 import ExternalLink from '../common/ExternalLink';
 
 const instagramURL = "https://www.instagram.com/amacss_utsc/";

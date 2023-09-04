@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Link } from "gatsby";
 import Scrollspy from "react-scrollspy";
 
-import { Container } from "@components/global";
+import { Container } from "../../../data/global";
 import { Mobile, MobileMenu, Nav, NavItem, NavListWrapper, StyledContainer } from "./style";
 import { ReactComponent as AMACSSLogo } from "@images/logos/amacss_logo.svg";
 import { ReactComponent as MenuIcon } from "@static/icons/menu.svg";
@@ -13,6 +13,8 @@ import FacebookIcon from "@static/icons/facebook.svg";
 import DiscordIcon from "@static/icons/discord.png";
 import Constitution from "@static/docs/constitution.pdf";
 import styled from "styled-components";
+import { SOCIAL_NAV } from "../../../data/socials_data";
+import { CONSTITUTION } from "../../../data/global";
 
 const HOME_URL = "/#home";
 const NAV_ITEMS = [
@@ -40,25 +42,6 @@ const NAV_ITEMS = [
     name: "FAQs",
     url: "/faq"
   }
-];
-const CONSTITUTION = Constitution;
-const SOCIAL = [
-  {
-    icon: GithubIcon,
-    link: "https://github.com/amacss-utsc",
-  },
-  {
-    icon: InstagramIcon,
-    link: "https://instagram.com/amacss_utsc/",
-  },
-  {
-    icon: FacebookIcon,
-    link: "https://facebook.com/AMACSSUTSC",
-  },
-  {
-    icon: DiscordIcon,
-    link: "https://discord.gg/9nB958kxTJ",
-  },
 ];
 
 class Navbar extends Component {
@@ -97,7 +80,7 @@ class Navbar extends Component {
           </a>
         </NavItem>
         <SocialIcons>
-          {SOCIAL.map(({ icon, link }) => (
+          {SOCIAL_NAV.map(({ icon, link }) => (
             <ExternalLink href={link}>
               <img src={icon} alt="link" />
             </ExternalLink>

@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import Constitution from "@static/docs/constitution.pdf";
 
 export const Container = styled.div`
   max-width: 1200px;
@@ -45,3 +46,7 @@ export const Section = styled.section`
             : props.theme.color.primary
     }`};
 `;
+
+export const year = "2023-2024"
+export const LOCATION = "https://goo.gl/maps/4dm87YbHmCWUodH17";
+export const CONSTITUTION = Constitution;

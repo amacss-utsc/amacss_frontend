@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import {Container, Section} from '@components/global';
+import {Container, Section} from '../../data/global';
 import ExternalLink from '../common/ExternalLink';
-
-const location = "https://goo.gl/maps/4dm87YbHmCWUodH17";
+import { socials } from '../../data/socials_data';
+import { LOCATION } from '../../data/global';
 
 const Contact = () => (
     <Section id="contact">
@@ -13,10 +13,10 @@ const Contact = () => (
                 <h2>Come See Us</h2>
                 <br/>
                 <p>
-                    In Person: AMACSS office (IC-312), open door policy. Max 4 people in room, 2 meters apart due to COVID-19 safety measures.
+                    In Person: AMACSS office (IC-312). We have an open door policy!
                     <br/>
                     <p>
-                        <ExternalLink href={location}><Button>View on Map</Button></ExternalLink>
+                        <ExternalLink href={LOCATION}><Button>View on Map</Button></ExternalLink>
                     </p>
                     <br/>
                     Office Hours: Posted soon, come in during any of the scheduled times
@@ -24,11 +24,11 @@ const Contact = () => (
                     general questions, or information or just for a chat.
                     <br/>
                     <br/>
-                    <b>Email:</b> <a href="mailto:amacss.uoft@gmail.com" target="_blank">amacss.uoft@gmail.com</a>
+                    <b>Email:</b> <a href="mailto:{socials.email}" target="_blank">{socials.email}</a>
                     <br/>
-                    <b>Instagram:</b> <a href="https://instagram.com/amacss_utsc/" target="_blank">amacss_utsc</a>
+                    <b>Instagram:</b> <a href="https://instagram.com/{socials.instagram}/" target="_blank">{socials.instagram}</a>
                     <br/>
-                    <b>Discord:</b> <a href="https://discord.gg/9nB958kxTJ" target="_blank">AMACSS Community</a>
+                    <b>Discord:</b> <a href={socials.discord} target="_blank">AMACSS Discord Community</a>
 
                 </p>
             </div>

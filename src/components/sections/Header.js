@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import {graphql, StaticQuery} from 'gatsby';
 import Img from 'gatsby-image';
 
-import {Container} from '@components/global';
+import {Container} from '../../data/global';
 import ExternalLink from '@common/ExternalLink';
 
 const Header = () => (
