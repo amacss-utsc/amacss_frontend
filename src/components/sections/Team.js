@@ -3,8 +3,9 @@ import styled from "styled-components";
 import { graphql, StaticQuery } from "gatsby";
 import Img from "gatsby-image";
 import { EXECUTIVE_TEAM, ACADEMICS_TEAM, MARKETING_TEAM, EVENTS_TEAM, FIRSTYEAR_TEAM, SPONSORED_BY, ALUMNI_TEAM } from "../../data/teams_data";
-import { Container, Section } from "@components/global";
+import { Container, Section } from "../../data/global";
 import ExternalLink from "../common/ExternalLink";
+import { year } from "../../data/global";
 
 // Clara Note:
 /**
@@ -34,16 +35,13 @@ const Team = () => (
     render={(data) => (
       <Section id="team">
         <Container style={{ position: "relative" }}>
-          <h1>The Team 2022-2023</h1>
+          <h1>The Team {year}</h1>
           <br />
           <br />
           <h2>Executive Team</h2>
           <TeamGrid>
             {EXECUTIVE_TEAM.map(({ name, image, role, linkedin }) => {
               const execPath = "exec/" + image;
-              if (image === "missing.png") {
-                execPath = image;
-              }
               const img = data.allFile.edges.find(({ node }) => node.relativePath === execPath).node;
 
               return (
