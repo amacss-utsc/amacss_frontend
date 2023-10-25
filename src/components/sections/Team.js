@@ -42,9 +42,6 @@ const Team = () => (
           <TeamGrid>
             {EXECUTIVE_TEAM.map(({ name, image, role, linkedin }) => {
               const execPath = "exec/" + image;
-              if (image === "missing.png") {
-                execPath = image;
-              }
               const img = data.allFile.edges.find(({ node }) => node.relativePath === execPath).node;
 
               return (
