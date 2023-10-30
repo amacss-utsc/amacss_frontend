@@ -8,20 +8,13 @@ import {ReactComponent as AMACSSLogo} from '@images/logos/amacss_logo.svg';
 
 const Footer = () => (
     <StaticQuery
-        query={graphql`
-      query {
-        art_pot: file(
-          sourceInstanceName: { eq: "art" }
-          name: { eq: "customers_pot" }
-        ) {
-          childImageSharp {
-            fluid(maxWidth: 960) {
-              ...GatsbyImageSharpFluid_withWebp_tracedSVG
-            }
-          }
-        }
-      }
-    `}
+        query={graphql`{
+  art_pot: file(sourceInstanceName: {eq: "art"}, name: {eq: "customers_pot"}) {
+    childImageSharp {
+      gatsbyImageData(width: 960, placeholder: TRACED_SVG, layout: CONSTRAINED)
+    }
+  }
+}`}
         render={data => (
             <React.Fragment>
                 <FooterWrapper>

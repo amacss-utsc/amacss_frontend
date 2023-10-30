@@ -1,33 +1,26 @@
 import React from 'react';
 import styled from 'styled-components';
 import {graphql, StaticQuery} from 'gatsby';
-import Img from 'gatsby-image';
+import { GatsbyImage } from "gatsby-plugin-image";
 
 import {Container} from '../../data/global';
 import ExternalLink from '@common/ExternalLink';
 
 const Header = () => (
     <StaticQuery
-        query={graphql`
-      query {
-        art_build: file(
-          sourceInstanceName: { eq: "art" }
-          name: { eq: "build" }
-        ) {
-          childImageSharp {
-            fluid(maxWidth: 1400) {
-              ...GatsbyImageSharpFluid_withWebp_tracedSVG
-            }
-          }
-        }
-      }
-    `}
+        query={graphql`{
+  art_build: file(sourceInstanceName: {eq: "art"}, name: {eq: "build"}) {
+    childImageSharp {
+      gatsbyImageData(placeholder: TRACED_SVG, layout: FULL_WIDTH)
+    }
+  }
+}`}
         render={data => (
             <HeaderWrapper id="home">
                 <Container>
                     <Grid>
                         <Art>
-                            <Img fluid={data.art_build.childImageSharp.fluid}/>
+                            <GatsbyImage image={data.art_build.childImageSharp.gatsbyImageData} />
                         </Art>
                         <Text>
                             <h1>

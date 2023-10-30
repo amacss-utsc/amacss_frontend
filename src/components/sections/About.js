@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import {graphql, StaticQuery} from 'gatsby';
-import Img from 'gatsby-image';
+import { GatsbyImage } from "gatsby-plugin-image";
 
 import {Container, Section} from '../../data/global';
 import ExternalLink from '../common/ExternalLink';
@@ -11,42 +11,23 @@ const amacssEmail = "mailto:amacss.uoft@gmail.com";
 
 const About = () => (
     <StaticQuery
-        query={graphql`
-      query {
-        art_fast: file(
-          sourceInstanceName: { eq: "art" }
-          name: { eq: "fast" }
-        ) {
-          childImageSharp {
-            fluid(maxWidth: 760) {
-              ...GatsbyImageSharpFluid_withWebp_tracedSVG
-            }
-          }
-        }
-
-        art_learn: file(
-          sourceInstanceName: { eq: "art" }
-          name: { eq: "learn_yourself" }
-        ) {
-          childImageSharp {
-            fluid(maxWidth: 760) {
-              ...GatsbyImageSharpFluid_withWebp_tracedSVG
-            }
-          }
-        }
-
-        art_ideas: file(
-          sourceInstanceName: { eq: "art" }
-          name: { eq: "ideas" }
-        ) {
-          childImageSharp {
-            fluid(maxWidth: 760) {
-              ...GatsbyImageSharpFluid_withWebp_tracedSVG
-            }
-          }
-        }
-      }
-    `}
+        query={graphql`{
+  art_fast: file(sourceInstanceName: {eq: "art"}, name: {eq: "fast"}) {
+    childImageSharp {
+      gatsbyImageData(width: 760, placeholder: TRACED_SVG, layout: CONSTRAINED)
+    }
+  }
+  art_learn: file(sourceInstanceName: {eq: "art"}, name: {eq: "learn_yourself"}) {
+    childImageSharp {
+      gatsbyImageData(width: 760, placeholder: TRACED_SVG, layout: CONSTRAINED)
+    }
+  }
+  art_ideas: file(sourceInstanceName: {eq: "art"}, name: {eq: "ideas"}) {
+    childImageSharp {
+      gatsbyImageData(width: 760, placeholder: TRACED_SVG, layout: CONSTRAINED)
+    }
+  }
+}`}
         render={data => (
             <Section>
                 <Container id="about">
@@ -70,7 +51,7 @@ const About = () => (
                 <Container>
                     <Grid inverse>
                         <Art>
-                            <Img fluid={data.art_ideas.childImageSharp.fluid}/>
+                            <GatsbyImage image={data.art_ideas.childImageSharp.gatsbyImageData} />
                         </Art>
                         <div>
                             <h2>Always learning</h2>
@@ -133,7 +114,7 @@ const About = () => (
                             </p>
                         </div>
                         <Art>
-                            <Img fluid={data.art_learn.childImageSharp.fluid}/>
+                            <GatsbyImage image={data.art_learn.childImageSharp.gatsbyImageData} />
                         </Art>
                     </Grid>
                 </Container>
