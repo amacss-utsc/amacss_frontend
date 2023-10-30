@@ -1,8 +1,17 @@
 import React from "react";
 import styled from "styled-components";
 import { graphql, StaticQuery } from "gatsby";
-import Img from "gatsby-image";
-import { EXECUTIVE_TEAM, ACADEMICS_TEAM, MARKETING_TEAM, EVENTS_TEAM, FIRSTYEAR_TEAM, SPONSORED_BY, ALUMNI_TEAM } from "../../data/teams_data";
+import { GatsbyImage } from "gatsby-plugin-image";
+import {
+  EXECUTIVE_TEAM,
+  ACADEMICS_TEAM,
+  MARKETING_TEAM,
+  EVENTS_TEAM,
+  FIRSTYEAR_TEAM,
+  SPONSORED_BY,
+  ALUMNI_TEAM,
+} from "../../data/teams_data";
+import TeamLayout from "../common/TeamLayout/TeamLayout";
 import { Container, Section } from "../../data/global";
 import ExternalLink from "../common/ExternalLink";
 import { year } from "../../data/global";
@@ -17,15 +26,13 @@ import { year } from "../../data/global";
 const Team = () => (
   <StaticQuery
     query={graphql`
-      query {
+      {
         allFile(filter: { sourceInstanceName: { eq: "team" } }) {
           edges {
             node {
               relativePath
               childImageSharp {
-                fluid(maxWidth: 400, maxHeight: 400) {
-                  ...GatsbyImageSharpFluid
-                }
+                gatsbyImageData(width: 400, height: 400, layout: CONSTRAINED)
               }
             }
           }
@@ -35,142 +42,68 @@ const Team = () => (
     render={(data) => (
       <Section id="team">
         <Container style={{ position: "relative" }}>
-          <h1>The Team {year}</h1>
+          <h1 style={{ marginBottom: "2.2rem" }}>The Team {year}</h1>
+          {/* Executive Team */}
+          <TeamLayout
+            teamName={"Executive Team"}
+            teamInfo={EXECUTIVE_TEAM}
+            gqlData={data}
+            path={"exec/"}
+          />
           <br />
           <br />
-          <h2>Executive Team</h2>
-          <TeamGrid>
-            {EXECUTIVE_TEAM.map(({ name, image, role, linkedin }) => {
-              const execPath = "exec/" + image;
-              if (image === "missing.png") {
-                execPath = image;
-              }
-              const img = data.allFile.edges.find(({ node }) => node.relativePath === execPath).node;
-
-              return (
-                <div>
-                  <ExternalLink href={linkedin}>
-                    <Img fluid={img.childImageSharp.fluid} alt={name} />
-                  </ExternalLink>
-                  <Title>{name}</Title>
-                  <Subtitle>{role}</Subtitle>
-                </div>
-              );
-            })}
-          </TeamGrid>
+          {/* Academics Team */}
+          <TeamLayout
+            teamName={"Academics Team"}
+            teamInfo={ACADEMICS_TEAM}
+            gqlData={data}
+            path={"academic/"}
+          />
           <br />
           <br />
-          <h2>Academics Team</h2>
-          <TeamGrid>
-            {ACADEMICS_TEAM.map(({ name, image, role, linkedin }) => {
-              const academicsPath = "academic/" + image;
-              const img = data.allFile.edges.find(({ node }) => node.relativePath === academicsPath).node;
-
-              return (
-                <div>
-                  <ExternalLink href={linkedin}>
-                    <Img fluid={img.childImageSharp.fluid} alt={name} />
-                  </ExternalLink>
-                  <Title>{name}</Title>
-                  <Subtitle>{role}</Subtitle>
-                </div>
-              );
-            })}
-          </TeamGrid>
+          {/* Marketing Team */}
+          <TeamLayout
+            teamName={"Marketing Team"}
+            teamInfo={MARKETING_TEAM}
+            gqlData={data}
+            path={"marketing/"}
+          />
           <br />
           <br />
-          <h2>Marketing Team</h2>
-          <TeamGrid>
-            {MARKETING_TEAM.map(({ name, image, role, linkedin }) => {
-              const marketingPath = "marketing/" + image;
-              const img = data.allFile.edges.find(({ node }) => node.relativePath === marketingPath).node;
-
-              return (
-                <div>
-                  <ExternalLink href={linkedin}>
-                    <Img fluid={img.childImageSharp.fluid} alt={name} />
-                  </ExternalLink>
-                  <Title>{name}</Title>
-                  <Subtitle>{role}</Subtitle>
-                </div>
-              );
-            })}
-          </TeamGrid>
+          {/* Events Team */}
+          <TeamLayout
+            teamName={"Events Team"}
+            teamInfo={EVENTS_TEAM}
+            gqlData={data}
+            path={"events/"}
+          />
           <br />
           <br />
-          <h2>Events Team</h2>
-          <TeamGrid>
-            {EVENTS_TEAM.map(({ name, image, role, linkedin }) => {
-              const eventsPath = "events/" + image;
-              const img = data.allFile.edges.find(({ node }) => node.relativePath === eventsPath).node;
-
-              return (
-                <div>
-                  <ExternalLink href={linkedin}>
-                    <Img fluid={img.childImageSharp.fluid} alt={name} />
-                  </ExternalLink>
-                  <Title>{name}</Title>
-                  <Subtitle>{role}</Subtitle>
-                </div>
-              );
-            })}
-          </TeamGrid>
+          {/* First Years Team */}
+          <TeamLayout
+            teamName={"First Years Team"}
+            teamInfo={FIRSTYEAR_TEAM}
+            gqlData={data}
+            path={"firstyear/"}
+          />
           <br />
           <br />
-          <h2>First Years Team</h2>
-          <TeamGrid>
-            {FIRSTYEAR_TEAM.map(({ name, image, role, linkedin }) => {
-              const firstyearPath = "firstyear/" + image;
-              const img = data.allFile.edges.find(({ node }) => node.relativePath === firstyearPath).node;
-
-              return (
-                <div>
-                  <ExternalLink href={linkedin}>
-                    <Img fluid={img.childImageSharp.fluid} alt={name} />
-                  </ExternalLink>
-                  <Title>{name}</Title>
-                  <Subtitle>{role}</Subtitle>
-                </div>
-              );
-            })}
-          </TeamGrid>
+          {/* Sponsored By */}
+          <TeamLayout
+            teamName={"Sponsored By"}
+            teamInfo={SPONSORED_BY}
+            gqlData={data}
+            path={"sponsor/"}
+          />
           <br />
           <br />
-          <h2>Sponsored By</h2>
-          <TeamGrid>
-            {SPONSORED_BY.map(({ name, image, role, linkedin }) => {
-              const sponsorPath = "sponsor/" + image;
-              const img = data.allFile.edges.find(({ node }) => node.relativePath === sponsorPath).node;
-
-              return (
-                <div>
-                  <ExternalLink href={linkedin}>
-                    <Img fluid={img.childImageSharp.fluid} alt={name} />
-                  </ExternalLink>
-                  <Title>{name}</Title>
-                </div>
-              );
-            })}
-          </TeamGrid>
-          <br />
-          <br />
-          <h1>Alumni</h1>
-          <TeamGrid>
-            {ALUMNI_TEAM.map(({ name, image, role, linkedin }) => {
-              const alumniPath = "alumni/" + image
-              const img = data.allFile.edges.find(({ node }) => node.relativePath === alumniPath).node;
-
-              return (
-                <div>
-                  <ExternalLink href={linkedin}>
-                    <Img fluid={img.childImageSharp.fluid} alt={name} />
-                  </ExternalLink>
-                  <Title>{name}</Title>
-                  <Subtitle>{role}</Subtitle>
-                </div>
-              );
-            })}
-          </TeamGrid>
+          {/* Alumni */}
+          <TeamLayout
+            teamName={"Alumni"}
+            teamInfo={ALUMNI_TEAM}
+            gqlData={data}
+            path={"alumni/"}
+          />
         </Container>
       </Section>
     )}

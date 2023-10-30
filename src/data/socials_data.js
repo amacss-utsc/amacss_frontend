@@ -6,8 +6,8 @@ import DiscordIcon from "@static/icons/discord.png";
 export const socials = {
   email: "amacss.uoft@gmail.com",
   instagram: "amacss_utsc",
-  discord: "https://discord.gg/9nB958kxTJ"
-}
+  discord: "https://discord.gg/9nB958kxTJ",
+};
 
 export const SOCIAL_NAV = [
   {
@@ -16,7 +16,7 @@ export const SOCIAL_NAV = [
   },
   {
     icon: InstagramIcon,
-    link: "https://instagram.com/{socials.instagram}/",
+    link: `https://instagram.com/${socials.instagram}/`,
   },
   {
     icon: FacebookIcon,

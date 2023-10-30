@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Img from 'gatsby-image';
+import { GatsbyImage } from "gatsby-plugin-image";
 
 import {graphql, StaticQuery} from 'gatsby';
 
@@ -8,20 +8,13 @@ import {Container, Section} from '../../data/global';
 
 const SignUp = () => (
     <StaticQuery
-        query={graphql`
-      query {
-        art_story: file(
-          sourceInstanceName: { eq: "art" }
-          name: { eq: "tell_story" }
-        ) {
-          childImageSharp {
-            fluid(maxWidth: 1200) {
-              ...GatsbyImageSharpFluid_withWebp_tracedSVG
-            }
-          }
-        }
-      }
-    `}
+        query={graphql`{
+  art_story: file(sourceInstanceName: {eq: "art"}, name: {eq: "tell_story"}) {
+    childImageSharp {
+      gatsbyImageData(placeholder: TRACED_SVG, layout: FULL_WIDTH)
+    }
+  }
+}`}
         render={data => (
             <Section id="sign%20up" accent>
                 <StyledContainer>
@@ -45,7 +38,7 @@ const SignUp = () => (
                         </form>
                     </div>
                     <Art>
-                        <Img fluid={data.art_story.childImageSharp.fluid}/>
+                        <GatsbyImage image={data.art_story.childImageSharp.gatsbyImageData} />
                     </Art>
                 </StyledContainer>
             </Section>
