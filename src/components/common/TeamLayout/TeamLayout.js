@@ -8,7 +8,7 @@ const TeamLayout = ({ teamName, teamInfo, gqlData, path }) => (
     <h2>{teamName}</h2>
     <TeamGrid>
       {teamInfo.map(({ name, image, role, linkedin }) => {
-        let imgPath = image == "missing.png" ? image : path + image;
+        let imgPath = image === "missing.png" ? image : path + image;
 
         const img = gqlData.allFile.edges.find(
           ({ node }) => node.relativePath === imgPath

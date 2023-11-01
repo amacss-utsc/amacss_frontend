@@ -119,8 +119,76 @@ const EVENTS_TEAM = [
 
 const FIRSTYEAR_TEAM = [
   {
-    name: "Coming Soon",
+    name: "Marilyn Zhang",
+    image: "Marilyn_Zhang.png",
+    role: "First-Years Coordinator",
+    linkedin: "https://www.linkedin.com/in/marilyn-zhang-436965246/",
+  },
+  {
+    name: "Mathan Thatparananthan",
+    image: "Mathan_Thatparananthan.png",
+    role: "First-Years Coordinator",
+    linkedin: "www.linkedin.com/in/mathan-thatparanananthan-4a645622a",
+  },
+  {
+    name: "Asad Mirza",
+    image: "Asad_Mirza.png",
+    role: "First Year Associate",
+    linkedin: "https://www.linkedin.com/in/asad-mirza-40bb36291/",
+  },
+  {
+    name: "Trishana Rammohan",
+    image: "Trishana_Rammohan.png",
+    role: "First Year Associate",
+    linkedin: "https://www.linkedin.com/in/trishana-rammohan-480892268/",
+  },
+  {
+    name: "Betty Jiang",
+    image: "Betty_Jiang.png",
+    role: "First Year Associate",
+    // linkedin:
+  },
+  {
+    name: "Christian Rogers",
+    image: "Christian_Rogers.png",
+    role: "First Year Associate",
+    // linkedin: "",
+  },
+  {
+    name: "Chiyoon Min",
+    image: "Chiyoon_Min.png",
+    role: "First Year Associate",
+    linkedin: "https://www.linkedin.com/in/cymin/",
+  },
+  {
+    name: "Albert Ho",
+    image: "Albert_Ho.jpg",
+    role: "First Year Associate",
+    // linkedin: "",
+  },
+  {
+    name: "Isaac Picov",
     image: "missing.png",
+    role: "First Year Associate",
+    // linkedin: "",
+  },
+  {
+    name: "Zohair Syed",
+    image: "Zohair_Syed.png",
+    role: "First Year Associate",
+    // linkedin: "",
+  },
+  {
+    name: "Borys Langowicz",
+    image: "Borys_Langowicz.png",
+    role: "First Year Associate",
+    // linkedin: "",
+  },
+  {
+    name: "Josh Crisologo",
+    image: "missing.png",
+    role: "First Year Associate",
+    // linkedin: "",
   },
 ];
 
