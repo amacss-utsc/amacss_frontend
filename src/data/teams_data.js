@@ -162,13 +162,13 @@ const FIRSTYEAR_TEAM = [
   },
   {
     name: "Albert Ho",
-    image: "Albert_Ho.jpg",
+    image: "Albert_Ho.png",
     role: "First Year Associate",
     // linkedin: "",
   },
   {
     name: "Isaac Picov",
-    image: "missing.png",
+    image: "Isaac_Picov.png",
     role: "First Year Associate",
     // linkedin: "",
   },
