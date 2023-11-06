@@ -7,7 +7,7 @@ import ExternalLink from '@common/ExternalLink';
 
 const FAQS = [
     {
-        title: 'What tech does Gatsby use?',
+        title: 'What is AMACSS?',
         content: () => (
             <>
                 Enjoy the power of the latest web technologies – React.js , Webpack ,
@@ -17,7 +17,7 @@ const FAQS = [
         ),
     },
     {
-        title: 'Where can you source data from?',
+        title: 'How can I get involved with AMACSS?',
         content: () => (
             <>
                 Gatsby’s rich data plugin ecosystem lets you build sites with the data
@@ -28,7 +28,7 @@ const FAQS = [
         ),
     },
     {
-        title: 'How do I scale Gatsby sites?',
+        title: 'How do I find out about AMACSS events?',
         content: () => (
             <>
                 Gatsby.js is Internet Scale. Forget complicated deploys with databases
@@ -39,7 +39,7 @@ const FAQS = [
         ),
     },
     {
-        title: 'How do I future-proof my website?',
+        title: 'Which courses do AMACSS hold review seminar?',
         content: () => (
             <>
                 Do not build a website with last decade’s tech. The future of the web is
@@ -51,7 +51,7 @@ const FAQS = [
         ),
     },
     {
-        title: 'What exactly does Gatsby build?',
+        title: 'Where can I find previously recorded review seminars?',
         content: () => (
             <>
                 Gatsby.js is a static PWA (Progressive Web App) generator. You get code
