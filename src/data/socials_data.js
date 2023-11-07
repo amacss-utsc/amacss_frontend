@@ -7,6 +7,7 @@ export const socials = {
   email: "amacss.uoft@gmail.com",
   instagram: "amacss_utsc",
   discord: "https://discord.gg/9nB958kxTJ",
+  youtube: "https://www.youtube.com/@amacssutsc/",
 };
 
 export const SOCIAL_NAV = [
