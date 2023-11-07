@@ -1,82 +1,85 @@
-import React from 'react';
+import React from "react";
 
-import {Container, Section} from '../../data/global';
+import { Container, Section } from "../../data/global";
 
-import FaqItem from '@common/FaqItem';
-import ExternalLink from '@common/ExternalLink';
+import FaqItem from "@common/FaqItem";
+import ExternalLink from "@common/ExternalLink";
+import { socials } from "../../data/socials_data";
 
 const FAQS = [
-    {
-        title: 'What tech does Gatsby use?',
-        content: () => (
-            <>
-                Enjoy the power of the latest web technologies – React.js , Webpack ,
-                modern JavaScript and CSS and more — all set up and waiting for you to
-                start building
-            </>
-        ),
-    },
-    {
-        title: 'Where can you source data from?',
-        content: () => (
-            <>
-                Gatsby’s rich data plugin ecosystem lets you build sites with the data
-                you want — from one or many sources: Pull data from headless CMSs, SaaS
-                services, APIs, databases, your file system, and more directly into your
-                pages using GraphQL.
-            </>
-        ),
-    },
-    {
-        title: 'How do I scale Gatsby sites?',
-        content: () => (
-            <>
-                Gatsby.js is Internet Scale. Forget complicated deploys with databases
-                and servers and their expensive, time-consuming setup costs,
-                maintenance, and scaling fears. Gatsby.js builds your site as “static”
-                files which can be deployed easily on dozens of services.
-            </>
-        ),
-    },
-    {
-        title: 'How do I future-proof my website?',
-        content: () => (
-            <>
-                Do not build a website with last decade’s tech. The future of the web is
-                mobile, JavaScript and APIs—the{` `}
-                <ExternalLink href="https://jamstack.org/">JAMstack</ExternalLink>.
-                Every website is a web app and every web app is a website. Gatsby.js is
-                the universal JavaScript framework you’ve been waiting for.
-            </>
-        ),
-    },
-    {
-        title: 'What exactly does Gatsby build?',
-        content: () => (
-            <>
-                Gatsby.js is a static PWA (Progressive Web App) generator. You get code
-                and data splitting out-of-the-box. Gatsby loads only the critical HTML,
-                CSS, data, and JavaScript so your site loads as fast as possible. Once
-                loaded, Gatsby prefetches resources for other pages so clicking around
-                the site feels incredibly fast.
-            </>
-        ),
-    },
+  {
+    title: "What is AMACSS?",
+    content: () => (
+      <>
+        AMACSS stands for the Association of Mathematical and Computer Science
+        Students. At AMACSS, we strive to enhance the experience of every CMS
+        student through our academic and non-academic events. By attending our
+        seminars and events, you are contributing to the AMACSS community! Check
+        our <a href="/about">about</a> page to learn more about AMACSS, and join
+        our social media community to stay informed on opportunities to
+        participate in our events.
+      </>
+    ),
+  },
+  {
+    title: "How can I get involved with AMACSS?",
+    content: () => (
+      <>
+        Hiring for every AMACSS team (executive, academics, marketing, events,
+        technology, finance, and first-year) is conducted at the beginning of
+        each academic year. Join our <a href={`${socials.discord}`}>Discord</a>{" "}
+        community for access to application forms, and important deadlines.
+      </>
+    ),
+  },
+  {
+    title: "How do I find out about AMACSS events?",
+    content: () => (
+      <>
+        Join our social media community for timely updates on our events! We
+        have Facebook, Instagram, and Discord communities, links to all of which
+        can be found on the navigation menu above.
+      </>
+    ),
+  },
+  {
+    title: "Will AMACSS hold a review seminar for one of my courses?",
+    content: () => (
+      <>
+        Check our <a href="/resources">resources</a> page for a subset of
+        previously held review seminars! Currently our Academics Team is
+        expanding our coverage of CMS courses. For inquiries regarding a
+        specific course, feel free to inquire on the{" "}
+        <a href={`${socials.discord}`}>AMACSS Discord Server!</a>
+      </>
+    ),
+  },
+  {
+    title: "Where can I find previously recorded review seminars?",
+    content: () => (
+      <>
+        To find previously recorded review seminars, navigate to our{" "}
+        <a href="/resources">resources</a> page! Alternatively, visit the{" "}
+        <a href={`${socials.youtube}`}>AMACSS Youtube channel</a> and navigate
+        our playlist.
+      </>
+    ),
+  },
 ];
 
 const Faq = () => (
-    <Section id="faq">
-        <Container>
-            <h1 style={{marginBottom: 40}}>Frequently Asked Questions</h1>
-            <div>
-                {FAQS.map(({title, content}) => (
-                    <FaqItem title={title} key={title}>
-                        {content()}
-                    </FaqItem>
-                ))}
-            </div>
-        </Container>
-    </Section>
+  <Section id="faq">
+    <Container>
+      <h1 style={{ marginBottom: 40 }}>Frequently Asked Questions</h1>
+      <div>
+        {FAQS.map(({ title, content }) => (
+          <FaqItem title={title} key={title}>
+            {content()}
+          </FaqItem>
+        ))}
+      </div>
+    </Container>
+  </Section>
 );
 
 export default Faq;
