@@ -43,13 +43,14 @@ const FAQS = [
     ),
   },
   {
-    title: "Which courses do AMACSS hold review seminar?",
+    title: "Will AMACSS hold a review seminar for one of my courses?",
     content: () => (
       <>
         Check our <a href="/resources">resources</a> page for a subset of
         previously held review seminars! Currently our Academics Team is
         expanding our coverage of CMS courses. For inquiries regarding a
-        specific course, feel free to inquire on the AMACSS Discord Server!
+        specific course, feel free to inquire on the{" "}
+        <a href={`${socials.discord}`}>AMACSS Discord Server!</a>
       </>
     ),
   },
