@@ -186,7 +186,7 @@ const FIRSTYEAR_TEAM = [
   },
   {
     name: "Josh Crisologo",
-    image: "missing.png",
+    image: "Josh_Crisologo.png",
     role: "First Year Associate",
     // linkedin: "",
   },
