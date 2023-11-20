@@ -9,49 +9,61 @@ import ExternalLink from "@common/ExternalLink";
 
 const Resources = () => {
   const youtubeLink = "https://www.youtube.com/watch?v=";
-  const data = useStaticQuery(
+  const YTdata = useStaticQuery(
     graphql`
       query {
         allYoutubeVideo {
           edges {
             node {
-              id
               title
               description
               videoId
               publishedAt
-              privacyStatus
-              channelTitle
             }
           }
         }
       }
     `
   );
-  // console.log("Data: ", data.allYoutubeVideo.edges[0]);
-  // data.allYoutubeVideo.edges.map((video) => {
-  //     console.log(video.node);
-  // })
-  // data.allYoutubeVideo.edges[0].node.title
-  // data.allYoutubeVideo.edges[0].node.title.lastIndexOf(" ", data.allYoutubeVideo.edges[0].node.title.lastIndexOf(" "))
+
+  const YTdataFormatted = YTdata.allYoutubeVideo.edges.map((edge) => ({
+    title: edge.node.title,
+    description: edge.node.description.split("\n")[0],
+    link: `https://www.youtube.com/watch?v=${edge.node.videoId}`,
+    date_added: edge.node.publishedAt,
+    button_message: "View on YouTube",
+  }));
+
+  const extraData = [
+    {
+      title: "Math and Stats Support (CTL)",
+      description:
+        "Check out services offered by UTSC's Centre for Teaching and Learning!",
+      link: "https://www.utsc.utoronto.ca/ctl/math-and-stats-support",
+      date_added: "2023-11-19", // YYYY-MM-DD
+      button_message: "Visit CTL Website",
+    },
+  ];
+
+  const allData = [...YTdataFormatted, ...extraData];
+  allData.sort((a, b) => new Date(b.date_added) - new Date(a.date_added));
+
+  console.log(YTdata.allYoutubeVideo.edges);
   return (
     <Section id="resources">
       <Container>
         <h1 style={{ marginBottom: 40 }}>Resources</h1>
         <CenterGrid>
           <Grid>
-            {data.allYoutubeVideo.edges.map((video) => {
-              const title = video.node.title;
-              console.log(video.node.publishedAt);
-              //console.log(title, video.node.title.lastIndexOf(" ", 33));
-              let desc = video.node.description.split("\n")[0];
-              const link = youtubeLink + video.node.videoId;
+            {allData.map((data) => {
+              const { title, description, link, button_message } = data;
               return (
                 <ResourceItem
                   title={title}
                   key={title}
-                  desc={desc}
+                  desc={description}
                   link={link}
+                  button_message={button_message}
                 />
               );
             })}
