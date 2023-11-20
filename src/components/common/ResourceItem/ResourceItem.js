@@ -12,7 +12,7 @@ import Typography from "@mui/material/Typography";
 
 //import {Wrapper} from './style';
 
-const ResourceItem = ({ title, key, desc, link }) => (
+const ResourceItem = ({ title, key, desc, link, button_message }) => (
   //<Wrapper>
   <Box
     key={key}
@@ -70,7 +70,7 @@ const ResourceItem = ({ title, key, desc, link }) => (
             backgroundColor: "white",
           }}
         >
-          <b>View on Youtube</b>
+          <b>{button_message.toUpperCase()}</b>
         </Button>
       </CardActions>
     </Card>
