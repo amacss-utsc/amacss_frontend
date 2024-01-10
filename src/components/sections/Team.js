@@ -11,6 +11,7 @@ import {
   FIRSTYEAR_TEAM,
   SPONSORED_BY,
   ALUMNI_TEAM,
+  EXTERNAL_AFFAIRS_TEAM,
 } from "../../data/teams_data";
 import TeamLayout from "../common/TeamLayout/TeamLayout";
 import { Container, Section } from "../../data/global";
@@ -54,41 +55,50 @@ const Team = () => (
           <br />
           <br />
           {/* Academics Team */}
-          {/* <TeamLayout
+          <TeamLayout
             teamName={"Academics Team"}
             teamInfo={ACADEMICS_TEAM}
             gqlData={data}
             path={"academic/"}
           />
           <br />
-          <br /> */}
+          <br />
           {/* Developer Team */}
-          {/* <TeamLayout
+          <TeamLayout
             teamName={"Developer Team"}
             teamInfo={DEVELOPER_TEAM}
             gqlData={data}
             path={"developer/"}
           />
           <br />
-          <br /> */}
+          <br />
           {/* Marketing Team */}
-          {/* <TeamLayout
+          <TeamLayout
             teamName={"Marketing Team"}
             teamInfo={MARKETING_TEAM}
             gqlData={data}
             path={"marketing/"}
           />
           <br />
-          <br /> */}
+          <br />
           {/* Events Team */}
-          {/* <TeamLayout
+          <TeamLayout
             teamName={"Events Team"}
             teamInfo={EVENTS_TEAM}
             gqlData={data}
             path={"events/"}
           />
           <br />
-          <br /> */}
+          <br />
+          {/* EA Team */}
+          <TeamLayout
+            teamName={"External Affairs Team"}
+            teamInfo={EXTERNAL_AFFAIRS_TEAM}
+            gqlData={data}
+            path={"external_affairs/"}
+          />
+          <br />
+          <br />
           {/* First Years Team */}
           <TeamLayout
             teamName={"First Years Team"}
