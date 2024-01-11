@@ -24,29 +24,4 @@ const OfficeHoursPage = ({ data }) => (
     </Layout>
 );
 
-export const query = graphql`
-    query {
-        allInstaNode (
-            sort: {fields: timestamp, order: DESC}
-            filter: {mediaType: {eq: "IMAGE"} }) {
-            edges {
-                node {
-                    id
-                    permalink
-                    timestamp
-                    caption
-                    mediaType
-                    localFile {
-                        childImageSharp {
-                            fluid(maxWidth: 600) {
-                                ...GatsbyImageSharpFluid
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-`;
-
 export default OfficeHoursPage;
