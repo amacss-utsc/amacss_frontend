@@ -75,7 +75,7 @@ const ACADEMICS_TEAM = [
   },
   {
     name: "Shreyas Rao",
-    image: "Shreyas_Rao.jpg",
+    image: "Shreyas_Rao.png",
     role: "CSCA48 Course Representative",
     linkedin: "https://ca.linkedin.com/in/shreyasrao14/",
   },
@@ -93,7 +93,7 @@ const ACADEMICS_TEAM = [
   },
   {
     name: "Eddie Yang",
-    image: "Eddie_Yang.jpg",
+    image: "Eddie_Yang.png",
     role: "CSCA67 Course Representative",
     linkedin: "",
   },
@@ -141,7 +141,7 @@ const ACADEMICS_TEAM = [
   },
   {
     name: "Evelyn Pan",
-    image: "Evelyn_Pan.jpg",
+    image: "Evelyn_Pan.png",
     role: "CSCC37 Course Representative",
     linkedin: "",
   },
@@ -159,10 +159,10 @@ const DEVELOPER_TEAM = [
     image: "Daniel_Alyoshin.png",
     role: "Tech Associate",
     linkedin: "https://ca.linkedin.com/in/danielalyoshin/",
-  }, 
+  },
   {
     name: "Shatat Al Hamid",
-    image: "Shatat_Hamid.jpg",
+    image: "Shatat_Hamid.png",
     role: "Tech Associate",
     linkedin: "https://ca.linkedin.com/in/shatat-al-hamid/",
   },
@@ -171,13 +171,13 @@ const DEVELOPER_TEAM = [
 const MARKETING_TEAM = [
   {
     name: "Amanda Zhu",
-    image: "Amanda_Zhu.jpg",
+    image: "Amanda_Zhu.png",
     role: "Graphic Designer",
     linkedin: "",
   },
   {
     name: "Sigmund Wang",
-    image: "Sigmund_Wang.jpg",
+    image: "Sigmund_Wang.png",
     role: "Graphic Designer",
     linkedin: "",
   },
@@ -204,13 +204,13 @@ const EXTERNAL_AFFAIRS_TEAM = [
   },
   {
     name: "Amora Krishna",
-    image: "Amora_Krishna.jpeg",
+    image: "Amora_Krishna.png",
     role: "External Affair Office",
     linkedin: "",
   },
   {
     name: "Ada Cakmak",
-    image: "Ada_Cakmak.jpg",
+    image: "Ada_Cakmak.png",
     role: "External Affair Office",
     linkedin: "https://www.linkedin.com/in/nevin-ada-cakmak/",
   },
@@ -243,7 +243,7 @@ const EVENTS_TEAM = [
   },
   {
     name: "Ashwin Mayurathan",
-    image: "Ashwin_Mayurathan.jpg",
+    image: "Ashwin_Mayurathan.png",
     role: "Gala Director",
     linkedin: "",
   },
@@ -293,8 +293,8 @@ const FIRSTYEAR_TEAM = [
     linkedin: "",
   },
   {
-    name: "Chiyoon Min",
-    image: "Chiyoon_Min.png",
+    name: "Chase Min",
+    image: "Chase_Min.png",
     role: "First Year Associate",
     linkedin: "https://www.linkedin.com/in/cymin/",
   },

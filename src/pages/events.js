@@ -1,27 +1,25 @@
-import React from 'react';
-import { graphql } from 'gatsby';
+import React from "react";
+import { graphql } from "gatsby";
 
-import Loadable from 'react-loadable';
-import Post from '../components/sections/IGposts';
+import Loadable from "react-loadable";
 
-import Layout from '@common/Layout';
-import Navbar from '@common/Navbar';
-import Footer from '@sections/Footer';
+import Layout from "@common/Layout";
+import Navbar from "@common/Navbar";
+import Footer from "@sections/Footer";
 
 const Calendar = Loadable({
-    loader: () => import('../components/sections/Schedule'),
-    loading() {
-        return <div>Loading Calendar!</div>;
-    },
+  loader: () => import("../components/sections/Schedule"),
+  loading() {
+    return <div>Loading Calendar!</div>;
+  },
 });
 
 const OfficeHoursPage = ({ data }) => (
-    <Layout>
-        <Navbar />
-        <Calendar />
-        <Post data={data} />
-        <Footer />
-    </Layout>
+  <Layout>
+    <Navbar />
+    <Calendar />
+    <Footer />
+  </Layout>
 );
 
 export default OfficeHoursPage;
