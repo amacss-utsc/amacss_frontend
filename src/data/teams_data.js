@@ -56,64 +56,202 @@ const EXECUTIVE_TEAM = [
 ];
 const ACADEMICS_TEAM = [
   {
-    name: "Coming Soon",
-    image: "missing.png",
+    name: "Shreyas Rao",
+    image: "Shreyas_Rao.png",
+    role: "Course Rep: CSCA08, CSCA48",
+    linkedin: "https://ca.linkedin.com/in/shreyasrao14/",
   },
-  // {
-  //   name: "Efkan Goktepe",
-  //   image: "Efkan_Goktepe.jpg",
-  //   role: "Academic Representative",
-  //   linkedin: "https://www.linkedin.com/in/serhatgoktepe/",
-  //   description: ""
-  // },
-  // {
-  //   name: "Sung Huang",
-  //   image: "Sung_Huang.jpg",
-  //   role: "Academic Representative",
-  //   linkedin: "https://www.linkedin.com/in/hwangso595/",
-  //   description: ""
-  // },
-  // {
-  //   name: "Leila Cheraghi Seifabad",
-  //   image: "Leila_Seifabad.jpg",
-  //   role: "Academic Representative",
-  //   linkedin: "https://www.linkedin.com/in/leila-chr/",
-  //   description: ""
-  // },
-  // {
-  //   name: "Mohannad Shehata",
-  //   image: "Mohannad_Shehata.png",
-  //   role: "Academic Representative",
-  //   linkedin: "https://www.linkedin.com/in/mohannad-shehata/",
-  //   description: ""
-  // },
-  // {
-  //   name: "Alex Teeter",
-  //   image: "Alexander_Teeter.png",
-  //   role: "Academic Representative",
-  //   linkedin: "https://www.linkedin.com/in/alexander-teeter-a7b3ba223/",
-  //   description: ""
-  // },
-  // {
-  //   name: "Theresa Yu",
-  //   image: "Theresa_Yu.jpg",
-  //   role: "Academic Representative",
-  //   linkedin: "https://www.linkedin.com/in/theresa-yu-70278119b/",
-  //   description: ""
-  // },
+  {
+    name: "Adibvafa Fallahpour",
+    image: "Adibvafa_Fallahpour.png",
+    role: "Course Rep: CSCA67",
+    linkedin: "",
+  },
+  {
+    name: "Eddie Yang",
+    image: "Eddie_Yang.png",
+    role: "Course Rep: CSCA67",
+    linkedin: "",
+  },
+  {
+    name: "Evelyn Pan",
+    image: "Evelyn_Pan.png",
+    role: "Course Rep: CSCC37",
+    linkedin: "",
+  },
+  {
+    name: "Archisha Pal",
+    image: "Archisha_Pal.jpeg",
+    role: "Course Rep: MATA31, MATB44",
+    linkedin: "",
+  },
+  {
+    name: "Miles Bernstein",
+    image: "Miles_Bernstein.jpg",
+    role: "Course Rep: CSCB36",
+    linkedin: "",
+  },
+  {
+    name: "Lily Zhou",
+    image: "missing.png",
+    role: "Course Rep: CSCA08",
+    linkedin: "",
+  },
+  {
+    name: "Jason Su",
+    image: "missing.png",
+    role: "Course Rep: CSCA08, MATB41",
+    linkedin: "",
+  },
+  {
+    name: "Prithiv Ajay",
+    image: "missing.png",
+    role: "Course Rep: MATA31",
+    linkedin: "",
+  },
+  {
+    name: "Chau Nguyen",
+    image: "missing.png",
+    role: "Course Rep: MATA31, CSCC37",
+    linkedin: "",
+  },
+  {
+    name: "Brandan Burgess",
+    image: "missing.png",
+    role: "Course Rep: CSCB07",
+    linkedin: "https://www.linkedin.com/in/brandan-burgess-a37b5b264/",
+  },
+  {
+    name: "Carlos Paez Gonzalez",
+    image: "missing.png",
+    role: "Course Rep: MATB44",
+    linkedin: "",
+  },
+  {
+    name: "Bob Cheng",
+    image: "missing.png",
+    role: "Course Rep: MATC09",
+    linkedin: "",
+  },
+  {
+    name: "Mark Sun",
+    image: "missing.png",
+    role: "Course Rep: CSCA67, MATC09",
+    linkedin: "",
+  },
+  {
+    name: "Hriday Algh",
+    image: "missing.png",
+    role: "Course Rep: CSCB36, MATB41",
+    linkedin: "",
+  },
+];
+
+const DEVELOPER_TEAM = [
+  {
+    name: "Shreyas Rao",
+    image: "Shreyas_Rao.png",
+    role: "Tech Associate",
+    linkedin: "https://ca.linkedin.com/in/shreyasrao14/",
+  },
+  {
+    name: "Daniel Alyoshin",
+    image: "Daniel_Alyoshin.png",
+    role: "Tech Associate",
+    linkedin: "https://ca.linkedin.com/in/danielalyoshin/",
+  },
+  {
+    name: "Shatat Al Hamid",
+    image: "Shatat_Hamid.png",
+    role: "Tech Associate",
+    linkedin: "https://ca.linkedin.com/in/shatat-al-hamid/",
+  },
 ];
 
 const MARKETING_TEAM = [
   {
-    name: "Coming Soon",
+    name: "Amanda Zhu",
+    image: "Amanda_Zhu.png",
+    role: "Graphic Designer",
+    linkedin: "",
+  },
+  {
+    name: "Sigmund Wang",
+    image: "Sigmund_Wang.png",
+    role: "Graphic Designer",
+    linkedin: "",
+  },
+  {
+    name: "Dana Wan",
+    image: "Dana_Wan.jpg",
+    role: "Social Media Coordinator",
+    linkedin: "https://www.linkedin.com/in/dana-wan/",
+  },
+  {
+    name: "Archi Shah",
     image: "missing.png",
+    role: "Social Media Coordinator",
+    linkedin: "",
+  },
+];
+
+const EXTERNAL_AFFAIRS_TEAM = [
+  {
+    name: "Ada Cakmak",
+    image: "Ada_Cakmak.png",
+    role: "External Affairs Officer",
+    linkedin: "https://www.linkedin.com/in/nevin-ada-cakmak/",
+  },
+  {
+    name: "Amora Krishna",
+    image: "Amora_Krishna.png",
+    role: "External Affairs Officer",
+    linkedin: "",
+  },
+  {
+    name: "Zupaash Naveed",
+    image: "missing.png",
+    role: "External Affairs Officer",
+    linkedin: "https://www.linkedin.com/in/zupaash-naveed",
   },
 ];
 
 const EVENTS_TEAM = [
   {
-    name: "Coming Soon",
+    name: "Ashwin Mayurathan",
+    image: "Ashwin_Mayurathan.png",
+    role: "Gala Director",
+    linkedin: "",
+  },
+  {
+    name: "Aaliyah Jaleel",
+    image: "Aaliyah_Jaleel.jpg",
+    role: "Gala Associate",
+    linkedin: "",
+  },
+  {
+    name: "Tasfiah Siara",
+    image: "Tasfiah_Siara.png",
+    role: "Events Associate",
+    linkedin: "",
+  },
+  {
+    name: "Sadra Setarehdan",
+    image: "Sadra_Setarehdan.jpg",
+    role: "Events Associate",
+    linkedin: "linkedin.com/in/sadra-setarehdan/",
+  },
+  {
+    name: "Jeanice Setyono",
+    image: "Jeanice_Setyono.jpg",
+    role: "Events Associate",
+    linkedin: "https://www.linkedin.com/in/jeaniceeliana/",
+  },
+  {
+    name: "Vraj Shah",
     image: "missing.png",
+    role: "Events Associate",
+    linkedin: "https://www.linkedin.com/in/vraj-shah-2105vs/",
   },
 ];
 
@@ -146,17 +284,17 @@ const FIRSTYEAR_TEAM = [
     name: "Betty Jiang",
     image: "Betty_Jiang.png",
     role: "First Year Associate",
-    // linkedin:
+    linkedin: "",
   },
   {
     name: "Christian Rogers",
     image: "Christian_Rogers.png",
     role: "First Year Associate",
-    // linkedin: "",
+    linkedin: "",
   },
   {
-    name: "Chiyoon Min",
-    image: "Chiyoon_Min.png",
+    name: "Chase Min",
+    image: "Chase_Min.png",
     role: "First Year Associate",
     linkedin: "https://www.linkedin.com/in/cymin/",
   },
@@ -164,31 +302,40 @@ const FIRSTYEAR_TEAM = [
     name: "Albert Ho",
     image: "Albert_Ho.png",
     role: "First Year Associate",
-    // linkedin: "",
+    linkedin: "",
   },
   {
     name: "Isaac Picov",
     image: "Isaac_Picov.png",
     role: "First Year Associate",
-    // linkedin: "",
+    linkedin: "",
   },
   {
     name: "Zohair Syed",
     image: "Zohair_Syed.png",
     role: "First Year Associate",
-    // linkedin: "",
+    linkedin: "",
   },
   {
     name: "Borys Langowicz",
     image: "Borys_Langowicz.png",
     role: "First Year Associate",
-    // linkedin: "",
+    linkedin: "",
   },
   {
     name: "Josh Crisologo",
     image: "Josh_Crisologo.png",
     role: "First Year Associate",
-    // linkedin: "",
+    linkedin: "",
+  },
+];
+
+const FINANCE_TEAM = [
+  {
+    name: "Michael Ong",
+    image: "Michael_Ong.png",
+    role: "First Year Associate",
+    linkedin: "",
   },
 ];
 
@@ -254,9 +401,12 @@ const SPONSORED_BY = [
 export {
   EXECUTIVE_TEAM,
   ACADEMICS_TEAM,
+  DEVELOPER_TEAM,
   MARKETING_TEAM,
+  EXTERNAL_AFFAIRS_TEAM,
   EVENTS_TEAM,
   FIRSTYEAR_TEAM,
+  FINANCE_TEAM,
   SPONSORED_BY,
   ALUMNI_TEAM,
 };

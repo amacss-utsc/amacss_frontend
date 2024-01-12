@@ -5,11 +5,14 @@ import { GatsbyImage } from "gatsby-plugin-image";
 import {
   EXECUTIVE_TEAM,
   ACADEMICS_TEAM,
+  DEVELOPER_TEAM,
   MARKETING_TEAM,
   EVENTS_TEAM,
   FIRSTYEAR_TEAM,
   SPONSORED_BY,
   ALUMNI_TEAM,
+  EXTERNAL_AFFAIRS_TEAM,
+  FINANCE_TEAM,
 } from "../../data/teams_data";
 import TeamLayout from "../common/TeamLayout/TeamLayout";
 import { Container, Section } from "../../data/global";
@@ -52,21 +55,21 @@ const Team = () => (
           />
           <br />
           <br />
+          {/* First Years Team */}
+          <TeamLayout
+            teamName={"First Years Team"}
+            teamInfo={FIRSTYEAR_TEAM}
+            gqlData={data}
+            path={"firstyear/"}
+          />
+          <br />
+          <br />
           {/* Academics Team */}
           <TeamLayout
             teamName={"Academics Team"}
             teamInfo={ACADEMICS_TEAM}
             gqlData={data}
             path={"academic/"}
-          />
-          <br />
-          <br />
-          {/* Marketing Team */}
-          <TeamLayout
-            teamName={"Marketing Team"}
-            teamInfo={MARKETING_TEAM}
-            gqlData={data}
-            path={"marketing/"}
           />
           <br />
           <br />
@@ -79,12 +82,39 @@ const Team = () => (
           />
           <br />
           <br />
-          {/* First Years Team */}
+          {/* Marketing Team */}
           <TeamLayout
-            teamName={"First Years Team"}
-            teamInfo={FIRSTYEAR_TEAM}
+            teamName={"Marketing Team"}
+            teamInfo={MARKETING_TEAM}
             gqlData={data}
-            path={"firstyear/"}
+            path={"marketing/"}
+          />
+          <br />
+          <br />
+          {/* EA Team */}
+          <TeamLayout
+            teamName={"External Affairs Team"}
+            teamInfo={EXTERNAL_AFFAIRS_TEAM}
+            gqlData={data}
+            path={"external_affairs/"}
+          />
+          <br />
+          <br />
+          {/* Developer Team */}
+          <TeamLayout
+            teamName={"Developer Team"}
+            teamInfo={DEVELOPER_TEAM}
+            gqlData={data}
+            path={"developer/"}
+          />
+          <br />
+          <br />
+          {/* Developer Team */}
+          <TeamLayout
+            teamName={"Finance Team"}
+            teamInfo={FINANCE_TEAM}
+            gqlData={data}
+            path={"finance/"}
           />
           <br />
           <br />

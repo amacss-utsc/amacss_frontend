@@ -3,7 +3,14 @@ import { Link } from "gatsby";
 import Scrollspy from "react-scrollspy";
 
 import { Container } from "../../../data/global";
-import { Mobile, MobileMenu, Nav, NavItem, NavListWrapper, StyledContainer } from "./style";
+import {
+  Mobile,
+  MobileMenu,
+  Nav,
+  NavItem,
+  NavListWrapper,
+  StyledContainer,
+} from "./style";
 import { ReactComponent as AMACSSLogo } from "@images/logos/amacss_logo.svg";
 import { ReactComponent as MenuIcon } from "@static/icons/menu.svg";
 import ExternalLink from "@common/ExternalLink";
@@ -23,10 +30,6 @@ const NAV_ITEMS = [
     url: "/about",
   },
   {
-    name: "Events",
-    url: "/events",
-  },
-  {
     name: "Resources",
     url: "/resources",
   },
@@ -40,8 +43,8 @@ const NAV_ITEMS = [
   },
   {
     name: "FAQs",
-    url: "/faq"
-  }
+    url: "/faq",
+  },
 ];
 
 class Navbar extends Component {
@@ -50,7 +53,9 @@ class Navbar extends Component {
   };
 
   toggleMobileMenu = () => {
-    this.setState((prevState) => ({ mobileMenuOpen: !prevState.mobileMenuOpen }));
+    this.setState((prevState) => ({
+      mobileMenuOpen: !prevState.mobileMenuOpen,
+    }));
   };
 
   closeMobileMenu = () => {
