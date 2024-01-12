@@ -56,93 +56,93 @@ const EXECUTIVE_TEAM = [
 ];
 const ACADEMICS_TEAM = [
   {
-    name: "Brandan Burgess",
-    image: "missing.png",
-    role: "CSCB07 Course Representative",
-    linkedin: "https://www.linkedin.com/in/brandan-burgess-a37b5b264/",
-  },
-  {
-    name: "Carlos Paez Gonzalez",
-    image: "missing.png",
-    role: "MATB44 Course Representative",
-    linkedin: "",
+    name: "Shreyas Rao",
+    image: "Shreyas_Rao.png",
+    role: "Course Rep: CSCA08, CSCA48",
+    linkedin: "https://ca.linkedin.com/in/shreyasrao14/",
   },
   {
     name: "Adibvafa Fallahpour",
     image: "Adibvafa_Fallahpour.png",
-    role: "CSCA67 Course Representative",
-    linkedin: "",
-  },
-  {
-    name: "Shreyas Rao",
-    image: "Shreyas_Rao.png",
-    role: "CSCA48 Course Representative",
-    linkedin: "https://ca.linkedin.com/in/shreyasrao14/",
-  },
-  {
-    name: "Bob Cheng",
-    image: "missing.png",
-    role: "MATC09 Course Representative",
-    linkedin: "",
-  },
-  {
-    name: "Lily Zhou",
-    image: "missing.png",
-    role: "CSCA08 Course Representative",
+    role: "Course Rep: CSCA67",
     linkedin: "",
   },
   {
     name: "Eddie Yang",
     image: "Eddie_Yang.png",
-    role: "CSCA67 Course Representative",
-    linkedin: "",
-  },
-  {
-    name: "Prithiv Ajay",
-    image: "missing.png",
-    role: "MATA31 Course Representative",
-    linkedin: "",
-  },
-  {
-    name: "Mark Sun",
-    image: "missing.png",
-    role: "MATC09 Course Representative",
-    linkedin: "",
-  },
-  {
-    name: "Miles Bernstein",
-    image: "Miles_Bernstein.jpg",
-    role: "CSCB36 Course Representative",
-    linkedin: "",
-  },
-  {
-    name: "Jason Su",
-    image: "missing.png",
-    role: "CSCA08 Course Representative",
-    linkedin: "",
-  },
-  {
-    name: "Archisha Pal",
-    image: "Archisha_Pal.jpeg",
-    role: "MATB44 Course Representative",
-    linkedin: "",
-  },
-  {
-    name: "Hriday Algh",
-    image: "missing.png",
-    role: "MATB41 Course Representative",
-    linkedin: "",
-  },
-  {
-    name: "Chau Nguyen",
-    image: "missing.png",
-    role: "CSCC37 Course Representative",
+    role: "Course Rep: CSCA67",
     linkedin: "",
   },
   {
     name: "Evelyn Pan",
     image: "Evelyn_Pan.png",
-    role: "CSCC37 Course Representative",
+    role: "Course Rep: CSCC37",
+    linkedin: "",
+  },
+  {
+    name: "Archisha Pal",
+    image: "Archisha_Pal.jpeg",
+    role: "Course Rep: MATA31, MATB44",
+    linkedin: "",
+  },
+  {
+    name: "Miles Bernstein",
+    image: "Miles_Bernstein.jpg",
+    role: "Course Rep: CSCB36",
+    linkedin: "",
+  },
+  {
+    name: "Lily Zhou",
+    image: "missing.png",
+    role: "Course Rep: CSCA08",
+    linkedin: "",
+  },
+  {
+    name: "Jason Su",
+    image: "missing.png",
+    role: "Course Rep: CSCA08, MATB41",
+    linkedin: "",
+  },
+  {
+    name: "Prithiv Ajay",
+    image: "missing.png",
+    role: "Course Rep: MATA31",
+    linkedin: "",
+  },
+  {
+    name: "Chau Nguyen",
+    image: "missing.png",
+    role: "Course Rep: MATA31, CSCC37",
+    linkedin: "",
+  },
+  {
+    name: "Brandan Burgess",
+    image: "missing.png",
+    role: "Course Rep: CSCB07",
+    linkedin: "https://www.linkedin.com/in/brandan-burgess-a37b5b264/",
+  },
+  {
+    name: "Carlos Paez Gonzalez",
+    image: "missing.png",
+    role: "Course Rep: MATB44",
+    linkedin: "",
+  },
+  {
+    name: "Bob Cheng",
+    image: "missing.png",
+    role: "Course Rep: MATC09",
+    linkedin: "",
+  },
+  {
+    name: "Mark Sun",
+    image: "missing.png",
+    role: "Course Rep: CSCA67, MATC09",
+    linkedin: "",
+  },
+  {
+    name: "Hriday Algh",
+    image: "missing.png",
+    role: "Course Rep: CSCB36, MATB41",
     linkedin: "",
   },
 ];
@@ -150,7 +150,7 @@ const ACADEMICS_TEAM = [
 const DEVELOPER_TEAM = [
   {
     name: "Shreyas Rao",
-    image: "Shreyas_Rao.jpg",
+    image: "Shreyas_Rao.png",
     role: "Tech Associate",
     linkedin: "https://ca.linkedin.com/in/shreyasrao14/",
   },
@@ -197,31 +197,37 @@ const MARKETING_TEAM = [
 
 const EXTERNAL_AFFAIRS_TEAM = [
   {
-    name: "Zupaash Naveed",
-    image: "missing.png",
-    role: "External Affair Office",
-    linkedin: "https://www.linkedin.com/in/zupaash-naveed",
+    name: "Ada Cakmak",
+    image: "Ada_Cakmak.png",
+    role: "External Affairs Officer",
+    linkedin: "https://www.linkedin.com/in/nevin-ada-cakmak/",
   },
   {
     name: "Amora Krishna",
     image: "Amora_Krishna.png",
-    role: "External Affair Office",
+    role: "External Affairs Officer",
     linkedin: "",
   },
   {
-    name: "Ada Cakmak",
-    image: "Ada_Cakmak.png",
-    role: "External Affair Office",
-    linkedin: "https://www.linkedin.com/in/nevin-ada-cakmak/",
+    name: "Zupaash Naveed",
+    image: "missing.png",
+    role: "External Affairs Officer",
+    linkedin: "https://www.linkedin.com/in/zupaash-naveed",
   },
 ];
 
 const EVENTS_TEAM = [
   {
-    name: "Vraj Shah",
-    image: "missing.png",
-    role: "Events Associate",
-    linkedin: "https://www.linkedin.com/in/vraj-shah-2105vs/",
+    name: "Ashwin Mayurathan",
+    image: "Ashwin_Mayurathan.png",
+    role: "Gala Director",
+    linkedin: "",
+  },
+  {
+    name: "Aaliyah Jaleel",
+    image: "Aaliyah_Jaleel.jpg",
+    role: "Gala Associate",
+    linkedin: "",
   },
   {
     name: "Tasfiah Siara",
@@ -242,16 +248,10 @@ const EVENTS_TEAM = [
     linkedin: "https://www.linkedin.com/in/jeaniceeliana/",
   },
   {
-    name: "Ashwin Mayurathan",
-    image: "Ashwin_Mayurathan.png",
-    role: "Gala Director",
-    linkedin: "",
-  },
-  {
-    name: "Aaliyah Jaleel",
-    image: "Aaliyah_Jaleel.jpg",
-    role: "Gala Associate",
-    linkedin: "",
+    name: "Vraj Shah",
+    image: "missing.png",
+    role: "Events Associate",
+    linkedin: "https://www.linkedin.com/in/vraj-shah-2105vs/",
   },
 ];
 
@@ -330,6 +330,15 @@ const FIRSTYEAR_TEAM = [
   },
 ];
 
+const FINANCE_TEAM = [
+  {
+    name: "Michael Ong",
+    image: "Michael_Ong.png",
+    role: "First Year Associate",
+    linkedin: "",
+  },
+];
+
 const ALUMNI_TEAM = [
   {
     name: "Ayesha Khan",
@@ -397,6 +406,7 @@ export {
   EXTERNAL_AFFAIRS_TEAM,
   EVENTS_TEAM,
   FIRSTYEAR_TEAM,
+  FINANCE_TEAM,
   SPONSORED_BY,
   ALUMNI_TEAM,
 };
