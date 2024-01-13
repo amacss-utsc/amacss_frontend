@@ -57,7 +57,7 @@ const EXECUTIVE_TEAM = [
 const ACADEMICS_TEAM = [
   {
     name: "Shreyas Rao",
-    image: "Shreyas_Rao.png",
+    image: "Shreyas_Rao.jpg",
     role: "Course Rep: CSCA08, CSCA48",
     linkedin: "https://ca.linkedin.com/in/shreyasrao14/",
   },
@@ -150,7 +150,7 @@ const ACADEMICS_TEAM = [
 const DEVELOPER_TEAM = [
   {
     name: "Shreyas Rao",
-    image: "Shreyas_Rao.png",
+    image: "Shreyas_Rao.jpg",
     role: "Tech Associate",
     linkedin: "https://ca.linkedin.com/in/shreyasrao14/",
   },

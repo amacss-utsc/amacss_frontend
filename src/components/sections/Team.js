@@ -91,15 +91,6 @@ const Team = () => (
           />
           <br />
           <br />
-          {/* EA Team */}
-          <TeamLayout
-            teamName={"External Affairs Team"}
-            teamInfo={EXTERNAL_AFFAIRS_TEAM}
-            gqlData={data}
-            path={"external_affairs/"}
-          />
-          <br />
-          <br />
           {/* Developer Team */}
           <TeamLayout
             teamName={"Developer Team"}
@@ -109,7 +100,16 @@ const Team = () => (
           />
           <br />
           <br />
-          {/* Developer Team */}
+          {/* EA Team */}
+          <TeamLayout
+            teamName={"External Affairs Team"}
+            teamInfo={EXTERNAL_AFFAIRS_TEAM}
+            gqlData={data}
+            path={"external_affairs/"}
+          />
+          <br />
+          <br />
+          {/* Finance Team */}
           <TeamLayout
             teamName={"Finance Team"}
             teamInfo={FINANCE_TEAM}
