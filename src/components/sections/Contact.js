@@ -13,7 +13,7 @@ const Contact = () => (
         <h2>Come See Us</h2>
         <br />
         <p>
-          In Person: AMACSS office (IC-312). We have an open door policy!
+          In Person: AMACSS office (IA-3002). We have an open door policy!
           <br />
           <p>
             <ExternalLink href={LOCATION}>

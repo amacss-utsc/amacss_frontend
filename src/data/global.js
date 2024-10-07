@@ -47,7 +47,7 @@ export const Section = styled.section`
     }`};
 `;
 
-export const year = "2023-2024";
+export const year = "2024-2025";
 export const LOCATION = "https://goo.gl/maps/4dm87YbHmCWUodH17";
 export const CONSTITUTION =
   "https://github.com/amacss-utsc/amacss_constitution";
