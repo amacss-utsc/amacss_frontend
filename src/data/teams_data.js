@@ -1,45 +1,21 @@
 const EXECUTIVE_TEAM = [
   {
-    name: "Sauhaard Walia",
-    image: "Sauhaard_Walia.png",
-    role: "Co-President",
-    linkedin: "https://www.linkedin.com/in/sauhaard",
-  },
-  {
-    name: "Katrina Best",
-    image: "Katrina_Best.png",
-    role: "Co-President",
-    linkedin: "https://www.linkedin.com/in/katrina-best/",
-  },
-  {
     name: "Alankrit Verma",
     image: "Alankrit_Verma.png",
-    role: "VP of Operations",
+    role: "Co-President",
     linkedin: "https://www.linkedin.com/in/alankritverma/",
-  },
-  {
-    name: "Aarushi Doshi",
-    image: "Aarushi_Doshi.png",
-    role: "VP of Events",
-    linkedin: "https://www.linkedin.com/in/aarushi-doshi-5901141a7/",
-  },
-  {
-    name: "Malhar Pandya",
-    image: "Malhar_Pandya.png",
-    role: "VP of Academics",
-    linkedin: "https://www.linkedin.com/in/malhar-pandya/",
-  },
-  {
-    name: "Jinie Choi",
-    image: "Jinie_Choi.png",
-    role: "VP of External Affairs",
-    linkedin: "https://www.linkedin.com/in/emily-choi-a1bba9243/",
   },
   {
     name: "Yihoi Jung",
     image: "Yihoi_Jung.png",
-    role: "VP of Marketing",
+    role: "Co-President",
     linkedin: "https://www.linkedin.com/in/yihoi-jung-0b95351b5/",
+  },
+  {
+    name: "Jinie Choi",
+    image: "Jinie_Choi.png",
+    role: "VP of Marketing",
+    linkedin: "https://www.linkedin.com/in/emily-j-choi-/",
   },
   {
     name: "Murphy Lee",
@@ -48,11 +24,35 @@ const EXECUTIVE_TEAM = [
     linkedin: "https://www.linkedin.com/in/murphylee10/",
   },
   {
-    name: "Elesie Tsui",
-    image: "Elesie_Tsui.png",
-    role: "VP of Finance",
-    linkedin: "https://ca.linkedin.com/in/elesie-tsui",
+    name: "Carlos Paez Gonzalez",
+    image: "missing.png",
+    role: "VP of Academics",
+    linkedin: "https://www.linkedin.com/in/carlos-arturo-paez-gonzalez-ba9a1b27a/",
   },
+  {
+    name: "Albert_Ho",
+    image: "Albert_Ho.png",
+    role: "VP of Finance",
+    linkedin: "",
+  },
+  {
+    name: "Arnencha Pradabkaew",
+    image: "missing.png",
+    role: "VP of Outreach",
+    linkedin: "https://www.linkedin.com/in/arnencha/",
+  },
+  {
+    name: "Brandan Burgess",
+    image: "missing.png",
+    role: "VP of Campus Life",
+    linkedin: "https://www.linkedin.com/in/brandan-burgess-a37b5b264/",
+  },
+  {
+    name: "Shahzad Jalil",
+    image: "missing.png",
+    role: "VP of Special Events",
+    linkedin: "https://www.linkedin.com/in/shahzad-jalil-09546b198/",
+  }, 
 ];
 const ACADEMICS_TEAM = [
   {
@@ -147,25 +147,49 @@ const ACADEMICS_TEAM = [
   },
 ];
 
-const DEVELOPER_TEAM = [
+const TECHNOLOGY_TEAM = [
   {
-    name: "Shreyas Rao",
-    image: "Shreyas_Rao.jpg",
-    role: "Tech Associate",
-    linkedin: "https://ca.linkedin.com/in/shreyasrao14/",
+    name: "Ashwin Mallik",
+    image: "missing.png",
+    role: "Director of Technology",
+    linkedin: "https://www.linkedin.com/in/ashwin-mallik-68a57b214/",
   },
   {
     name: "Daniel Alyoshin",
     image: "Daniel_Alyoshin.png",
-    role: "Tech Associate",
+    role: "Director of Technology",
     linkedin: "https://ca.linkedin.com/in/danielalyoshin/",
   },
   {
-    name: "Shatat Al Hamid",
-    image: "Shatat_Hamid.png",
-    role: "Tech Associate",
-    linkedin: "https://ca.linkedin.com/in/shatat-al-hamid/",
+    name: "Joshua Crisologo",
+    image: "missing.png",
+    role: "Director of Technology",
+    linkedin: "https://www.linkedin.com/in/joshua-crisologo/",
   },
+  {
+    name: "Marilyn Zhang",
+    image: "Marilyn_Zhang.png",
+    role: "Director of Technology",
+    linkedin: "https://www.linkedin.com/in/marilyn-zhang-436965246/",
+  }, 
+  {
+    name: "Shreyas Rao",
+    image: "Shreyas_Rao.jpg",
+    role: "Director of Technology",
+    linkedin: "https://ca.linkedin.com/in/shreyasrao14/",
+  },
+  {
+    name: "Deepika Chandrashekar",
+    image: "missing.png",
+    role: "Technology Associate",
+    linkedin: "https://www.linkedin.com/in/deepika-chandrashekar-b23aa7266/",
+  },
+  {
+    name: "Moksha Kachhia",
+    image: "missing.png",
+    role: "Technology Associate",
+    linkedin: "https://www.linkedin.com/in/moksha-kachhia/",
+  }, 
 ];
 
 const MARKETING_TEAM = [
@@ -258,7 +282,7 @@ const EVENTS_TEAM = [
 const FIRSTYEAR_TEAM = [
   {
     name: "Marilyn Zhang",
-    image: "Marilyn_Zhang.png",
+    image: "missing.png",
     role: "First-Years Coordinator",
     linkedin: "https://www.linkedin.com/in/marilyn-zhang-436965246/",
   },
@@ -300,7 +324,7 @@ const FIRSTYEAR_TEAM = [
   },
   {
     name: "Albert Ho",
-    image: "Albert_Ho.png",
+    image: "missing.png",
     role: "First Year Associate",
     linkedin: "",
   },
@@ -401,7 +425,7 @@ const SPONSORED_BY = [
 export {
   EXECUTIVE_TEAM,
   ACADEMICS_TEAM,
-  DEVELOPER_TEAM,
+  TECHNOLOGY_TEAM,
   MARKETING_TEAM,
   EXTERNAL_AFFAIRS_TEAM,
   EVENTS_TEAM,

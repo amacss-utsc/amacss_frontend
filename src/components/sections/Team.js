@@ -5,7 +5,7 @@ import { GatsbyImage } from "gatsby-plugin-image";
 import {
   EXECUTIVE_TEAM,
   ACADEMICS_TEAM,
-  DEVELOPER_TEAM,
+  TECHNOLOGY_TEAM,
   MARKETING_TEAM,
   EVENTS_TEAM,
   FIRSTYEAR_TEAM,
@@ -93,10 +93,10 @@ const Team = () => (
           <br />
           {/* Developer Team */}
           <TeamLayout
-            teamName={"Developer Team"}
-            teamInfo={DEVELOPER_TEAM}
+            teamName={"Technology Team"}
+            teamInfo={TECHNOLOGY_TEAM}
             gqlData={data}
-            path={"developer/"}
+            path={"technology/"}
           />
           <br />
           <br />
