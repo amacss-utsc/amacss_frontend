@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 
 import Layout from "@common/Layout";
 import Navbar from "@common/Navbar";
@@ -7,7 +7,10 @@ import styled from "styled-components";
 import { Container, Section } from "../data/global";
 
 const NewsletterPage = () => {
+  const [isClient, setIsClient] = useState(false);
+
   useEffect(() => {
+    setIsClient(true);
     const script = document.createElement("script");
     script.src = "https://assets.mailerlite.com/js/universal.js";
     script.async = true;
@@ -36,7 +39,7 @@ const NewsletterPage = () => {
               and events!
             </StyledParagraph>
             <br />
-            <div className="ml-embedded" data-form="3M7MKq"></div>
+            {isClient && <div className="ml-embedded" data-form="3M7MKq"></div>}
           </div>
         </Container>
       </Section>
@@ -44,6 +47,7 @@ const NewsletterPage = () => {
     </Layout>
   );
 };
+
 const StyledParagraph = styled.p`
   margin-bottom: 1.5rem;
 `;
