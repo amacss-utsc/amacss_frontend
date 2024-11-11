@@ -9,7 +9,6 @@ import Contact from "@sections/Contact";
 import FAQs from "@sections/Faq";
 import Footer from "@sections/Footer";
 import Update from "@sections/Update";
-import Newsletter from "@sections/Newsletter";
 
 const IndexPage = () => (
   <Layout>
@@ -19,7 +18,6 @@ const IndexPage = () => (
     <Contact />
     {/* <About/> */}
     {/* <Signup/> */}
-    {/* <Newsletter /> */}
     <Footer />
   </Layout>
 );
