@@ -38,12 +38,12 @@ const NAV_ITEMS = [
     url: "/team",
   },
   {
-    name: "Contact",
-    url: "/#contact",
-  },
-  {
     name: "FAQs",
     url: "/faq",
+  },
+  {
+    name: "Newsletter",
+    url: "/#newsletter",
   },
 ];
 
