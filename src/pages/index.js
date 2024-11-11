@@ -19,7 +19,7 @@ const IndexPage = () => (
     <Contact />
     {/* <About/> */}
     {/* <Signup/> */}
-    <Newsletter />
+    {/* <Newsletter /> */}
     <Footer />
   </Layout>
 );

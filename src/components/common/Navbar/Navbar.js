@@ -43,7 +43,7 @@ const NAV_ITEMS = [
   },
   {
     name: "Newsletter",
-    url: "/#newsletter",
+    url: "/newsletter",
   },
 ];
 
