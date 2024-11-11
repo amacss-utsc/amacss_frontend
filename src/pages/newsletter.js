@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, Suspense } from "react";
 
 import Layout from "@common/Layout";
 import Navbar from "@common/Navbar";
@@ -7,24 +7,24 @@ import styled from "styled-components";
 import { Container, Section } from "../data/global";
 
 const NewsletterPage = () => {
-  const [isClient, setIsClient] = useState(false);
+  // const [isClient, setIsClient] = useState(false);
 
-  useEffect(() => {
-    setIsClient(true);
-    const script = document.createElement("script");
-    script.src = "https://assets.mailerlite.com/js/universal.js";
-    script.async = true;
-    script.onload = () => {
-      if (window.ml) {
-        window.ml("account", "1182403");
-      }
-    };
-    document.body.appendChild(script);
+  // useEffect(() => {
+  //   setIsClient(true);
+  //   // const script = document.createElement("script");
+  //   script.src = "https://assets.mailerlite.com/js/universal.js";
+  //   script.async = true;
+  //   script.onload = () => {
+  //     if (window.ml) {
+  //       window.ml("account", "1182403");
+  //     }
+  //   };
+  //   document.body.appendChild(script);
 
-    return () => {
-      document.body.removeChild(script);
-    };
-  }, []);
+  //   return () => {
+  //     // document.body.removeChild(script);
+  //   };
+  // }, []);
 
   return (
     <Layout>
@@ -39,7 +39,9 @@ const NewsletterPage = () => {
               and events!
             </StyledParagraph>
             <br />
-            {isClient && <div className="ml-embedded" data-form="3M7MKq"></div>}
+            <Suspense fallback={<div>Loading...</div>}>
+              {<div className="ml-embedded" data-form="3M7MKq"></div>}
+            </Suspense>
           </div>
         </Container>
       </Section>
