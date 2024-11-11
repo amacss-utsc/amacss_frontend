@@ -20,7 +20,7 @@ const NewsletterPage = () => {
               and events!
             </StyledParagraph>
             <br />
-            {/* <div class="ml-embedded" data-form="3M7MKq"></div> */}
+            <div class="ml-embedded" data-form="3M7MKq"></div>
           </div>
         </Container>
       </Section>
