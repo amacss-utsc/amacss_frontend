@@ -194,29 +194,35 @@ const TECHNOLOGY_TEAM = [
 
 const MARKETING_TEAM = [
   {
-    name: "Amanda Zhu",
-    image: "Amanda_Zhu.png",
-    role: "Graphic Designer",
-    linkedin: "",
+    name: "Thanita Rerkthanakajon",
+    image: "missing.png",
+    role: "Social Media Director",
+    linkedin: "https://www.linkedin.com/in/rerkthanita/",
   },
   {
-    name: "Sigmund Wang",
-    image: "Sigmund_Wang.png",
-    role: "Graphic Designer",
-    linkedin: "",
+    name: "Vidhi Gandhi",
+    image: "missing.png",
+    role: "Social Media Director",
+    linkedin: "https://www.linkedin.com/in/vidhi-gandhi-86361622b/",
   },
   {
     name: "Dana Wan",
     image: "Dana_Wan.jpg",
-    role: "Social Media Coordinator",
+    role: "Design Director",
     linkedin: "https://www.linkedin.com/in/dana-wan/",
   },
   {
-    name: "Archi Shah",
-    image: "missing.png",
-    role: "Social Media Coordinator",
-    linkedin: "",
+    name: "Amanda Zhu",
+    image: "Amanda_Zhu.png",
+    role: "Design Director",
+    linkedin: "https://www.linkedin.com/in/amandajzhu/",
   },
+  {
+    name: "Tony Park",
+    image: "missing.png",
+    role: "Marketing Associate",
+    linkedin: "https://www.linkedin.com/in/tony-park-8b5313307/",
+  }
 ];
 
 const EXTERNAL_AFFAIRS_TEAM = [
@@ -240,42 +246,69 @@ const EXTERNAL_AFFAIRS_TEAM = [
   },
 ];
 
-const EVENTS_TEAM = [
+const CAMPUS_LIFE_TEAM = [
   {
-    name: "Ashwin Mayurathan",
-    image: "Ashwin_Mayurathan.png",
-    role: "Gala Director",
-    linkedin: "",
-  },
-  {
-    name: "Aaliyah Jaleel",
-    image: "Aaliyah_Jaleel.jpg",
-    role: "Gala Associate",
-    linkedin: "",
-  },
-  {
-    name: "Tasfiah Siara",
-    image: "Tasfiah_Siara.png",
-    role: "Events Associate",
-    linkedin: "",
-  },
-  {
-    name: "Sadra Setarehdan",
-    image: "Sadra_Setarehdan.jpg",
-    role: "Events Associate",
-    linkedin: "linkedin.com/in/sadra-setarehdan/",
-  },
-  {
-    name: "Jeanice Setyono",
-    image: "Jeanice_Setyono.jpg",
-    role: "Events Associate",
-    linkedin: "https://www.linkedin.com/in/jeaniceeliana/",
-  },
-  {
-    name: "Vraj Shah",
+    name: "Archi Shah",
     image: "missing.png",
-    role: "Events Associate",
-    linkedin: "https://www.linkedin.com/in/vraj-shah-2105vs/",
+    role: "Campus Life Director",
+    linkedin: "https://www.linkedin.com/in/archiashah/",
+  },
+  {
+    name: "Anuj Sarvate",
+    image: "missing.png",
+    role: "Campus Life Director",
+    linkedin: "https://www.linkedin.com/in/anujsarvate/",
+  },
+  {
+    name: "Ariella Siahaan",
+    image: "missing.png",
+    role: "Campus Life Associate",
+    linkedin: "",
+  },
+  {
+    name: "Sophie Zheng",
+    image: "missing.png",
+    role: "Campus Life Associate",
+    linkedin: "",
+  },
+  {
+    name: "Hamed Dawoudzai",
+    image: "missing.png",
+    role: "Campus Life Associate",
+    linkedin: "https://www.linkedin.com/in/hamed-dawoudzai-219742290/",
+  },
+];
+
+const SPECIAL_EVENTS_TEAM = [
+  {
+    name: "Arushi Bhatt",
+    image: "missing.png",
+    role: "Special Events Director",
+    linkedin: "https://www.linkedin.com/in/arushi-k-bhatt/",
+  },
+  {
+    name: "Alvin Cao",
+    image: "missing.png",
+    role: "Special Events Director",
+    linkedin: "https://www.linkedin.com/in/ac-alvin-cao/",
+  },
+  {
+    name: "Linda Guo",
+    image: "missing.png",
+    role: "Special Events Associate",
+    linkedin: "",
+  },
+  {
+    name: "Donat Ivliev",
+    image: "missing.png",
+    role: "Special Events Associate",
+    linkedin: "https://www.linkedin.com/in/donat-ivliev-17626728a/",
+  },
+  {
+    name: "Ethan Chan",
+    image: "missing.png",
+    role: "Special Events Associate",
+    linkedin: "https://www.linkedin.com/in/ethan-chan-02b690203/",
   },
 ];
 
@@ -356,10 +389,28 @@ const FIRSTYEAR_TEAM = [
 
 const FINANCE_TEAM = [
   {
-    name: "Michael Ong",
-    image: "Michael_Ong.png",
-    role: "First Year Associate",
-    linkedin: "",
+    name: "Eva Xu",
+    image: "missing.png",
+    role: "Operations Director",
+    linkedin: "https://www.linkedin.com/in/eva-xu-30a213239/",
+  },
+  {
+    name: "Maanya Gupta",
+    image: "missing.png",
+    role: "Documentation Director",
+    linkedin: "https://www.linkedin.com/in/maanya-g-900821214/",
+  },
+  {
+    name: "Afnan Rahman",
+    image: "missing.png",
+    role: "Operations Associate",
+    linkedin: "https://www.linkedin.com/in/afnan-rahman-a55b14285/",
+  },
+  {
+    name: "Vicky Wu Roopal",
+    image: "missing.png",
+    role: "Documentation Associate",
+    linkedin: "https://www.linkedin.com/in/vicky-wu-230284329/",
   },
 ];
 
@@ -428,7 +479,8 @@ export {
   TECHNOLOGY_TEAM,
   MARKETING_TEAM,
   EXTERNAL_AFFAIRS_TEAM,
-  EVENTS_TEAM,
+  CAMPUS_LIFE_TEAM,
+  SPECIAL_EVENTS_TEAM,
   FIRSTYEAR_TEAM,
   FINANCE_TEAM,
   SPONSORED_BY,

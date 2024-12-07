@@ -7,7 +7,8 @@ import {
   ACADEMICS_TEAM,
   TECHNOLOGY_TEAM,
   MARKETING_TEAM,
-  EVENTS_TEAM,
+  CAMPUS_LIFE_TEAM,
+  SPECIAL_EVENTS_TEAM,
   FIRSTYEAR_TEAM,
   SPONSORED_BY,
   ALUMNI_TEAM,
@@ -73,12 +74,21 @@ const Team = () => (
           />
           <br />
           <br />
-          {/* Events Team */}
+          {/* Campus Life Team */}
           <TeamLayout
-            teamName={"Events Team"}
-            teamInfo={EVENTS_TEAM}
+            teamName={"Campus Life Team"}
+            teamInfo={CAMPUS_LIFE_TEAM}
             gqlData={data}
-            path={"events/"}
+            path={"campus_life/"}
+          />
+          <br />
+          <br />
+          {/* Special Events Team */}
+          <TeamLayout
+            teamName={"Special Events Team"}
+            teamInfo={SPECIAL_EVENTS_TEAM}
+            gqlData={data}
+            path={"special_events/"}
           />
           <br />
           <br />
