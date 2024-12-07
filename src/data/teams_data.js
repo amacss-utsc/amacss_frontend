@@ -412,6 +412,12 @@ const FINANCE_TEAM = [
     role: "Documentation Associate",
     linkedin: "https://www.linkedin.com/in/vicky-wu-230284329/",
   },
+  {
+    name: "Roopal",
+    image: "missing.png",
+    role: "Documentation Associate",
+    linkedin: "",
+  },
 ];
 
 const ALUMNI_TEAM = [
