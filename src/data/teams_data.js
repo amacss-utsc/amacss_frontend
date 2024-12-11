@@ -50,12 +50,6 @@ const EXECUTIVE_TEAM = [
 ];
 const ACADEMICS_TEAM = [
   {
-    name: "Carlos Paez Gonzalez",
-    image: "Carlos_P.jpg",
-    role: "VP of Academics",
-    linkedin: "https://www.linkedin.com/in/carlos-arturo-paez-gonzalez-ba9a1b27a/",
-  },
-  {
     name: "Sabine Mohamad",
     image: "Sabine.JPG",
     role: "Director of Math",
@@ -489,13 +483,7 @@ const FINANCE_TEAM = [
   
 ];
 
-const OUTREACH_TEAM = [  
-  {
-    name: "Arnencha Pradabkaew",
-    image: "missing.png",
-    role: "VP of Outreach",
-    linkedin: "https://www.linkedin.com/in/arnencha/",
-  },
+const OUTREACH_TEAM = [ 
   {
     name: "Violet Zhu",
     image: "Zimo_Zhu.jpeg",
