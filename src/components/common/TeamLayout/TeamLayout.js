@@ -10,15 +10,27 @@ const TeamLayout = ({ teamName, teamInfo, gqlData, path }) => (
       {teamInfo.map(({ name, image, role, linkedin }) => {
         let imgPath = image === "missing.png" ? image : path + image;
 
-        const img = gqlData.allFile.edges.find(
+        // Add null check and fallback
+        const imgNode = gqlData.allFile.edges.find(
           ({ node }) => node.relativePath === imgPath
-        ).node;
+        );
+
+        // If image not found, return placeholder or skip
+        if (!imgNode) {
+          console.warn(`Image not found for ${name}: ${imgPath}`);
+          return (
+            <div key={name}>
+              <Title>{name}</Title>
+              <Subtitle>{role}</Subtitle>
+            </div>
+          );
+        }
 
         return (
-          <div>
+          <div key={name}>
             <ExternalLink href={linkedin}>
               <GatsbyImage
-                image={img.childImageSharp.gatsbyImageData}
+                image={imgNode.node.childImageSharp.gatsbyImageData}
                 alt={name}
               />
             </ExternalLink>

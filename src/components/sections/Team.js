@@ -14,6 +14,7 @@ import {
   ALUMNI_TEAM,
   EXTERNAL_AFFAIRS_TEAM,
   FINANCE_TEAM,
+  OUTREACH_TEAM,
 } from "../../data/teams_data";
 import TeamLayout from "../common/TeamLayout/TeamLayout";
 import { Container, Section } from "../../data/global";
@@ -125,6 +126,15 @@ const Team = () => (
             teamInfo={FINANCE_TEAM}
             gqlData={data}
             path={"finance/"}
+          />         
+          <br />
+          <br />
+          {/* Outreach Team */}
+          <TeamLayout
+            teamName={"Outreach Team"}
+            teamInfo={OUTREACH_TEAM}
+            gqlData={data}
+            path={"outreach/"}
           />
           <br />
           <br />
