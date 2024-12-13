@@ -242,7 +242,7 @@ const ACADEMICS_TEAM = [
 const TECHNOLOGY_TEAM = [
   {
     name: "Ashwin Mallik",
-    image: "missing.png",
+    image: "Ashwin_Mallik.png",
     role: "Director of Technology",
     linkedin: "https://www.linkedin.com/in/ashwin-mallik-68a57b214/",
   },
@@ -347,7 +347,7 @@ const CAMPUS_LIFE_TEAM = [
   },
   {
     name: "Anuj Sarvate",
-    image: "Anuj_Sarvate.PNG",
+    image: "missing.png",
     role: "Campus Life Director",
     linkedin: "https://www.linkedin.com/in/anujsarvate/",
   },
