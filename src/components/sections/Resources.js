@@ -9,22 +9,20 @@ import ExternalLink from "@common/ExternalLink";
 
 const Resources = () => {
   const youtubeLink = "https://www.youtube.com/watch?v=";
-  const YTdata = useStaticQuery(
-    graphql`
-      query {
-        allYoutubeVideo {
-          edges {
-            node {
-              title
-              description
-              videoId
-              publishedAt
-            }
+  const YTdata = useStaticQuery(graphql`
+    query {
+      allYoutubeVideo {
+        edges {
+          node {
+            title
+            description
+            videoId
+            publishedAt
           }
         }
       }
-    `
-  );
+    }
+  `);
 
   const YTdataFormatted = YTdata.allYoutubeVideo.edges.map((edge) => ({
     title: edge.node.title,
@@ -35,6 +33,13 @@ const Resources = () => {
   }));
 
   const extraData = [
+    {
+      title: "Rate My Cources",
+      description: "View and submit reviews for courses at UTSC!",
+      link: "https://ratemycourses.org",
+      date_added: "2025-01-09",
+      button_message: "View RMC!",
+    },
     {
       title: "Math and Stats Support (CTL)",
       description:
