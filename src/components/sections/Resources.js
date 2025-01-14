@@ -34,7 +34,7 @@ const Resources = () => {
 
   const extraData = [
     {
-      title: "Rate My Cources",
+      title: "Rate My Courses",
       description: "View and submit reviews for courses at UTSC!",
       link: "https://ratemycourses.org",
       date_added: "2025-01-09",
